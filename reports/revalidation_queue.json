@@ -1,0 +1,51 @@
+[
+  {
+    "source_id": "incident_validation",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "completed": "9 incidentes; IODA 1/15 inicios; Cloudflare Radar anotaciones 15/15 HTTP 200, 0 coincidencias (0/10 OSIPTEL); NetFlows 15/15, menor mediana normalizada en 9/15.",
+    "cause": "NetFlows compara con la semana previa, no un control normal confirmado; sin positivos/negativos independientes y regla congelada no se calcula rendimiento operativo.",
+    "next_action": "Validar una regla de alerta con referencias de internet fijas/móviles y ventanas normales independientes; usar voz/SMS solo como corroboración alineada y cobertura declarada solo como contexto."
+  },
+  {
+    "source_id": "inei_ubigeo_and_district_geometry",
+    "status": "PARTIAL_OFFICIAL_CROSSCHECK",
+    "completed": "1,893 catalog codes; 1,890 official INEI WFS polygons; isolated Anapia/Amantaní confirmed as island districts; valid Alto Trujillo patch from 4 official PCM segments; 6 district name differences.",
+    "cause": "INEI WFS predates new districts; tested official services do not supply full vector geometry for Sangani or Santa Rosa de Loreto.",
+    "next_action": "Retain the local Alto Trujillo patch as a candidate; source complete official vector boundaries for Sangani and Santa Rosa de Loreto."
+  },
+  {
+    "source_id": "official_accounts",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "completed": "Nine official handles verified; 6 additional reply searches (operator replies plus OSIPTEL authored replies) returned HTTP 200; 3 context replies, 0 complete operator/district/service candidates",
+    "cause": "Replies are observable but the retrieved sample has no complete independently confirmed event.",
+    "next_action": "No pending query implementation; keep account signal INSUFFICIENT_EVIDENCE until a reference event establishes value."
+  },
+  {
+    "source_id": "peru_news_feeds",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "completed": "Base feeds plus 8 extra endpoints for Peru21, Gestión, Trome, El Peruano and Expreso; 2 distinct extra feeds parsed, 0 strict hits; article pages not accessed",
+    "cause": "Only two distinct additional feeds returned parseable XML content and no outage-specific items in the captured samples.",
+    "next_action": "No pending feed implementation for tested endpoints; retain parse/error outcomes and revisit only if an official feed endpoint is identified."
+  },
+  {
+    "source_id": "service_technology_and_operator_scope",
+    "status": "INSUFFICIENT_EVIDENCE",
+    "completed": "8 cases: Movistar 5, Claro 4, Entel 4, Bitel 2; fixed explicit in 6 and mobile in 7.",
+    "cause": "AS-level signals do not classify retail fixed/mobile product; missing report field is not a negative.",
+    "next_action": "No local data transformation can infer service class where source signals lack it; preserve attribution scope."
+  },
+  {
+    "source_id": "provider_quotas_and_recovery",
+    "status": "PARTIALLY_VALIDATED",
+    "completed": "TwexAPI 0.2 QPS and Cloudflare global rate limits documented; bounded requests succeeded; unit recovery tests exist",
+    "cause": "IODA and some feeds do not expose applicable quota headers or a documented per-endpoint quota",
+    "next_action": "continue monitoring response headers and documented Retry-After on actual calls"
+  },
+  {
+    "source_id": "osiptel_checa_tu_senal",
+    "status": "CONDITIONAL_CONTEXT_ONLY",
+    "completed": "Página oficial consultada: cobertura móvil 2G/3G/4G/5G declarada por operadores, corte 2026-II cargado 2026-09-02, actualización trimestral; no es feed de interrupciones.",
+    "cause": "No se confirmó endpoint/API o archivo GIS público documentado; cobertura declarada no mide disponibilidad actual ni servicio fijo cableado.",
+    "next_action": "Usar solo como referencia contextual si se obtiene archivo/API oficial documentado; mantener fuera de la evaluación como detector de outage."
+  }
+]

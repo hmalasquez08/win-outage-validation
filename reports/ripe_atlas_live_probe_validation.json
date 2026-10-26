@@ -1,0 +1,41 @@
+{
+  "observed_utc": "2026-10-25T08:26:00.059285+00:00",
+  "method": "Corrected read-only probe census; status parsed from status.name; details in ripe_atlas_live_probe_district_coverage.json.",
+  "evidence_id": "ripe_atlas_live_probe_district_coverage-a2a8bc4d2ef3",
+  "aggregate": {
+    "redacted": true,
+    "total_pe_probes": 63,
+    "connected_target_asn_aggregate": {
+      "movistar": {
+        "connected_probes": 1,
+        "with_location": 1,
+        "district_assigned": 1,
+        "districts_represented": 1,
+        "district_assignment_boundary_uncertain": 1
+      },
+      "claro": {
+        "connected_probes": 2,
+        "with_location": 2,
+        "district_assigned": 2,
+        "districts_represented": 2,
+        "district_assignment_boundary_uncertain": 0
+      },
+      "entel": {
+        "connected_probes": 2,
+        "with_location": 2,
+        "district_assigned": 2,
+        "districts_represented": 2,
+        "district_assignment_boundary_uncertain": 0
+      },
+      "bitel": {
+        "connected_probes": 0,
+        "with_location": 0,
+        "district_assigned": 0,
+        "districts_represented": 0,
+        "district_assignment_boundary_uncertain": 0
+      }
+    },
+    "coordinate_and_probe_ids_persisted": false
+  },
+  "supersedes": "Initial status parser incorrectly treated the RIPE Atlas status object as a scalar; no operational claim was based on that first pass."
+}

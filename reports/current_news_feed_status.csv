@@ -1,0 +1,11 @@
+﻿outlet,rank,reach,url,status,http_status,parse_status,feed_items,news_candidates,freshest_item_age_minutes,evidence_id,artifact_path
+Latina Noticias,1,26%,,NO_VALIDATED_FEED_ROUTE,,,0,0,,,
+RPP Noticias,2,24%,https://rpp.pe/rss,CONFIGURED,200,XML_PARSED,60,0,6.7,news_rss_rpp_noticias-bc9f7ebf5197,evidencias/api_responses/news_rss_rpp_noticias/20261025T223646.755084+0000.xml
+El Comercio,3,23%,https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml,CONFIGURED,200,XML_PARSED,100,0,4.4,news_rss_el_comercio-8b9ff533ee4f,evidencias/api_responses/news_rss_el_comercio/20261025T223647.201601+0000.xml
+La República,4,23%,https://larepublica.pe/rss/home.xml,CONFIGURED,200,XML_PARSED,200,0,2.1,news_rss_la_republica-7950b7531d7a,evidencias/api_responses/news_rss_la_republica/20261025T223650.129162+0000.xml
+América Noticias,5,22%,https://www.americatv.com.pe/noticias/feed,CONFIGURED,200,XML_PARSED,33,0,67.5,news_rss_america_noticias-0836e788d7ed,evidencias/api_responses/news_rss_america_noticias/20261025T223653.390470+0000.xml
+Infobae,6,21%,https://www.infobae.com/arc/outboundfeeds/rss/,CONFIGURED_GLOBAL_FEED,200,XML_PARSED,100,0,6.8,news_rss_infobae-44a20b95c92f,evidencias/api_responses/news_rss_infobae/20261025T223654.064567+0000.xml
+Perú21,7,17%,https://peru21.pe/rss/,CONFIGURED,200,XML_PARSED,20,0,5259.4,news_rss_peru21-5f48c0bd80a8,evidencias/api_responses/news_rss_peru21/20261025T223656.243552+0000.xml
+ATV Noticias,8,16%,https://www.atv.pe/rss/,CONFIGURED,200,XML_PARSED,20,0,40595.1,news_rss_atv_noticias-d89d8bd09f99,evidencias/api_responses/news_rss_atv_noticias/20261025T223656.619475+0000.xml
+Exitosa Noticias,9,15%,,NO_VALIDATED_FEED_ROUTE,,,0,0,,,
+TV Perú,10,14%,,NO_VALIDATED_FEED_ROUTE,,,0,0,,,

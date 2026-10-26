@@ -1,0 +1,11 @@
+{
+  "status": "NOT_DETERMINED",
+  "reason": "A trial parser did not resolve the nested measurement-list schema/public visibility; its counts are discarded. Do not use its output as evidence.",
+  "reliable_existing_result_sample": {
+    "source": "reports/atlas_latest_results.csv",
+    "observed_2026_10_24": "Five sampled ongoing measurement records for Movistar, Claro, and Entel; zero latest results returned in that sample."
+  },
+  "current_probe_census": "reports/ripe_atlas_live_probe_coverage.md",
+  "next_read_only_step": "Resolve public measurement metadata and latest results for the connected target-ASN probes before claiming usable active telemetry.",
+  "no_measurements_created": true
+}

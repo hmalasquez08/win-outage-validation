@@ -1,0 +1,51 @@
+{
+  "evidence_type": "redacted_api_validation_summary",
+  "source": "StatusGator API v3",
+  "observed_at_utc": "2026-10-25T21:24:47+00:00",
+  "credentials_persisted": false,
+  "write_operations_performed": false,
+  "board_list_http_status": 200,
+  "board_count": 1,
+  "board_monitors_http_status": 200,
+  "board_monitor_count": 2,
+  "board_monitor_services": [
+    "Amazon Web Services",
+    "Amazon Web Services"
+  ],
+  "search_results": [
+    {
+      "query": "Movistar",
+      "http_status": 200,
+      "matches": [
+        {
+          "name": "Movistar",
+          "status_page_url": null,
+          "official": false
+        },
+        {
+          "name": "DANAconnect",
+          "official": true
+        }
+      ]
+    },
+    {
+      "query": "Claro Peru",
+      "http_status": 200,
+      "result_count": 9,
+      "relevant_peruvian_operator_match": false
+    },
+    {
+      "query": "Entel Peru",
+      "http_status": 200,
+      "result_count": 4,
+      "relevant_peruvian_operator_match": false
+    },
+    {
+      "query": "Bitel Peru",
+      "http_status": 200,
+      "result_count": 1,
+      "relevant_peruvian_operator_match": false
+    }
+  ],
+  "conclusion": "API accessible; the returned Movistar listing is unofficial and not Peru-specific; no useful localized operator coverage demonstrated."
+}

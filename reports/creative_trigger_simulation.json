@@ -1,0 +1,214 @@
+{
+  "simulator": "local-only-v1",
+  "real_source_data_used": false,
+  "scenarios": [
+    {
+      "scenario": "direct_plus_independent_same_zone",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "QUALIFIED_FOR_SIMULATED_CREATIVE",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:25:00Z",
+        "scope": {
+          "operator": "movistar",
+          "technology": "internet_unspecified",
+          "geography": {
+            "country": "PE",
+            "level": "district",
+            "code": "150101"
+          },
+          "direct_signal_ids": [
+            "demo-netflow"
+          ],
+          "corroborating_signal_ids": [
+            "demo-independent-internet-reports"
+          ],
+          "evidence_families": [
+            "cloudflare",
+            "community_reports"
+          ],
+          "first_observed_at": "2026-10-25T15:55:00Z",
+          "last_observed_at": "2026-10-25T15:55:00Z"
+        },
+        "reasons": [],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    },
+    {
+      "scenario": "complaints_without_internet_signal",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "SUPPRESSED",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:00:00Z",
+        "scope": null,
+        "reasons": [
+          "missing_fresh_direct_internet_signal"
+        ],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    },
+    {
+      "scenario": "direct_only",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "CANDIDATE_ONLY",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:25:00Z",
+        "scope": null,
+        "reasons": [
+          "no_independent_same_operator_zone_time_corroboration"
+        ],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    },
+    {
+      "scenario": "same_provider_products_do_not_corroborate",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "CANDIDATE_ONLY",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:25:00Z",
+        "scope": null,
+        "reasons": [
+          "no_independent_same_operator_zone_time_corroboration"
+        ],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    },
+    {
+      "scenario": "other_operator_complaints_do_not_corroborate",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "CANDIDATE_ONLY",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:25:00Z",
+        "scope": null,
+        "reasons": [
+          "no_independent_same_operator_zone_time_corroboration"
+        ],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    },
+    {
+      "scenario": "unverified_geography",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "SUPPRESSED",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:25:00Z",
+        "scope": null,
+        "reasons": [
+          "direct_signal_has_no_verified_actionable_geography"
+        ],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    },
+    {
+      "scenario": "stale_evidence",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "SUPPRESSED",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:00:00Z",
+        "scope": null,
+        "reasons": [
+          "missing_fresh_direct_internet_signal"
+        ],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    },
+    {
+      "scenario": "source_error",
+      "decision": {
+        "schema_version": "win-creative-trigger-simulation-v1",
+        "status": "SUPPRESSED",
+        "simulation_only": true,
+        "decision_at": "2026-10-25T16:00:00Z",
+        "expires_at": "2026-10-25T16:00:00Z",
+        "scope": null,
+        "reasons": [
+          "missing_fresh_direct_internet_signal"
+        ],
+        "policy": {
+          "requires_direct_internet_evidence": true,
+          "requires_independent_corroboration": true,
+          "requires_verified_peru_geography": true,
+          "max_signal_age_minutes": 30,
+          "voice_sms_or_complaints_alone_can_trigger": false,
+          "declared_coverage_can_trigger": false
+        }
+      }
+    }
+  ],
+  "hysteresis": {
+    "activation": [
+      "PENDING_ACTIVATION",
+      "ACTIVE"
+    ],
+    "duplicate_snapshot": [
+      "PENDING_ACTIVATION",
+      "PENDING_ACTIVATION"
+    ],
+    "recovery": [
+      "PENDING_RECOVERY",
+      "RECOVERED"
+    ]
+  }
+}

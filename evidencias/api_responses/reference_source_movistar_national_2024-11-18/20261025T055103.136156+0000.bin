@@ -1,0 +1,943 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XNEP1QP956"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XNEP1QP956');
+</script>
+
+<!-- Matomo -->
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//tracking.osiptel.gob.pe/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<!-- End Matomo Code -->    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="copyright" content="OSIPTEL" />
+    <meta name="description" content="El Organismo Supervisor de Inversión Privada en Telecomunicaciones - OSIPTEL, es un organismo público especializado, regulador y descentralizado adscrito a la Presidencia del Consejo de Ministros, que cuenta con autonomía técnica, administrativa, económica y financiera.">
+    <meta name="robots" content="index,follow" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';connect-src *; font-src 'self' data:; script-src * 'unsafe-inline' 'unsafe-eval';img-src * data:; style-src * 'unsafe-inline';frame-src *;">
+    <title>OSIPTEL coordina el restablecimiento total de internet m&#243;vil y fijo de Movistar en diversos distritos a nivel nacional</title>
+    <link type="image/x-icon" rel="shortcut icon" href="/media/qblmaumx/favicon.ico">
+    <link href="/css/Cabecera/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/Cabecera/fontawesome.css" rel="stylesheet" />
+    <link href="/css/Cabecera/style.css" rel="stylesheet" />
+    <link href="/css/Buscador.css" rel="stylesheet" />
+    <link href="/css/breadcrumb.css" rel="stylesheet" />
+    <link href="/css/operadoras.css" rel="stylesheet" />
+    <!--[if lt IE 8]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="/css/StyleOSIPTEL.css">
+    <style>
+    .titulo-medida-uno {
+        font-family: 'Museo Sans 500';
+        font-size: 30px;
+        color: #0077c0;
+    }
+        
+    .btn-volver{
+        color: #F68934;
+        font-size: 15px;
+        font-weight: bold;        
+    }    
+    
+    .box-img-principal{
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .box-img-principal img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        max-height: 400px;
+    }    
+    
+    </style>
+    <!-- facebook -->
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="OSIPTEL coordina el restablecimiento total de internet m&#243;vil y fijo de Movistar en diversos distritos a nivel nacional" />
+    <meta property="og:description"        content="El Organismo Supervisor de Inversi&#243;n Privada en Telecomunicaciones (OSIPTEL) informa a la ciudadan&#237;a lo siguiente" />
+    <meta property="og:image"              content="https://www.osiptel.gob.pe/media/xjgoafzx/np18112024.jpg" />
+    <!-- twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="El Organismo Supervisor de Inversi&#243;n Privada en Telecomunicaciones (OSIPTEL) informa a la ciudadan&#237;a lo siguiente">
+    <meta name="twitter:title" content="OSIPTEL coordina el restablecimiento total de internet m&#243;vil y fijo de Movistar en diversos distritos a nivel nacional">
+    <meta name="twitter:image" content="https://www.osiptel.gob.pe/media/xjgoafzx/np18112024.jpg">
+    
+    
+
+    
+</head>
+<body>
+    
+
+ <!-- ============================================================
+    INICIO — PEGAR ANTES DE </body>
+    ============================================================ -->
+
+  <script>
+    function lcw() {
+      return {
+
+        // ── BURBUJAS Y AVATAR DENTRO DEL CHAT ────────────────────────────────
+        webChatContainerProps: {
+          webChatStyles: {
+            bubbleMaxWidth: 400,  // Ancho máximo de burbujas de texto e IA generativa
+            bubbleMinWidth: 40,   // Ancho mínimo de burbujas
+          },
+
+          // ── AVATAR DEL BOT (imagen al lado de cada mensaje de Telia) ─────────
+          renderingMiddlewareProps: {
+            avatarStyleProps: {
+              backgroundImage:    "url('https://sociedadtelecom.pe/chatbot/chatbot-telia.png')",
+              backgroundSize:     "cover",
+              backgroundPosition: "center center",
+              backgroundRepeat:   "no-repeat",
+              backgroundColor:    "transparent"
+            },
+            avatarTextStyleProps: {
+              display: "none"   // Oculta las iniciales "TE"
+            }
+          }
+        },
+
+        // ── TAMAÑO DE LA VENTANA DEL CHAT ────────────────────────────────────
+        styleProps: {
+          generalStyles: {
+            width:  "520px",  // Ancho de la ventana del chat
+            height: "640px"   // Alto de la ventana del chat
+          }
+        },
+
+        // ── BOTÓN FLOTANTE CON ÍCONO DE TELIA Y BURBUJA DE MENSAJES ──────────
+        chatButtonProps: {
+          controlProps: {
+            hideChatTextContainer:  true,   // Oculta el texto, solo muestra la imagen
+            hideNotificationBubble: false   // Muestra la burbuja roja de mensajes no leídos
+          },
+          styleProps: {
+
+            // Contenedor del botón flotante
+            generalStyleProps: {
+              height:          "110px",
+              width:           "95px",
+              backgroundColor: "transparent",
+              borderStyle:     "none",
+              borderRadius:    "0",
+              boxShadow:       "none",
+              padding:         "10px 5px 0px 5px",
+              outline:         "none",
+              overflow:        "visible",  // Permite que la burbuja no se corte
+              bottom:          "20px",     // Distancia desde abajo
+              right:           "20px",     // Distancia desde la derecha
+
+              "&:hover": {
+                backgroundColor: "transparent",
+                boxShadow:       "none",
+                opacity:         "0.88",
+                transform:       "scale(1.04)"
+              },
+              "&:focus": {
+                outline:         "none",
+                boxShadow:       "none",
+                backgroundColor: "transparent"
+              },
+              "&:focus-visible": {
+                outline:   "none",
+                boxShadow: "none"
+              }
+            },
+
+            // Imagen del ícono de Telia en el botón flotante
+            iconStyleProps: {
+              width:               "100%",
+              height:              "100%",
+              cursor:              "pointer",
+              backgroundImage:     "url(https://sociedadtelecom.pe/chatbot/chatbot-telia.png)",
+              backgroundSize:      "contain",
+              backgroundPosition:  "center center",
+              backgroundRepeat:    "no-repeat",
+              backgroundColor:     "transparent",
+              borderStyle:         "none",
+              borderRadius:        "0",
+              margin:              "0px"
+            },
+
+            // ── BURBUJA ROJA DE MENSAJES NO LEÍDOS ───────────────────────────
+            // Para ajustar su posición si necesitas moverla:
+            //   top: "8px"   → más abajo    | top: "2px"  → más arriba
+            //   right: "5px" → más a la izq | right: "0px" → más a la derecha
+            notificationBubbleStyleProps: {
+              backgroundColor: "#d9342b",  // Color rojo
+              color:           "#ffffff",  // Número en blanco
+              fontSize:        "11px",
+              fontWeight:      "bold",
+              borderRadius:    "50%",
+              width:           "20px",     // Tamaño de la burbuja
+              height:          "20px",
+              minWidth:        "20px",
+              display:         "flex",
+              alignItems:      "center",
+              justifyContent:  "center",
+              position:        "absolute",
+              top:             "24px",      // ← Sube/baja la burbuja
+              right:           "4px"       // ← Acerca/aleja la burbuja del borde derecho
+            }
+          }
+        }
+      };
+    }
+  </script>
+
+  <!-- SCRIPT DE MICROSOFT CON v2
+       "v2" activa el widget 2.0 — mejor soporte de personalización del ícono -->
+  <script v2
+    id="Microsoft_Omnichannel_LCWidget"
+    src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
+    onerror="(function(el){el.parentNode.removeChild(el);var s=document.createElement('script');s.src='https://ocprodpublicsamgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';s.setAttribute('id', 'Microsoft_Omnichannel_LCWidget');s.setAttribute('data-app-id', '17943868-895a-4309-9712-def121ca2b37');s.setAttribute('data-lcw-version', 'prod');s.setAttribute('data-org-id', '42a915ad-c2e5-f011-89f6-00224836e4ef');s.setAttribute('data-org-url', 'https://m-42a915ad-c2e5-f011-89f6-00224836e4ef.br.omnichannelengagementhub.com');s.setAttribute('data-customization-callback', 'lcw');document.body.appendChild(s);})(this);"
+    data-app-id="17943868-895a-4309-9712-def121ca2b37"
+    data-lcw-version="prod"
+    data-org-id="42a915ad-c2e5-f011-89f6-00224836e4ef"
+    data-org-url="https://m-42a915ad-c2e5-f011-89f6-00224836e4ef.br.omnichannelengagementhub.com"
+    data-customization-callback="lcw"
+    async>
+  </script>
+
+  <!-- ============================================================
+    FIN — HASTA AQUÍ PEGAR
+    ============================================================ -->
+
+<!-- banner top -->
+<div class="banner-top">
+    <div class="banner-top container">
+        <ul class="d-flex mb-0" style="font-size: 1.1rem;">
+            <li class="active" style="padding: 0px 12px;"><a href="/portal-del-usuario/" class="cabecera-btn">Usuarios</a></li>
+            <li class=" " style="padding: 0px 12px;"><a href="/portal-de-operadoras/" class="cabecera-btn">Operadoras</a></li>
+        </ul>
+        <div class="d-flex">
+            <form class="form-inline my-2 my-lg-0" action="/buscador-global/" method="get">
+                <span class="icono-search fas fa-search "></span>
+                <input class="form-control search-styles" type="search" name="q" value="" placeholder="Buscar..." aria-label="Search">
+            </form>
+            <div class="banner-btn">
+                <ul class="d-flex p-0 mb-0">
+                    <span class="separator">&nbsp;&nbsp;|</span>
+                    <li class="hide-rd  "><a class="cabecera-opcional" href="/en/your-osiptel/">English</a></li>
+                    <span class="separator">|</span>
+                    <li class="hide-rd"><a class="cabecera-opcional" href="/accesibilidad/">Accesibilidad</a></li>
+                    <span class="separator">|</span>
+                    <li class="hide-rd active"><a class="cabecera-opcional" href="/portal-del-usuario/portal-de-transparencia/">Portal de Transparencia Estándar</a></li>
+                    <li class="img-search"><img src="/media/ylkhkpi0/search.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light container">
+
+            <a class="navbar-brand" href="/portal-del-usuario/"><img src="/media/cbihrirt/prueba.png" alt="Opsitel"></a>
+            <div class="open-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-3 w-100">
+                    <li class="nav-item detail-be">
+                        <a class="nav-link detail" href="#">LO QUE DEBE SABER EL USUARIO<span class="sr-only">(current)</span></a>
+                        <div class="content-menu" style="z-index:10000">
+                            <div class="d-flex">
+                                <ul class="content-ul">
+                                    <li><a href="#">Tus Derechos</a>
+                                        <ul>
+                                            <li><a href="https://sociedadtelecom.pe/landing/derechos/derechos-castellano.html" target="_blank">Castellano</a></li>
+                                            <li><a href="https://sociedadtelecom.pe/landing/derechos/derechos-quechua.html" target="_blank">Quechua</a></li>
+                                            <li><a href="https://sociedadtelecom.pe/landing/derechos/derechos-aimara.html" target="_blank">Aimara</a></li>
+                                            <li><a href="https://sociedadtelecom.pe/landing/derechos/derechos-shipibo.html" target="_blank">Shipibo Konibo</a></li>
+                                            <li><a href="https://sociedadtelecom.pe/landing/derechos/derechos-ashaninka.html" target="_blank">Ashaninka</a></li>
+                                            <li><a href="https://sociedadtelecom.pe/landing/derechos/derechos-kichwa.html" target="_blank">Kichwa</a></li>
+                                            <li><a href="https://sociedadtelecom.pe/landing/derechos/assets/pdf/derechos-usuarios-awajun.pdf" target="_blank">Awajun (Decálogo)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="/portal-del-usuario/preguntas-frecuentes/">Preguntas Frecuentes</a>
+                                        <ul>
+                                            <li><a href="/portal-del-usuario/preguntas-frecuentes/ranking-de-la-calidad-de-atencion-al-usuario/" target="_blank">Ranking de la calidad de atención al usuario</a></li>
+                                            <li><a href="/portal-del-usuario/preguntas-frecuentes/lo-que-debes-hacer-si-te-robaron-el-celular/" target="_blank">Lo que debes hacer si te robaron el celular</a></li>
+                                        </ul>  
+                                    </li>
+                                    <li><a href="/portal-del-usuario/lo-que-debes-saber/normativas-de-usuarios/">Normativas de Usuarios</a></li>
+                                    <li><a href="/portal-del-usuario/lo-que-debes-saber/carta-de-servicios/">Cartas de Servicios</a></li>
+                                    <li><a href="/portal-del-usuario/oferta-comercial-residencial/">Oferta Comercial Residencial</a></li>
+                                    <li><a href="/portal-del-usuario/participacion-ciudadana/consejo-de-usuarios/">Consejo de Usuarios</a></li>
+                                    <li><a href="/portal-del-usuario/participacion-ciudadana/asociaciones-de-usuarios/">Asociación de Usuarios</a></li>
+                                </ul>
+                                <div class="column-two">
+                                    Guía de información y orientación
+                                    <ul class="list-style">
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/lo-que-debes-saber-antes-de-reclamar/">Lo que debes saber antes de reclamar</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/solucion-anticipada/">Solución anticipada</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/esquema-general/">Esquema General</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/qui&#233;nes-pueden-reclamar/">¿Quiénes pueden reclamar?</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/requisitos/">Requisitos</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/formas-de-presentacion/">Formas de presentación</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/silencio-administrativo-positivo/">Silencio Administrativo Positivo</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/expediente-de-reclamo/">¿Expediente de reclamo?</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/motivos-plazos-y-proc-para-reclamar/">Motivos, plazos y proc. para reclamar</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/cu&#225;ndo-presentar-una-queja/">¿Cuándo presentar una queja?</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/formularios/">Formularios</a></li>
+                                        <li><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/denuncias/">Denuncias</a></li>
+                                    </ul>
+                                    <br>
+                                    <span class="col2-menuextra" style="font-family: 'Museo Sans 500';">TRASU</span>
+                                    <ul class="list-style">
+                                        <li><a href="/portal-del-usuario/trasu-2da-instancia-apelacion/qu&#233;-es-el-trasu/">¿Qué es el TRASU?</a></li>
+										<li><a href="/portal-del-usuario/trasu-2da-instancia-apelacion/lineamientos-resolutivos/">Lineamientos Resolutivos</a></li>
+										<li><a href="/portal-del-usuario/trasu-2da-instancia-apelacion/medios-probatorios/">Medios Probatorios</a></li>
+										<li><a href="/portal-del-usuario/trasu-2da-instancia-apelacion/jurisprudencia/">Jurisprudencia</a></li>
+									</ul>										
+                                    <br>                                    
+                                    <span class="col2-menuextra" style="font-family: 'Museo Sans 500';">Publicaciones y estadísticas</span>
+                                    <ul class="list-style">
+                                        <li><a target="_blank" href="https://repositorio.osiptel.gob.pe/bitstream/handle/20.500.12630/762/Ranking%20de%20RECLAMOS%20para%20Asociaciones%20JULIO%202021%20final-OCRI.pdf?sequence=1&isAllowed=y">Ranking de desempeño de la atención de reclamos</a></li>
+                                        <li><a target="_blank" href="https://repositorio.osiptel.gob.pe/bitstream/handle/20.500.12630/758/_20%2007%202021%20%20PPT%20RANKING%20DE%20CALIDAD%20DE%20ATENCION%20%202020%20II.pdf?sequence=6&isAllowed=y">Ranking de calidad de atención al usuario</a></li>
+                                        <li><a target="_blank" href="https://repositorio.osiptel.gob.pe/bitstream/handle/20.500.12630/764/ESTUDIO%20DE%20SATISFACCION%202020.pdf?sequence=1&isAllowed=y">Estudio de Satisfacción al Usuario 2020</a></li>
+                                        <li><a target="_blank" href="https://repositorio.osiptel.gob.pe/bitstream/handle/20.500.12630/765/Reporte%20estad%c3%adstico%20N%c2%b0%2005.pdf?sequence=1&isAllowed=y">Reporte estadístico: Estudio de Satisfacción 2020</a></li>
+                                    </ul>                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="nav-item  detail-be">
+                        <a class="nav-link detail" href="#">PORTAL DE DATOS ABIERTOS <span class="sr-only">(current)</span></a>
+                        <div class="content-menu" style="z-index:10000">
+                            <div class="d-flex">
+                                <ul class="content-ul">
+                                    <li><a target="_blank" href="https://punku.osiptel.gob.pe/FrmLogin.aspx">Portal de Información de Telecomunicaciones (PUNKU)</a></li>
+                                    <li><a target="_blank" href="https://bit.ly/3se6QoQ">Portal de Información de Usuarios</a></li>
+                                    <li><a target="_blank" href="https://bit.ly/3I6DrCW">Portal de Estadísticas de Fiscalización</a></li>
+                                    <li><a target="_blank" href="https://repositorio.osiptel.gob.pe/handle/20.500.12630/327">Encuesta Residencial de Servicios de Telecomunicaciones</a></li>
+                                    <li><a target="_blank" href="https://repositorio.osiptel.gob.pe/handle/20.500.12630/764">Estudio de Satisfacción al Usuario</a></li>
+                                    <li><a target="_blank" href="https://www.datosabiertos.gob.pe/search/field_tags/osiptel-921/type/dataset?query=osiptel&sort_by=changed">Portal Nacional de Datos Abiertos</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://repositorio.osiptel.gob.pe/">PUBLICACIONES Y ESTADÍSTICAS</a>
+                    </li>      
+                    
+                    <li class="nav-item detail-be">
+                        <a class="nav-link detail" href="#">BUEN GOBIERNO OSIPTEL<span class="sr-only">(current)</span></a>
+                        <div class="content-menu" style="z-index:10000">
+                            <div class="d-flex">
+                                <ul class="content-ul">
+                                    <li><a href="https://sociedadtelecom.pe/landing/buengobierno/bg-mapa-gestion-estrategica.php" target="_blank">Mapa de Gestión Estratégica</a></li>
+                                    <li><a href="https://sociedadtelecom.pe/landing/buengobierno/bg-transformacion-cultural.php" target="_blank">Transformación Cultural</a></li>
+                                    <li><a href="https://sociedadtelecom.pe/landing/buengobierno/bg-sistema-gestion-conocimiento.php" target="_blank">Sistema de Gestión del Conocimiento</a></li>
+                                    <li><a href="https://sociedadtelecom.pe/landing/buengobierno/bg-sistema-antisoborno.php" target="_blank">Sistema Antisoborno</a></li>
+                                    <li><a href="https://sociedadtelecom.pe/landing/buengobierno/bg-rendicion-cuentas.php" target="_blank">Rendición de cuentas</a></li>
+                                    <li><a href="https://www.gob.pe/institucion/osiptel/informes-publicaciones/2955482-plan-estrategico-institucional-2020-2025-ampliado" target="_blank">Plan Estratégico Institucional</a></li>
+                                    <li><a href="https://sociedadtelecom.pe/transformacion-digital/" target="_blank">Transformación Digital</a></li>
+                                    <li><a href="http://sociedadtelecom.pe/impacto-regulatorio/" target="_blank">RIA y Agenda Regulatoria</a></li>
+                                    <li><a href="https://sociedadtelecom.pe/transformacion-digital/sistema-gestion-procesos.html" target="_blank">Sistema de Gestión de Procesos</a></li>
+                                    <li><a href="/informacion-institucional/sistema-de-conflicto-de-intereses/" target="_blank">Sistema de Conflicto de Intereses</a></li>
+                                    <li><a href="/informacion-institucional/gestion-del-riesgo-de-desastres-en-el-osiptel/" target="_blank">Gestión del Riesgo de Desastres</a></li>
+                                </ul>
+
+                            </div>
+                        </div>                        
+                    </li>
+                  
+                    <li class="nav-item  detail-be">
+                        <a class="nav-link detail" href="#">CONTÁCTENOS <span class="sr-only">(current)</span></a>
+                        <div class="content-menu" style="z-index:10000">
+                            <div class="d-flex">
+                                <ul class="content-ul">
+                                    <li><a href="/portal-del-usuario/contactenos/sedes-de-orientacion/">Sedes de orientación</a></li>
+                                    <li><a href="/portal-del-usuario/contactenos/atencion-de-personas-con-discapacidad-auditiva/">Atención a personas con discapacidad auditiva</a></li>
+                                    <li><a href="https://teayudamos.osiptel.gob.pe/">Formulario de Consulta y Orientación al Usuario</a></li>
+                                </ul>
+                                <div class="d-flex">
+                                    <ul class="content-ul">
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link btn-menu" href="/buscador-de-normas-y-regulaciones/">BUSCADOR DE NORMAS Y REGULACIONES</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- menu collapse -->
+        <div class="nav-hide" style="z-index:1000">
+            <div class="close p-3 mr-2">
+                <i class="fas fa-plus transfor-search"></i>
+            </div>
+            <ul class="list-group list-submenu">
+                <li class="list-group-item"><a class="collapse-btn" href="/portal-del-usuario/">Usuarios</a></li>
+                <li class="list-group-item"><a class="collapse-btn" href="/portal-de-operadoras/">Operadoras</a></li>
+            </ul>
+            <br>
+            <form action="/buscador-global/" method="get">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="input-group search-rd">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input class="form-control mr-sm-2" type="search" name="q" value="" placeholder="Buscar..." aria-label="Search">
+                    </div>
+
+                </div>
+            </form>
+            <ul class="list-group list-submenu">
+                <li class="list-group-item"><a href="/en/your-osiptel/">English</a></li>
+                <li class="list-group-item"><a href="/accesibilidad/">Accesibilidad</a></li>
+                <li class="list-group-item"><a href="https://transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=7&id_tema=1&ver=D#.YlRYSsjMKCr" target="_blank">Portal de Tranparencia Estándar</a></li>
+            </ul><br>
+            <ul class="list-group">
+                <li class="list-group-item list-collapse" data-toggle="collapse" href="#collapse-menu" role="button" aria-expanded="false" aria-controls="collapse-menu">
+                    Lo que debe saber el usuario
+                    <span class="px-2"> <i class="fas fa-chevron-down"></i></span>
+
+                </li>
+                <div class="collapse collapse-menu" id="collapse-menu">
+                    <ul class="list-group collapse-menu">
+                        <li class="list-group-item hide-li"><a href="https://sociedadtelecom.pe/landing/derechos/derechos-castellano.html">Tus derechos</a></li>
+                        <li class="list-group-item hide-li"><a href="/portal-del-usuario/lo-que-debes-saber/carta-de-servicios/">Cartas de Servicios</a></li>
+                        <li class="list-group-item hide-li"><a href="/portal-del-usuario/preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                        <li class="list-group-item hide-li"><a href="/portal-del-usuario/lo-que-debes-saber/normativas-de-usuarios/">Normativas de Usuarios</a></li>
+                        <li class="list-group-item hide-li extend-menu" data-toggle="collapse" href="#collapse-submenu" role="button" aria-expanded="false" aria-controls="collapse-submenu">
+                            <a> Guía de información y orientación</a>
+                            <span class="px-2"><i class="fas fa-plus"></i></span>
+                        </li>
+                        <div class="collapse" id="collapse-submenu">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/lo-que-debes-saber-antes-de-reclamar/">Lo que debes saber antes de reclamar</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/solucion-anticipada/">Solución anticipada</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/esquema-general/">Esquema General</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/qui&#233;nes-pueden-reclamar/">¿Quiénes pueden reclamar?</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/requisitos/">Requisitos</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/formas-de-presentacion/">Formas de presentación</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/silencio-administrativo-positivo/">Silencio Administrativo Positivo</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/expediente-de-reclamo/">¿Expediente de reclamo?</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/motivos-plazos-y-proc-para-reclamar/">Motivos, plazos y proc. para reclamar</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/cu&#225;ndo-presentar-una-queja/">¿Cuándo presentar una queja?</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/formularios/">Formularios</a></li>
+                                <li class="list-group-item"><a href="/portal-del-usuario/lo-que-debes-saber/guia-de-informacion-y-orientacion/denuncias/">Denuncias</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+                <li class="list-group-item list-collapse" data-toggle="collapse" href="#collapse-menu-1" role="button" aria-expanded="false" aria-controls="collapse-menu">
+                    Portal de datos abiertos
+                    <span class="px-2"> <i class="fas fa-chevron-down"></i></span>
+
+                </li>
+                <div class="collapse collapse-menu" id="collapse-menu-1">
+                    <ul class="list-group collapse-menu">
+                        <li class="list-group-item hide-li"><a href="https://punku.osiptel.gob.pe/FrmLogin.aspx">Portal de Información de Telecomunicaciones (PUNKU)</a></li>
+                        <li class="list-group-item hide-li"><a href="https://bit.ly/3se6QoQ">Portal de Información de Usuarios</a></li>
+                        <li class="list-group-item hide-li"><a href="https://bit.ly/3I6DrCW">Portal de Estadísticas de Fiscalización</a></li>
+                        <li class="list-group-item hide-li"><a href="https://repositorio.osiptel.gob.pe/handle/20.500.12630/327">Encuesta Residencial de Servicios de Telecomunicaciones</a></li>
+                        <li class="list-group-item hide-li"><a href="https://repositorio.osiptel.gob.pe/handle/20.500.12630/764">Estudio de Satisfacción al Usuario</a></li>
+                        <li class="list-group-item hide-li"><a href="https://www.datosabiertos.gob.pe/search/type/dataset?query=osiptel">Portal Nacional de Datos Abiertos</a></li>                        
+                    </ul>
+                </div>
+                <!-- -->
+                <li class="list-group-item list-collapse" data-toggle="collapse" href="#collapse-menu-2" role="button" aria-expanded="false" aria-controls="collapse-menu">
+                    Buen Gobierno OSIPTEL
+                    <span class="px-2"> <i class="fas fa-chevron-down"></i></span>
+
+                </li>
+                <div class="collapse collapse-menu" id="collapse-menu-2">
+                    <ul class="list-group collapse-menu">
+                        <li class="list-group-item hide-li"><a href="https://cdn.www.gob.pe/uploads/document/file/1871133/Plan%20Estrat%C3%A9gico%20Institucional%202020-2024%20ampliado.pdf">Plan Estratégico Institucional</a></li>
+                        <li class="list-group-item hide-li"><a href="https://sociedadtelecom.pe/transformacion-digital/">Transformación Digital</a></li>
+                        <li class="list-group-item hide-li"><a href="http://sociedadtelecom.pe/impacto-regulatorio/">RIA y Agenda Regulatoria</a></li>
+                        <li class="list-group-item hide-li"><a href="/informacion-institucional/sistema-de-conflicto-de-intereses/">Sistema de Conflicto de Intereses</a></li>
+                        <li class="list-group-item hide-li"><a href="/informacion-institucional/gestion-del-riesgo-de-desastres-en-el-osiptel/">Gestión del Riesgo de Desastres</a></li>
+                    </ul>
+                </div>
+                <!-- -->
+                <li class="list-group-item"><a class="collapse-btn" href="http://repositorio.osiptel.gob.pe/" target="_blank">Publicaciones y Estadísticas</a></li>
+                <li class="list-group-item list-collapse" data-toggle="collapse" href="#collapse-menu-3" role="button" aria-expanded="false" aria-controls="collapse-menu">
+                    Contáctenos
+                    <span class="px-2"> <i class="fas fa-chevron-down"></i></span>
+
+                </li>
+                <div class="collapse collapse-menu" id="collapse-menu-3">
+                    <ul class="list-group collapse-menu">
+                        <li class="list-group-item hide-li"><a href="https://www.gob.pe/osiptel#contacto" target="_blank">Nuestras sedes</a></li>
+                        
+                        <li class="list-group-item hide-li"><a href="/portal-del-usuario/contactenos/atencion-de-personas-con-discapacidad-auditiva/">Atencion a personas con discapacidad auditiva</a></li>
+                        <li class="list-group-item hide-li"><a href="/portal-del-usuario/contactenos/formulario-de-consulta-y-orientacion-al-usuario/">Formulario de Consulta y Orientación al Usuario</a></li>
+                    </ul>
+                </div>
+                <li class="list-group-item" style="border-bottom-width: 0;">
+                    <a class="nav-link btn-menu" href="/buscador-de-normas-y-regulaciones/">BUSCADOR DE NORMAS Y REGULACIONES</a>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+<div class="bg-menu" style="background: rgba(0,0,0,0.2); position: absolute; width: 100%; height: 100%; z-index: 7; display:none">
+    </div>
+    <section class="titulo contenedor-titulo">
+        <div class="container">
+            <div class="row">
+                <div class="titulo contenedor-titulo col-md-12" style="display: flex; align-items: center; ">
+                    <h1 class="titulo-cabecera">NOTICIAS </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="page__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="breadcrumb breadcrumb_type1" style="padding:30px 0 30px 10px;">
+                            <ol class="breadcrumb__list r-list">
+                                        <li class="breadcrumb__group">
+                                            <a href="/" class="breadcrumb__point r-link" id="Home">
+                                                Home
+                                            </a>
+                                            <span class="breadcrumb__divider" aria-hidden="true"><i class="fas fa-angle-double-right" style="font-size:0.7rem;"></i></span>
+                                        </li>
+                                        <li class="breadcrumb__group">
+                                            <a href="/portal-del-usuario/" class="breadcrumb__point r-link" id="Portal del Usuario">
+                                                Portal del Usuario
+                                            </a>
+                                            <span class="breadcrumb__divider" aria-hidden="true"><i class="fas fa-angle-double-right" style="font-size:0.7rem;"></i></span>
+                                        </li>
+                                        <li class="breadcrumb__group">
+                                            <a href="/portal-del-usuario/noticias/" class="breadcrumb__point r-link" id="Noticias">
+                                                Noticias
+                                            </a>
+                                            <span class="breadcrumb__divider" aria-hidden="true"><i class="fas fa-angle-double-right" style="font-size:0.7rem;"></i></span>
+                                        </li>
+                                <li class="breadcrumb__group">
+                                    <span class="breadcrumb__point" aria-current="page">OSIPTEL coordina el restablecimiento total de internet m&#243;vil y fijo de Movistar en diversos distritos a nivel nacional</span>
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <hr style="margin:0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <section style="padding-top:20px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1">
+                    
+                </div>                
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="titulo-medida-uno">OSIPTEL coordina el restablecimiento total de internet m&#243;vil y fijo de Movistar en diversos distritos a nivel nacional</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-img-principal">
+
+                                <img src="/media/xjgoafzx/np18112024.jpg" alt="">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-contenido" style="text-align: justify;">
+                                <p>El Organismo Supervisor de Inversión Privada en Telecomunicaciones (OSIPTEL) informa a la ciudadanía lo siguiente: </p>
+<ol>
+<li>El Centro de Monitoreo del OSIPTEL detectó, a las 10:47 a.m. del lunes 18 de noviembre de 2024, la afectación del servicio de internet móvil y fijo en diversos distritos a nivel nacional.</li>
+<li>Conocido el hecho, se solicitó a Movistar información detallada sobre el origen del evento y el impacto en los usuarios afectados, con el fin de evaluar y determinar las acciones pertinentes conforme a la normativa vigente.</li>
+<li>Paralelamente, se viene coordinando con la empresa operadora las acciones correctivas necesarias, así como la reposición del servicio.</li>
+<li>De acuerdo a información preliminar de Movistar, los servicios se vienen restableciendo progresivamente desde las 11:22 a.m.</li>
+<li>El OSIPTEL recuerda a los abonados afectados que, de ser el caso, las empresas operadoras están obligadas a realizar la devolución correspondiente en el recibo por el tiempo en que el servicio estuvo interrumpido. El OSIPTEL verificará el cumplimiento de estas devoluciones.</li>
+</ol>
+<p>El OSIPTEL seguirá supervisando los trabajos realizados por la empresa hasta el restablecimiento total del servicio.</p>
+<p> </p>
+<p><strong>Lima, 18 de noviembre de 2024</strong></p>
+<div><strong>Oficina de Comunicaciones y Relaciones Institucionales<br /></strong></div>
+<div></div>
+<div><a rel="noopener" href="https://twitter.com/OSIPTEL" target="_blank" class="underline">@OSIPTEL<br /></a></div>
+<div><a rel="noopener" href="http://www.facebook.com/osipteloficial" target="_blank" class="underline">www.facebook.com/osipteloficial</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box_enlaces">
+                                <div class="btn_descarga">
+                                    <span style="float:right;" title="Descargar Documento"><a class="btn-doc-principal" href="" target="_blank">Descargar documento <img src="/media/0ldnduqi/recurso-2-2x.png" height="18px"></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-1">
+                    <a href="#" class="btn-volver"><i class="fas fa-angle-left"></i> Volver</a>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    <style>
+    .espaciado-boton {
+        margin: 10px 0;
+    }
+
+    .footer_a {
+        color: #333333;
+        text-decoration: none;
+    }
+
+        .footer_a:hover {
+            color: #00BCE4;
+            text-decoration: none;
+            font-weight: 300;
+        }
+
+    .redes {
+        border: 1px solid #EDEEEE;
+        padding: 10px;
+    }
+
+    .footer_titulo {
+        color: #333333;
+        font-weight: 700;
+    }
+
+    .iso-img {
+        float: left;
+        padding-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        height: 60px;
+    }
+
+    .iso-text {
+        font-size: 9px;
+        color: #333333;
+    }
+
+    .iso-text-1 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .footer-inferior {
+        padding: 0px 0px 20px 20px;
+    }
+
+    .footer-top {
+        padding: 20px 20px 0px 20px;
+    }
+</style>
+
+<script src="/js/Cabecera/jquery-3.4.1.slim.min.js"></script>
+<script src="/js/Cabecera/popper.min.js"></script>
+<script src="/js/Cabecera/bootstrap.min.js"></script>
+<script src="/js/Cabecera/cabecera.js"></script>
+<script src="/js/fontawesome.js"></script>
+<style>
+    /*Flecha para hacer la pagina hacia arriba*/
+    #ir-arriba {
+        display: none;
+        padding: 18px 20px;
+        background-repeat: no-repeat;
+        font-size: 18px;
+        color: black;
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 200000;
+        background: #f68934;
+        border-radius: 5px 5px 5px 5px;
+        -moz-border-radius: 5px 5px 5px 5px;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border: 0px solid #000000;
+        filter: drop-shadow(0 0 5px rgb(161, 161, 161));
+    }
+    .flecha-icon{
+        color:white;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        $('#ir-arriba').click(function(){
+		    $('body, html').animate({
+			    scrollTop: '0px'
+		    }, 800);
+	    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('#ir-arriba').slideDown("slow");
+        } else {
+            $('#ir-arriba').slideUp("slow");
+        }
+    });
+
+    });
+</script>
+<a id="ir-arriba" href="#" title="Volver arriba" >
+    <i class="flecha-icon fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+</a>
+<footer style="background-color:#F9F9F9;">
+    <div class="container" style="padding-top: 0px;">
+        <div class="row footer-top">
+            <div class="col-md-12">
+                <hr />
+            </div>
+            <div class="col-md-3">
+                <h3 class="footer_titulo">Institucional</h3>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/informacion-institucional/nosotros/">Nosotros</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/informacion-institucional/organigrama/">Organigrama</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/informacion-institucional/funciones-del-osiptel/">Funciones</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/informacion-institucional/nuestras-politicas-principios-y-metodologia-de-trabajo/">Nuestras Políticas</a>
+                </div>   
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/informacion-institucional/legislacion-basica-del-osiptel/">Legislación Básica</a>
+                </div> 
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/informacion-institucional/sistema-de-control-interno/">Sistema de Control Interno</a>
+                </div>   
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="https://www.gob.pe/institucion/osiptel/informes-publicaciones/5188135-gestion-de-procesos">Gestión por Procesos</a>
+                </div>   
+               
+            </div>
+            <div class="col-md-3">
+                <h3 class="footer_titulo">Enlaces</h3>
+             
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/convocatorias-laborales/">Convocatorias de Trabajo</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="https://sociedadtelecom.pe/transformacion-digital/">Transformación Digital</a>
+                </div>                
+                <div class="espaciado-boton">
+                    <a class="footer_a espaciado-boton" href="http://repositorio.osiptel.gob.pe/" target="_blank">Estadísticas</a><br />
+                </div>                
+                <div class="espaciado-boton">
+                    <a class="footer_a espaciado-boton" href="http://sociedadtelecom.pe/" target="_blank">Sociedad Telecom</a><br />
+                </div>                
+
+                <div class="espaciado-boton">
+                    <a class="footer_a espaciado-boton" href="/portal-de-operadoras/pedidos-de-opinion/" target="_blank">Pedidos de opinión de instituciones</a><br />
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/centro-de-arbitraje/">Centro de Arbitraje</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="footer_titulo">Formularios</h3>
+                <!--
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/portal-del-usuario/contactenos/formulario-de-consulta-y-orientacion-al-usuario/">Orientación al Usuario</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="https://reclamos.servicios.gob.pe/?institution_id=11" target="_blank">Libro de Reclamaciones</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="/solicitud-de-acceso-a-la-informacion-publica/">Solicitud de Acceso a la información</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="https://denuncias.servicios.gob.pe/" target="_blank">Denuncias de actos de corrupción</a>
+                </div>
+                -->
+                <div class="box-btn-formularios">            
+                    <a href="https://teayudamos.osiptel.gob.pe/">Orientación al Usuario</a>
+                </div>
+                <div class="box-btn-formularios">            
+                    <a href="https://reclamos.servicios.gob.pe/?institution_id=11" target="_blank">Libro de Reclamaciones</a>
+                </div>
+                <div class="box-btn-formularios">            
+                    <a href="/solicitud-de-acceso-a-la-informacion-publica/">Solicitud de Acceso a la información</a>
+                </div>                
+                <div class="box-btn-formularios">            
+                    <a href="https://denuncias.servicios.gob.pe/" target="_blank" id="btn-resaltado">Denuncias de actos de corrupción</a>
+                </div>
+
+            </div>
+            <div class="col-md-3">
+                <h3 class="footer_titulo">Contáctanos</h3>
+
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="" style="font-weight: 700;">Atención al usuario<br>Fono Ayuda</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href=""><h3 class="footer_titulo">1844</h3></a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="" style="font-weight: 700;">Costo de llamada local</a>
+                </div>
+                <div class="espaciado-boton"  style="border-bottom: 1px dashed #F68934;">
+                    <a class="footer_a " href="">De lunes a sábado <br>de 8:00 a.m. a 8:00 p.m.</a>
+                </div>
+                <!-- -->
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="" style="font-weight: 700;">Atención Administrativa<br>Central Teléfonica</a>
+                </div>
+                <div class="espaciado-boton">
+                    <a class="footer_a " href=""><h3 class="footer_titulo">225-1313</h3></a>
+                </div>    
+                <div class="espaciado-boton">
+                    <a class="footer_a " href="">De lunes a viernes de 8:45 a.m. a 5:45 p.m.</a>
+                </div>                
+            </div>            
+            <div class="col-md-12">
+                <hr />
+            </div>   
+            <div class="col-md-6">
+                <a href="https://serviciosweb.osiptel.gob.pe/MesaPartesVirtual/" target="_blank">
+                    <img class="" src="/media/xa5jafyf/mesa-partes-c-12062022.jpg" style="width: 100%;"/>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <img class="iso-img" src="/Media/Imgs/iso.png" />
+                <p class="iso-text iso-text-1">
+                    Alcance del Sistema de Gestión de Seguridad de la Información
+                </p>
+                <p class="iso-text ">
+                    Regulación del Mercado de Telecomunicaciones mediante los procesos de emisión de normas, regulación, solución de controversias, solución de reclamos de usuarios, supervisión y fiscalización y sanción. Atención y orientación a usuarios desde sus oficinas de San Borja y San Isidro en Lima, según la declaración de aplicabilidad vigente.
+                </p>
+            </div>            
+        </div>
+    </div>
+    <div class="container">
+        <div class="row footer-inferior">
+            <div class="col-md-12">
+                <hr />
+            </div>
+            <div class="col-md-6">
+                <p>© Copyright 2025 - Todos los derechos reservados</p>
+            </div>
+
+            <div class="col-md-6" style="text-align:right">
+                <a class="redes" target="_blank" href="https://www.facebook.com/OsiptelOficial"><img src="/Media/Imgs/facebook.png" /></a>
+                <a class="redes" target="_blank" href="https://twitter.com/OSIPTEL"><img src="/Media/Imgs/twitter.png" /></a>
+                <a class="redes" target="_blank" href="https://www.linkedin.com/company/osiptel"><img src="/Media/Imgs/linkedin.png" /></a>
+                <a class="redes" target="_blank" href="https://www.instagram.com/osipteloficial"><img src="/Media/Imgs/instagram.png" /></a>
+                <a class="redes" target="_blank" href="https://www.youtube.com/user/OsiptelOficial"><img src="https://www.osiptel.gob.pe/media/jp4h5hgk/youtube.png" /></a>
+                <a class="redes" target="_blank" href="https://open.spotify.com/show/2RpK5uIOVDby01ulbTh3RQ?si=2G1YcLJvSEeH28hyFWWuVA&dl_branch=1"><img src="https://www.osiptel.gob.pe/media/1vbhbw1t/spotify.png" /></a>
+                <a class="redes" target="_blank" href="https://vm.tiktok.com/ZMeyB57v6/"><img src="https://www.osiptel.gob.pe/media/2zqg5cmx/tiktok-ico.png" /></a>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    
+
+    //if (bloque == "block") {
+    //    var lista_megamenu = $(".navbar-nav .nav-item .nav-link")
+    //    $.each(lista_megamenu, function (indice, elemento) ){
+    //         $(elemento).css("color", "#00BCE4")
+    //    }
+    //}
+    
+</script>
+<!--Color megamenu-->
+<script>
+    
+    var lista_megamenu = $(".navbar-nav .nav-item .nav-link")
+    lista_megamenu.splice(5, 1)
+    lista_megamenu.hover(
+        function () {
+            elemento_principal = this
+		    $.each(lista_megamenu, function (indice, elemento) {
+			    if (elemento_principal == elemento ) {
+                    $(elemento_principal).css("color", "#00BCE4")
+			    }
+                else {
+				    $(elemento).css("color", "#B6B7B7")
+			    }
+		    })
+        },
+        function () {
+            elemento_principal = this
+            $.each(lista_megamenu, function (indice, elemento) {
+                if (elemento_principal == elemento) {
+                    $(elemento_principal).css("color", "#333333")
+                }
+                else {
+                    $(elemento).css("color", "#333333")
+                }
+                
+		    })
+        }  
+    )
+    
+    $(".nav-item .nav-link").mouseenter(function(){
+             $(".bg-menu").show();
+            $(".nav-item .content-menu").mouseleave(function(){
+              $(".bg-menu").hide();
+            });
+        });
+        $(".nav-item .nav-link").mouseleave(function(){
+            setTimeout(function(){
+					if (!$('.nav-item:hover').length) {
+						$(".bg-menu").hide();
+					}
+				}, 100);
+        });
+//    if(( $(".nav-item:hover .content-menu").css("display").length > 0)) {
+//      console.log("asd")
+//} 
+    
+</script>
+
+
+
+</body>
+
+    
+</html>

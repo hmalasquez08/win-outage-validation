@@ -1,0 +1,1 @@
+Leave-one-source-out, delay, 1h/6h/24h outage, commercial exclusion, paid-inaccessible and family-loss scenarios are represented in source_loss_analysis.json. Every loss metric is INSUFFICIENT_EVIDENCE because there is no independent incident truth set and enough matched incident cases; no percentages are fabricated.

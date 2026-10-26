@@ -1,0 +1,1144 @@
+{
+  "algorithm_version": "rule-detector-2026-10-25-v4-hermes-ablation-audit",
+  "approach": "Deterministic multi-source rules. No machine learning: 8 incidents are too few to fit and validate a generalizable model.",
+  "data_scope": "15 positive operator-event pairs and 17 matched operator-not-affected controls across 8 historical incident windows.",
+  "labels": "Controls mean the operator was not named as affected in that incident reference; they are matched operator controls, not a broad independent sample of outage-free time.",
+  "main_candidate_rule": "Experimental candidate if persistent Cloudflare NetFlows, IODA onset, X explicit complaint cluster, M-Lab HERMES throughput anomaly, OR a human-reviewed news item aligned to incident operator/area/time and independently sourced. HERMES is counted only for exact incident date + area + operator, >=40% throughput drop, >=80% anomalous sample fraction and >=5 clients; news RSS extraction alone cannot authorize activation.",
+  "corroboration_rule": "At least two distinct reviewed families among Cloudflare (NetFlows/Radar), IODA, X, M-Lab HERMES and news. News is eligible only with explicit operator-area-time alignment and source-independence review; a story derived from social complaints does not count independently from X. Live creative simulator still requires fresh direct internet signal, aligned independent corroboration and verified geography.",
+  "news_integration": {
+    "collector": "python -m win_validation.detector --fetch-news",
+    "historical_alignment_file": "reports/news_historical_incident_replay.csv",
+    "accepted_rows": 0,
+    "historical_aligned_rows_in_replay": 0,
+    "status": "INTEGRATED_NO_ALIGNED_HISTORICAL_CANDIDATES",
+    "current_feed_candidates_are_not_automatically_independent": true
+  },
+  "rule_metrics": {
+    "netflows_only_delta_lt_0": {
+      "true_candidate_pairs": 9,
+      "missed_positive_pairs": 6,
+      "control_candidate_pairs": 9,
+      "quiet_control_pairs": 8,
+      "precision_in_selected_matched_sample": 0.5,
+      "sensitivity_in_selected_positive_sample": 0.6,
+      "specificity_in_matched_operator_controls": 0.47058823529411764,
+      "matched_control_false_trigger_rate": 0.5294117647058824,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.3333,
+          0.7692
+        ],
+        "sensitivity": [
+          0.3636,
+          0.8462
+        ],
+        "specificity": [
+          0.0,
+          0.8462
+        ],
+        "matched_control_false_trigger_rate": [
+          0.1538,
+          1.0
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "persistent_netflows_delta_lt_minus_0_02_and_90pct_bins": {
+      "true_candidate_pairs": 6,
+      "missed_positive_pairs": 9,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.8571428571428571,
+      "sensitivity_in_selected_positive_sample": 0.4,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.625,
+          1.0
+        ],
+        "sensitivity": [
+          0.2,
+          0.6
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "any_family_sensitive_candidate": {
+      "true_candidate_pairs": 10,
+      "missed_positive_pairs": 5,
+      "control_candidate_pairs": 9,
+      "quiet_control_pairs": 8,
+      "precision_in_selected_matched_sample": 0.5263157894736842,
+      "sensitivity_in_selected_positive_sample": 0.6666666666666666,
+      "specificity_in_matched_operator_controls": 0.47058823529411764,
+      "matched_control_false_trigger_rate": 0.5294117647058824,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.3529,
+          0.8
+        ],
+        "sensitivity": [
+          0.4444,
+          0.9231
+        ],
+        "specificity": [
+          0.0,
+          0.8462
+        ],
+        "matched_control_false_trigger_rate": [
+          0.1538,
+          1.0
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "two_independent_families_corroborated": {
+      "true_candidate_pairs": 2,
+      "missed_positive_pairs": 13,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.6666666666666666,
+      "sensitivity_in_selected_positive_sample": 0.13333333333333333,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5,
+          1.0
+        ],
+        "sensitivity": [
+          0.0,
+          0.4
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "strict_candidate_union": {
+      "true_candidate_pairs": 8,
+      "missed_positive_pairs": 7,
+      "control_candidate_pairs": 2,
+      "quiet_control_pairs": 15,
+      "precision_in_selected_matched_sample": 0.8,
+      "sensitivity_in_selected_positive_sample": 0.5333333333333333,
+      "specificity_in_matched_operator_controls": 0.8823529411764706,
+      "matched_control_false_trigger_rate": 0.11764705882352941,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.6154,
+          1.0
+        ],
+        "sensitivity": [
+          0.3529,
+          0.8
+        ],
+        "specificity": [
+          0.7619,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.2381
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "ioda_only": {
+      "true_candidate_pairs": 1,
+      "missed_positive_pairs": 14,
+      "control_candidate_pairs": 0,
+      "quiet_control_pairs": 17,
+      "precision_in_selected_matched_sample": 1.0,
+      "sensitivity_in_selected_positive_sample": 0.06666666666666667,
+      "specificity_in_matched_operator_controls": 1.0,
+      "matched_control_false_trigger_rate": 0.0,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": null,
+        "sensitivity": [
+          0.0,
+          0.2727
+        ],
+        "specificity": null,
+        "matched_control_false_trigger_rate": null
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "radar_only": {
+      "true_candidate_pairs": 0,
+      "missed_positive_pairs": 15,
+      "control_candidate_pairs": 0,
+      "quiet_control_pairs": 17,
+      "precision_in_selected_matched_sample": null,
+      "sensitivity_in_selected_positive_sample": 0.0,
+      "specificity_in_matched_operator_controls": 1.0,
+      "matched_control_false_trigger_rate": 0.0,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": null,
+        "sensitivity": null,
+        "specificity": null,
+        "matched_control_false_trigger_rate": null
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "x_geographic_cluster_only": {
+      "true_candidate_pairs": 0,
+      "missed_positive_pairs": 15,
+      "control_candidate_pairs": 0,
+      "quiet_control_pairs": 17,
+      "precision_in_selected_matched_sample": null,
+      "sensitivity_in_selected_positive_sample": 0.0,
+      "specificity_in_matched_operator_controls": 1.0,
+      "matched_control_false_trigger_rate": 0.0,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": null,
+        "sensitivity": null,
+        "specificity": null,
+        "matched_control_false_trigger_rate": null
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "mlab_hermes_experimental_only": {
+      "true_candidate_pairs": 2,
+      "missed_positive_pairs": 13,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.6666666666666666,
+      "sensitivity_in_selected_positive_sample": 0.13333333333333333,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5,
+          1.0
+        ],
+        "sensitivity": [
+          0.0,
+          0.4
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "strict_candidate_with_hermes_and_aligned_news": {
+      "true_candidate_pairs": 8,
+      "missed_positive_pairs": 7,
+      "control_candidate_pairs": 2,
+      "quiet_control_pairs": 15,
+      "precision_in_selected_matched_sample": 0.8,
+      "sensitivity_in_selected_positive_sample": 0.5333333333333333,
+      "specificity_in_matched_operator_controls": 0.8823529411764706,
+      "matched_control_false_trigger_rate": 0.11764705882352941,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.6154,
+          1.0
+        ],
+        "sensitivity": [
+          0.3529,
+          0.8
+        ],
+        "specificity": [
+          0.7619,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.2381
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    "leave_one_incident_out": {
+      "true_candidate_pairs": 7,
+      "missed_positive_pairs": 8,
+      "control_candidate_pairs": 2,
+      "quiet_control_pairs": 15,
+      "precision_in_selected_matched_sample": 0.7777777777777778,
+      "sensitivity_in_selected_positive_sample": 0.4666666666666667,
+      "specificity_in_matched_operator_controls": 0.8823529411764706,
+      "matched_control_false_trigger_rate": 0.11764705882352941,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5833,
+          1.0
+        ],
+        "sensitivity": [
+          0.25,
+          0.7778
+        ],
+        "specificity": [
+          0.7619,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.2381
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    }
+  },
+  "source_ablation": {
+    "status": "DESCRIPTIVE_SELECTED_REPLAY",
+    "results": [
+      {
+        "removed_family": "cloudflare_netflows_radar",
+        "true_candidate_pairs": 3,
+        "missed_positive_pairs": 12,
+        "control_candidate_pairs": 1,
+        "quiet_control_pairs": 16,
+        "precision_in_selected_matched_sample": 0.75,
+        "sensitivity_in_selected_positive_sample": 0.2,
+        "specificity_in_matched_operator_controls": 0.9411764705882353,
+        "matched_control_false_trigger_rate": 0.058823529411764705,
+        "incident_cluster_bootstrap_95pct_ci": {
+          "precision": [
+            0.5,
+            1.0
+          ],
+          "sensitivity": [
+            0.0,
+            0.5455
+          ],
+          "specificity": [
+            0.8235,
+            1.0
+          ],
+          "matched_control_false_trigger_rate": [
+            0.0,
+            0.1765
+          ]
+        },
+        "positive_pairs": 15,
+        "matched_controls": 17,
+        "delta_positive_pairs_vs_all": 7,
+        "delta_matched_control_pairs_vs_all": 1
+      },
+      {
+        "removed_family": "ioda",
+        "true_candidate_pairs": 7,
+        "missed_positive_pairs": 8,
+        "control_candidate_pairs": 2,
+        "quiet_control_pairs": 15,
+        "precision_in_selected_matched_sample": 0.7777777777777778,
+        "sensitivity_in_selected_positive_sample": 0.4666666666666667,
+        "specificity_in_matched_operator_controls": 0.8823529411764706,
+        "matched_control_false_trigger_rate": 0.11764705882352941,
+        "incident_cluster_bootstrap_95pct_ci": {
+          "precision": [
+            0.5833,
+            1.0
+          ],
+          "sensitivity": [
+            0.2667,
+            0.6923
+          ],
+          "specificity": [
+            0.7619,
+            1.0
+          ],
+          "matched_control_false_trigger_rate": [
+            0.0,
+            0.2381
+          ]
+        },
+        "positive_pairs": 15,
+        "matched_controls": 17,
+        "delta_positive_pairs_vs_all": 3,
+        "delta_matched_control_pairs_vs_all": 0
+      },
+      {
+        "removed_family": "x",
+        "true_candidate_pairs": 8,
+        "missed_positive_pairs": 7,
+        "control_candidate_pairs": 2,
+        "quiet_control_pairs": 15,
+        "precision_in_selected_matched_sample": 0.8,
+        "sensitivity_in_selected_positive_sample": 0.5333333333333333,
+        "specificity_in_matched_operator_controls": 0.8823529411764706,
+        "matched_control_false_trigger_rate": 0.11764705882352941,
+        "incident_cluster_bootstrap_95pct_ci": {
+          "precision": [
+            0.6154,
+            1.0
+          ],
+          "sensitivity": [
+            0.3529,
+            0.8
+          ],
+          "specificity": [
+            0.7619,
+            1.0
+          ],
+          "matched_control_false_trigger_rate": [
+            0.0,
+            0.2381
+          ]
+        },
+        "positive_pairs": 15,
+        "matched_controls": 17,
+        "delta_positive_pairs_vs_all": 2,
+        "delta_matched_control_pairs_vs_all": 0
+      },
+      {
+        "removed_family": "mlab_hermes",
+        "true_candidate_pairs": 7,
+        "missed_positive_pairs": 8,
+        "control_candidate_pairs": 1,
+        "quiet_control_pairs": 16,
+        "precision_in_selected_matched_sample": 0.875,
+        "sensitivity_in_selected_positive_sample": 0.4666666666666667,
+        "specificity_in_matched_operator_controls": 0.9411764705882353,
+        "matched_control_false_trigger_rate": 0.058823529411764705,
+        "incident_cluster_bootstrap_95pct_ci": {
+          "precision": [
+            0.6667,
+            1.0
+          ],
+          "sensitivity": [
+            0.2778,
+            0.7
+          ],
+          "specificity": [
+            0.8235,
+            1.0
+          ],
+          "matched_control_false_trigger_rate": [
+            0.0,
+            0.1765
+          ]
+        },
+        "positive_pairs": 15,
+        "matched_controls": 17,
+        "delta_positive_pairs_vs_all": 3,
+        "delta_matched_control_pairs_vs_all": 1
+      }
+    ],
+    "caveat": "Ablations compare candidate counts on the same selected positive and matched-operator-control replay; they do not estimate independent incremental value."
+  },
+  "validation_gaps": {
+    "independent_negative_windows": {
+      "status": "MISSING_INDEPENDENT_NORMAL_WINDOWS",
+      "count": 0,
+      "available_controls": 17,
+      "control_definition": "operator not named in an incident window; not independently confirmed normal time"
+    },
+    "live_detection_latency": {
+      "status": "NOT_MEASURABLE_FROM_REPLAY",
+      "pairs_with_first_valid_detector_alert_timestamp": 0,
+      "pairs_with_independent_incident_start_timestamp": 0,
+      "reason": "Historical signal snapshots contain window aggregates, not timestamped first-valid alerts and independently timed incident onset pairs."
+    },
+    "fixed_mobile_attribution_by_operator": {
+      "bitel": {
+        "positive_pairs": 2,
+        "fixed_only_pairs": 0,
+        "mobile_only_pairs": 0,
+        "mixed_fixed_mobile_pairs": 2,
+        "unspecified_pairs": 0
+      },
+      "claro": {
+        "positive_pairs": 3,
+        "fixed_only_pairs": 0,
+        "mobile_only_pairs": 0,
+        "mixed_fixed_mobile_pairs": 3,
+        "unspecified_pairs": 0
+      },
+      "entel": {
+        "positive_pairs": 4,
+        "fixed_only_pairs": 0,
+        "mobile_only_pairs": 1,
+        "mixed_fixed_mobile_pairs": 3,
+        "unspecified_pairs": 0
+      },
+      "movistar": {
+        "positive_pairs": 6,
+        "fixed_only_pairs": 2,
+        "mobile_only_pairs": 1,
+        "mixed_fixed_mobile_pairs": 3,
+        "unspecified_pairs": 0
+      }
+    },
+    "geographic_completeness": {
+      "missing_ubigeo": [
+        "120307",
+        "130112",
+        "160405"
+      ],
+      "district_geometry_activation_safe": false,
+      "note": "The official boundary crosswalk is incomplete for two codes; the available 130112 geometry is a candidate patch, not a complete authoritative boundary."
+    },
+    "aligned_corroboration": {
+      "current_live_candidate_has_same_operator_zone_time_independent_confirmation": false,
+      "policy": "No aggregation across operator, zone, technology or non-overlapping time windows."
+    }
+  },
+  "hermes_evaluation_rule": {
+    "exact_operator_area_date": true,
+    "minimum_throughput_drop_pct": 40,
+    "minimum_anomalous_sample_fraction": 0.8,
+    "minimum_unique_clients": 5,
+    "role": "experimental direct performance signal; daily, user-initiated; not an outage proof"
+  },
+  "leave_one_incident_out_folds": [
+    {
+      "held_out_incident": "ancash_multioperator_2025-04-24",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 0.9,
+      "held_positive_candidates": 2,
+      "held_positive_pairs": 4,
+      "held_control_candidates": 0,
+      "held_control_pairs": 0
+    },
+    {
+      "held_out_incident": "ayacucho_integratel_entel_mobile_2025-12-26",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 0.9,
+      "held_positive_candidates": 0,
+      "held_positive_pairs": 2,
+      "held_control_candidates": 0,
+      "held_control_pairs": 2
+    },
+    {
+      "held_out_incident": "claro_los_olivos_2025-12-11",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 0.9,
+      "held_positive_candidates": 1,
+      "held_positive_pairs": 1,
+      "held_control_candidates": 1,
+      "held_control_pairs": 3
+    },
+    {
+      "held_out_incident": "loreto_shared_carrier_2025-12-19",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 0.9,
+      "held_positive_candidates": 1,
+      "held_positive_pairs": 3,
+      "held_control_candidates": 0,
+      "held_control_pairs": 1
+    },
+    {
+      "held_out_incident": "movistar_entel_south_2022-10-25",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 1.0,
+      "held_positive_candidates": 0,
+      "held_positive_pairs": 2,
+      "held_control_candidates": 0,
+      "held_control_pairs": 2
+    },
+    {
+      "held_out_incident": "movistar_lima_fiber_2026-07-01",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 0.9,
+      "held_positive_candidates": 1,
+      "held_positive_pairs": 1,
+      "held_control_candidates": 0,
+      "held_control_pairs": 3
+    },
+    {
+      "held_out_incident": "movistar_lima_fixed_2024-11-26",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 0.9,
+      "held_positive_candidates": 1,
+      "held_positive_pairs": 1,
+      "held_control_candidates": 0,
+      "held_control_pairs": 3
+    },
+    {
+      "held_out_incident": "movistar_national_2024-11-18",
+      "training_selected_delta_threshold": -0.01,
+      "training_selected_minimum_bin_share": 0.9,
+      "held_positive_candidates": 1,
+      "held_positive_pairs": 1,
+      "held_control_candidates": 1,
+      "held_control_pairs": 3
+    }
+  ],
+  "netflows_threshold_sensitivity": [
+    {
+      "delta_threshold": 0.0,
+      "true_candidate_pairs": 9,
+      "missed_positive_pairs": 6,
+      "control_candidate_pairs": 9,
+      "quiet_control_pairs": 8,
+      "precision_in_selected_matched_sample": 0.5,
+      "sensitivity_in_selected_positive_sample": 0.6,
+      "specificity_in_matched_operator_controls": 0.47058823529411764,
+      "matched_control_false_trigger_rate": 0.5294117647058824,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.3333,
+          0.7692
+        ],
+        "sensitivity": [
+          0.3636,
+          0.8462
+        ],
+        "specificity": [
+          0.0,
+          0.8462
+        ],
+        "matched_control_false_trigger_rate": [
+          0.1538,
+          1.0
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.005,
+      "true_candidate_pairs": 9,
+      "missed_positive_pairs": 6,
+      "control_candidate_pairs": 7,
+      "quiet_control_pairs": 10,
+      "precision_in_selected_matched_sample": 0.5625,
+      "sensitivity_in_selected_positive_sample": 0.6,
+      "specificity_in_matched_operator_controls": 0.5882352941176471,
+      "matched_control_false_trigger_rate": 0.4117647058823529,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.3684,
+          0.8333
+        ],
+        "sensitivity": [
+          0.3636,
+          0.8462
+        ],
+        "specificity": [
+          0.25,
+          0.8889
+        ],
+        "matched_control_false_trigger_rate": [
+          0.1111,
+          0.75
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.01,
+      "true_candidate_pairs": 9,
+      "missed_positive_pairs": 6,
+      "control_candidate_pairs": 6,
+      "quiet_control_pairs": 11,
+      "precision_in_selected_matched_sample": 0.6,
+      "sensitivity_in_selected_positive_sample": 0.6,
+      "specificity_in_matched_operator_controls": 0.6470588235294118,
+      "matched_control_false_trigger_rate": 0.35294117647058826,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.375,
+          0.9231
+        ],
+        "sensitivity": [
+          0.3636,
+          0.8462
+        ],
+        "specificity": [
+          0.2857,
+          0.9444
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0556,
+          0.7143
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.02,
+      "true_candidate_pairs": 8,
+      "missed_positive_pairs": 7,
+      "control_candidate_pairs": 5,
+      "quiet_control_pairs": 12,
+      "precision_in_selected_matched_sample": 0.6153846153846154,
+      "sensitivity_in_selected_positive_sample": 0.5333333333333333,
+      "specificity_in_matched_operator_controls": 0.7058823529411765,
+      "matched_control_false_trigger_rate": 0.29411764705882354,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.375,
+          0.9231
+        ],
+        "sensitivity": [
+          0.3077,
+          0.8182
+        ],
+        "specificity": [
+          0.3529,
+          0.9524
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0476,
+          0.6471
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.05,
+      "true_candidate_pairs": 5,
+      "missed_positive_pairs": 10,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.8333333333333334,
+      "sensitivity_in_selected_positive_sample": 0.3333333333333333,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5714,
+          1.0
+        ],
+        "sensitivity": [
+          0.125,
+          0.5
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.1,
+      "true_candidate_pairs": 2,
+      "missed_positive_pairs": 13,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.6666666666666666,
+      "sensitivity_in_selected_positive_sample": 0.13333333333333333,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5,
+          1.0
+        ],
+        "sensitivity": [
+          0.0,
+          0.3333
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.15,
+      "true_candidate_pairs": 1,
+      "missed_positive_pairs": 14,
+      "control_candidate_pairs": 0,
+      "quiet_control_pairs": 17,
+      "precision_in_selected_matched_sample": 1.0,
+      "sensitivity_in_selected_positive_sample": 0.06666666666666667,
+      "specificity_in_matched_operator_controls": 1.0,
+      "matched_control_false_trigger_rate": 0.0,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": null,
+        "sensitivity": [
+          0.0,
+          0.2727
+        ],
+        "specificity": null,
+        "matched_control_false_trigger_rate": null
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.2,
+      "true_candidate_pairs": 1,
+      "missed_positive_pairs": 14,
+      "control_candidate_pairs": 0,
+      "quiet_control_pairs": 17,
+      "precision_in_selected_matched_sample": 1.0,
+      "sensitivity_in_selected_positive_sample": 0.06666666666666667,
+      "specificity_in_matched_operator_controls": 1.0,
+      "matched_control_false_trigger_rate": 0.0,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": null,
+        "sensitivity": [
+          0.0,
+          0.2727
+        ],
+        "specificity": null,
+        "matched_control_false_trigger_rate": null
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    }
+  ],
+  "netflows_persistence_sensitivity": [
+    {
+      "delta_threshold": -0.01,
+      "minimum_lower_bins_share": 0.9,
+      "true_candidate_pairs": 6,
+      "missed_positive_pairs": 9,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.8571428571428571,
+      "sensitivity_in_selected_positive_sample": 0.4,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.625,
+          1.0
+        ],
+        "sensitivity": [
+          0.2,
+          0.6
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.02,
+      "minimum_lower_bins_share": 0.7,
+      "true_candidate_pairs": 8,
+      "missed_positive_pairs": 7,
+      "control_candidate_pairs": 3,
+      "quiet_control_pairs": 14,
+      "precision_in_selected_matched_sample": 0.7272727272727273,
+      "sensitivity_in_selected_positive_sample": 0.5333333333333333,
+      "specificity_in_matched_operator_controls": 0.8235294117647058,
+      "matched_control_false_trigger_rate": 0.17647058823529413,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5,
+          1.0
+        ],
+        "sensitivity": [
+          0.3077,
+          0.8182
+        ],
+        "specificity": [
+          0.6,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.4
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.02,
+      "minimum_lower_bins_share": 0.8,
+      "true_candidate_pairs": 6,
+      "missed_positive_pairs": 9,
+      "control_candidate_pairs": 2,
+      "quiet_control_pairs": 15,
+      "precision_in_selected_matched_sample": 0.75,
+      "sensitivity_in_selected_positive_sample": 0.4,
+      "specificity_in_matched_operator_controls": 0.8823529411764706,
+      "matched_control_false_trigger_rate": 0.11764705882352941,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.4545,
+          1.0
+        ],
+        "sensitivity": [
+          0.2,
+          0.6
+        ],
+        "specificity": [
+          0.6471,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.3529
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.02,
+      "minimum_lower_bins_share": 0.9,
+      "true_candidate_pairs": 6,
+      "missed_positive_pairs": 9,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.8571428571428571,
+      "sensitivity_in_selected_positive_sample": 0.4,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.625,
+          1.0
+        ],
+        "sensitivity": [
+          0.2,
+          0.6
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.02,
+      "minimum_lower_bins_share": 1.0,
+      "true_candidate_pairs": 4,
+      "missed_positive_pairs": 11,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.8,
+      "sensitivity_in_selected_positive_sample": 0.26666666666666666,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5,
+          1.0
+        ],
+        "sensitivity": [
+          0.0667,
+          0.4545
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    },
+    {
+      "delta_threshold": -0.05,
+      "minimum_lower_bins_share": 0.9,
+      "true_candidate_pairs": 5,
+      "missed_positive_pairs": 10,
+      "control_candidate_pairs": 1,
+      "quiet_control_pairs": 16,
+      "precision_in_selected_matched_sample": 0.8333333333333334,
+      "sensitivity_in_selected_positive_sample": 0.3333333333333333,
+      "specificity_in_matched_operator_controls": 0.9411764705882353,
+      "matched_control_false_trigger_rate": 0.058823529411764705,
+      "incident_cluster_bootstrap_95pct_ci": {
+        "precision": [
+          0.5714,
+          1.0
+        ],
+        "sensitivity": [
+          0.125,
+          0.5
+        ],
+        "specificity": [
+          0.8235,
+          1.0
+        ],
+        "matched_control_false_trigger_rate": [
+          0.0,
+          0.1765
+        ]
+      },
+      "positive_pairs": 15,
+      "matched_controls": 17
+    }
+  ],
+  "positive_pairs": 15,
+  "matched_control_pairs": 17,
+  "incidents_with_any_positive_candidate": 7,
+  "incidents_with_any_unaffected_operator_flagged": 4,
+  "incidents_with_strict_positive_candidate": 7,
+  "incidents_with_strict_unaffected_operator_flagged": 2,
+  "events": [
+    {
+      "incident_id": "claro_los_olivos_2025-12-11",
+      "positive_operator_pairs": 1,
+      "positive_pairs_flagged": 1,
+      "positive_event_has_candidate": true,
+      "unaffected_operator_pairs_flagged": 3,
+      "unaffected_operators_flagged": "bitel;entel;movistar",
+      "positive_pairs_strict_candidate": 1,
+      "strict_positive_event_has_candidate": true,
+      "unaffected_operator_pairs_strict_flagged": 1,
+      "strict_unaffected_operators_flagged": "movistar"
+    },
+    {
+      "incident_id": "loreto_shared_carrier_2025-12-19",
+      "positive_operator_pairs": 3,
+      "positive_pairs_flagged": 2,
+      "positive_event_has_candidate": true,
+      "unaffected_operator_pairs_flagged": 1,
+      "unaffected_operators_flagged": "movistar",
+      "positive_pairs_strict_candidate": 1,
+      "strict_positive_event_has_candidate": true,
+      "unaffected_operator_pairs_strict_flagged": 0,
+      "strict_unaffected_operators_flagged": ""
+    },
+    {
+      "incident_id": "movistar_lima_fiber_2026-07-01",
+      "positive_operator_pairs": 1,
+      "positive_pairs_flagged": 1,
+      "positive_event_has_candidate": true,
+      "unaffected_operator_pairs_flagged": 0,
+      "unaffected_operators_flagged": "",
+      "positive_pairs_strict_candidate": 1,
+      "strict_positive_event_has_candidate": true,
+      "unaffected_operator_pairs_strict_flagged": 0,
+      "strict_unaffected_operators_flagged": ""
+    },
+    {
+      "incident_id": "movistar_national_2024-11-18",
+      "positive_operator_pairs": 1,
+      "positive_pairs_flagged": 1,
+      "positive_event_has_candidate": true,
+      "unaffected_operator_pairs_flagged": 3,
+      "unaffected_operators_flagged": "bitel;claro;entel",
+      "positive_pairs_strict_candidate": 1,
+      "strict_positive_event_has_candidate": true,
+      "unaffected_operator_pairs_strict_flagged": 1,
+      "strict_unaffected_operators_flagged": "claro"
+    },
+    {
+      "incident_id": "movistar_lima_fixed_2024-11-26",
+      "positive_operator_pairs": 1,
+      "positive_pairs_flagged": 1,
+      "positive_event_has_candidate": true,
+      "unaffected_operator_pairs_flagged": 0,
+      "unaffected_operators_flagged": "",
+      "positive_pairs_strict_candidate": 1,
+      "strict_positive_event_has_candidate": true,
+      "unaffected_operator_pairs_strict_flagged": 0,
+      "strict_unaffected_operators_flagged": ""
+    },
+    {
+      "incident_id": "movistar_entel_south_2022-10-25",
+      "positive_operator_pairs": 2,
+      "positive_pairs_flagged": 2,
+      "positive_event_has_candidate": true,
+      "unaffected_operator_pairs_flagged": 2,
+      "unaffected_operators_flagged": "bitel;claro",
+      "positive_pairs_strict_candidate": 1,
+      "strict_positive_event_has_candidate": true,
+      "unaffected_operator_pairs_strict_flagged": 0,
+      "strict_unaffected_operators_flagged": ""
+    },
+    {
+      "incident_id": "ancash_multioperator_2025-04-24",
+      "positive_operator_pairs": 4,
+      "positive_pairs_flagged": 2,
+      "positive_event_has_candidate": true,
+      "unaffected_operator_pairs_flagged": 0,
+      "unaffected_operators_flagged": "",
+      "positive_pairs_strict_candidate": 2,
+      "strict_positive_event_has_candidate": true,
+      "unaffected_operator_pairs_strict_flagged": 0,
+      "strict_unaffected_operators_flagged": ""
+    },
+    {
+      "incident_id": "ayacucho_integratel_entel_mobile_2025-12-26",
+      "positive_operator_pairs": 2,
+      "positive_pairs_flagged": 0,
+      "positive_event_has_candidate": false,
+      "unaffected_operator_pairs_flagged": 0,
+      "unaffected_operators_flagged": "",
+      "positive_pairs_strict_candidate": 0,
+      "strict_positive_event_has_candidate": false,
+      "unaffected_operator_pairs_strict_flagged": 0,
+      "strict_unaffected_operators_flagged": ""
+    }
+  ],
+  "confidence_and_usage": "These are development-set descriptive metrics on a selected matched sample. Uncertainty intervals resample whole incident clusters because operator pairs within an incident are not independent. Do not interpret as population precision/recall or launch criteria; thresholds were explored on positive cases before matched control signals were fetched.",
+  "critical_limits": [
+    "The 17 controls are operator-not-affected pairs during real incident windows, not independent normal windows; the observed control-trigger rate is a matched-control false-trigger rate only.",
+    "Positive labels mix OSIPTEL, operator and media references with different time precision and independence.",
+    "NetFlows is a normalized partial Cloudflare view, not total operator traffic. Its prior-week comparator is not independently verified normal.",
+    "Lima GeoID NetFlows returned only zero-valued data; geographic targeting below Peru is not demonstrated by that source.",
+    "No first-alert timestamps exist in this historical replay, so alert lead time/freshness is not measured.",
+    "Fixed and mobile attribution is unresolved for most pairs; a broad ASN signal can flag an unaffected operator during a shared-area event.",
+    "Human complaints are corroborative context; the evaluated district/time X cluster rule did not activate in these cases."
+  ],
+  "control_query_completeness": {
+    "netflows_controls_http_200": 17,
+    "radar_controls_http_200": 17,
+    "ioda_controls_http_200": 17,
+    "expected_matched_controls": 17,
+    "x_controls_complete": 17
+  },
+  "outputs": {
+    "csv": "reports/robust_detector_replay.csv",
+    "summary": "reports/robust_detector_replay.json",
+    "report": "reports/robust_detector_replay.md",
+    "controls": "reports/detector_historical_controls.csv"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "evidence_type": "redacted_api_validation_summary",
+  "source": "GDELT DOC API",
+  "observed_at_utc": "2026-10-25T21:24:47+00:00",
+  "endpoint": "https://api.gdeltproject.org/api/v2/doc/doc",
+  "query_scope": "Peru internet/telecom outage terms; recent 7-day window; article-list mode",
+  "attempts_in_current_validation": 5,
+  "http_statuses": [
+    429,
+    429,
+    429,
+    429,
+    429
+  ],
+  "successful_article_response_received": false,
+  "conclusion": "Rate-limited on every attempt; no article findings can be assessed and this is not evidence that relevant articles are absent."
+}

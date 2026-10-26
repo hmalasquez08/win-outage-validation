@@ -1,0 +1,115 @@
+{
+  "cases": 8,
+  "source_counts": {
+    "operador": 1,
+    "OSIPTEL": 6,
+    "medio que cita al operador": 1
+  },
+  "operator_case_counts": {
+    "claro": 4,
+    "bitel": 2,
+    "entel": 4,
+    "movistar": 5
+  },
+  "fixed_cases_with_explicit_impact": 6,
+  "mobile_cases_with_explicit_impact": 7,
+  "case_rows": [
+    {
+      "reference_case_id": "claro_los_olivos_2025-12-11",
+      "case": "Claro Los Olivos 2025-12-11",
+      "operator": "Claro",
+      "fixed": "significant impacts named in districts",
+      "mobile": "partial impacts named in districts",
+      "geography": "separate district lists; Callao also included for fixed",
+      "reference_source": "operator primary report; not independent ground truth",
+      "evidence_source_url": "https://www.claro.com.pe/institucional/centro-de-prensa/comunicado-corte-servicio/",
+      "source_evidence_id": "reference_source_claro_los_olivos_2025-12-11-ba87474e6edc",
+      "source_artifact_path": "evidencias/api_responses/reference_source_claro_los_olivos_2025-12-11/20261025T014718.659630+0000.bin"
+    },
+    {
+      "reference_case_id": "loreto_shared_carrier_2025-12-19",
+      "case": "Shared carrier Loreto 2025-12-19",
+      "operator": "Bitel; Claro; Entel",
+      "fixed": "degradation reported",
+      "mobile": "degradation reported",
+      "geography": "Loreto department; no district attribution",
+      "reference_source": "OSIPTEL regulator report",
+      "evidence_source_url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/osiptel-monitorea-el-restablecimiento-total-de-los-servicios-fijos-y-moviles-de-las-empresas-operadoras-bitel-claro-y-entel-en-loreto/",
+      "source_evidence_id": "reference_source_loreto_shared_carrier_2025-12-19-1de7c0ee731d",
+      "source_artifact_path": "evidencias/api_responses/reference_source_loreto_shared_carrier_2025-12-19/20261025T014724.422002+0000.bin"
+    },
+    {
+      "reference_case_id": "movistar_lima_fiber_2026-07-01",
+      "case": "Movistar fiber Lima 2026-07-01",
+      "operator": "Movistar",
+      "fixed": "internet fijo outage reported",
+      "mobile": "not reported in this case",
+      "geography": "La Molina, Ate, Chaclacayo, Santa Clara, Chosica",
+      "reference_source": "RPP report citing operator",
+      "evidence_source_url": "https://rpp.pe/economia/economia/atentados-contra-la-red-de-fibra-de-movistar-dejan-sin-internet-a-usuarios-de-cinco-distritos-como-la-molina-ate-y-chosica-noticia-1695454",
+      "source_evidence_id": "reference_source_movistar_lima_fiber_2026-07-01-83cd4122a997",
+      "source_artifact_path": "evidencias/api_responses/reference_source_movistar_lima_fiber_2026-07-01/20261025T014736.421078+0000.bin"
+    },
+    {
+      "reference_case_id": "movistar_national_2024-11-18",
+      "case": "Movistar national 2024-11-18",
+      "operator": "Movistar",
+      "fixed": "affected",
+      "mobile": "affected",
+      "geography": "diverse districts nationwide; no district list published",
+      "reference_source": "OSIPTEL monitoring; recovery progress from operator",
+      "evidence_source_url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/osiptel-coordina-el-restablecimiento-total-de-internet-movil-y-fijo-de-movistar-en-diversos-distritos-a-nivel-nacional/",
+      "source_evidence_id": "reference_source_movistar_national_2024-11-18-48ef3494d0f2",
+      "source_artifact_path": "evidencias/api_responses/reference_source_movistar_national_2024-11-18/20261025T014741.832515+0000.bin"
+    },
+    {
+      "reference_case_id": "movistar_entel_south_2022-10-25",
+      "case": "Movistar and Entel south 2022-10-25",
+      "operator": "Movistar; Entel",
+      "fixed": "affected",
+      "mobile": "affected",
+      "geography": "seven southern departments; no district list published",
+      "reference_source": "OSIPTEL monitoring and restoration notice",
+      "evidence_source_url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/osiptel-informa-sobre-el-restablecimiento-total-de-los-servicios-de-internet-movil-y-fijo-en-el-sur-del-pais/",
+      "source_evidence_id": "reference_source_movistar_entel_south_2022-10-25-510d1e6c6f3c",
+      "source_artifact_path": "evidencias/api_responses/reference_source_movistar_entel_south_2022-10-25/20261025T014746.231180+0000.bin"
+    },
+    {
+      "reference_case_id": "claro_2g_multiregion_2024-01-31",
+      "case": "Claro 2G multi-region 2024-01-31",
+      "operator": "Claro",
+      "fixed": "not involved",
+      "mobile": "2G service interruption at 177 base stations",
+      "geography": "15 departments; 37 stations still affected in OSIPTEL's 8 Feb update",
+      "reference_source": "OSIPTEL monitoring; cause/progress from operator",
+      "evidence_source_url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/osiptel-supervisa-el-restablecimiento-total-del-servicio-movil-2g-de-claro-en-centros-poblados-de-algunas-regiones-del-pais/",
+      "source_evidence_id": "reference_source_claro_2g_multiregion_2024-01-31-1c464a3422f9",
+      "source_artifact_path": "evidencias/api_responses/reference_source_claro_2g_multiregion_2024-01-31/20261025T014752.371848+0000.bin"
+    },
+    {
+      "reference_case_id": "ancash_multioperator_2025-04-24",
+      "case": "Áncash four-operator outage 2025-04-24",
+      "operator": "Movistar/Integratel; Claro; Entel; Bitel",
+      "fixed": "affected",
+      "mobile": "affected",
+      "geography": "localities in five named provinces; no districts or exact recovery time in notice",
+      "reference_source": "OSIPTEL monitoring detected onset; cause preliminary from operators",
+      "evidence_source_url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/osiptel-monitorea-el-restablecimiento-del-servicio-movil-y-de-internet-fijo-en-localidades-de-algunas-provincias-de-ancash/",
+      "source_evidence_id": "reference_source_ancash_multioperator_2025-04-24-0e0d7b193c6e",
+      "source_artifact_path": "evidencias/api_responses/reference_source_ancash_multioperator_2025-04-24/20261025T014752.550220+0000.bin"
+    },
+    {
+      "reference_case_id": "ayacucho_integratel_entel_mobile_2025-12-26",
+      "case": "Ayacucho mobile outage 2025-12-26",
+      "operator": "Movistar/Integratel; Entel",
+      "fixed": "not reported",
+      "mobile": "affected",
+      "geography": "some districts in Huanca Sancos and Lucanas; no district names in notice",
+      "reference_source": "OSIPTEL monitoring detected onset and restoration of initial event",
+      "evidence_source_url": "https://www.osiptel.gob.pe/portal-del-usuario/noticias/osiptel-monitorea-el-restablecimiento-del-servicio-movil-de-las-empresas-operadoras-integratel-y-entel-en-algunos-distritos-de-ayacucho/",
+      "source_evidence_id": "reference_source_ayacucho_integratel_entel_mobile_2025-12-26-9b03081bf20e",
+      "source_artifact_path": "evidencias/api_responses/reference_source_ayacucho_integratel_entel_mobile_2025-12-26/20261025T014805.803189+0000.bin"
+    }
+  ],
+  "scope": "These are references, not affected-subscriber counts. “Not reported” is not unaffected. ASN-level signals do not classify retail fixed/mobile service."
+}

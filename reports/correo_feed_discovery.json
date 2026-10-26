@@ -1,0 +1,17 @@
+{
+  "homepage_http_status": 200,
+  "homepage_evidence_id": "correo_official_homepage_feed_discovery-744985a15a57",
+  "official_alternate_feed_links": [
+    "https://diariocorreo.pe/arcio/rss/"
+  ],
+  "tested_feed_candidates": [
+    {
+      "url": "https://diariocorreo.pe/arcio/rss/",
+      "http_status": 200,
+      "item_count": 100,
+      "evidence_id": "correo_discovered_feed_1-6d590bf70049",
+      "artifact_path": "evidencias/api_responses/correo_discovered_feed_1/20261024T201216.341290+0000.xml"
+    }
+  ],
+  "interpretation": "No feed link means RSS discovery not exposed in homepage metadata; previous /rss/ route 404 does not prove the publisher has no feed."
+}

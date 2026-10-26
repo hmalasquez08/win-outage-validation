@@ -1,0 +1,1 @@
+Radar contributes a PE aggregate distribution but no operator attribution in the tested summary. Its outage annotations returned 0 for candidate ASNs in this 30d window. Without independent reference incidents, leave-one-out effect is INSUFFICIENT_EVIDENCE; no equivalent replacement asserted.

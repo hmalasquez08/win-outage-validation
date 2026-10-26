@@ -1,0 +1,12 @@
+{
+  "executed_at_utc": "2026-10-24T19:37:05.473759+00:00",
+  "environment": {
+    "python": "3.14.6",
+    "platform": "Windows",
+    "cost_effective_usd": 0
+  },
+  "sources_attempted": 131,
+  "evidence_manifest": "evidencias/manifest.jsonl",
+  "integrity_errors": [],
+  "secret_values_logged": false
+}

@@ -1,0 +1,9 @@
+﻿incident_id,positive_operator_pairs,positive_pairs_flagged,positive_event_has_candidate,unaffected_operator_pairs_flagged,unaffected_operators_flagged,positive_pairs_strict_candidate,strict_positive_event_has_candidate,unaffected_operator_pairs_strict_flagged,strict_unaffected_operators_flagged
+claro_los_olivos_2025-12-11,1,1,True,3,bitel;entel;movistar,1,True,1,movistar
+loreto_shared_carrier_2025-12-19,3,2,True,1,movistar,1,True,0,
+movistar_lima_fiber_2026-07-01,1,1,True,0,,1,True,0,
+movistar_national_2024-11-18,1,1,True,3,bitel;claro;entel,1,True,1,claro
+movistar_lima_fixed_2024-11-26,1,1,True,0,,1,True,0,
+movistar_entel_south_2022-10-25,2,2,True,2,bitel;claro,1,True,0,
+ancash_multioperator_2025-04-24,4,2,True,0,,2,True,0,
+ayacucho_integratel_entel_mobile_2025-12-26,2,0,False,0,,0,False,0,

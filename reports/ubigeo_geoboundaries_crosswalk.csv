@@ -1,0 +1,222 @@
+﻿level,name_in_ubigeo,name_in_geoboundaries,normalization_or_alias,code_crosswalk
+department,amazonas,amazonas,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,ancash,ancash,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,apurimac,apurimac,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,arequipa,arequipa,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,ayacucho,ayacucho,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,cajamarca,cajamarca,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,callao,el callao,alias,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,cusco,cusco,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,huancavelica,huancavelica,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,huanuco,huanuco,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,ica,ica,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,junin,junin,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,la libertad,la libertad,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,lambayeque,lambayeque,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,lima,lima,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,loreto,loreto,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,madre de dios,madre de dios,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,moquegua,moquegua,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,pasco,pasco,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,piura,piura,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,puno,puno,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,san martin,san martin,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,tacna,tacna,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,tumbes,tumbes,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+department,ucayali,ucayali,unicode_normalized_exact,INEI administrative code validated for table uniqueness; geoBoundaries ADM1 has no comparable UBIGEO field
+province,abancay,abancay,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,acobamba,acobamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,acomayo,acomayo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,aija,aija,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,alto amazonas,alto amazonas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ambo,ambo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,andahuaylas,andahuaylas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,angaraes,angaraes,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,anta,anta,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,antabamba,antabamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,antonio raymondi,antonio raymondi,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,arequipa,arequipa,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ascope,ascope,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,asuncion,asuncion,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,atalaya,atalaya,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ayabaca,ayabaca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,aymaraes,aymaraes,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,azangaro,azangaro,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,bagua,bagua,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,barranca,barranca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,bellavista,bellavista,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,bolivar,bolivar,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,bolognesi,bolognesi,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,bongara,bongara,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,cajabamba,cajabamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,cajamarca,cajamarca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,cajatambo,cajatambo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,calca,calca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,callao,callao,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,camana,camana,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,canas,canas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,canchis,canchis,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,candarave,candarave,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,canete,canete,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,cangallo,cangallo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,canta,canta,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,carabaya,carabaya,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,caraveli,caraveli,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,carhuaz,carhuaz,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,carlos fermin fitzcarrald,carlos fermin fitzcarrald,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,casma,casma,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,castilla,castilla,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,castrovirreyna,castrovirreyna,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,caylloma,caylloma,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,celendin,celendin,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chachapoyas,chachapoyas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chanchamayo,chanchamayo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chepen,chepen,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chiclayo,chiclayo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chincha,chincha,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chincheros,chincheros,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chota,chota,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chucuito,chucuito,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chumbivilcas,chumbivilcas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,chupaca,chupaca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,churcampa,churcampa,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,concepcion,concepcion,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,condesuyos,condesuyos,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,condorcanqui,condorcanqui,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,contralmirante villar,contralmirante villar,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,contumaza,contumaza,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,coronel portillo,coronel portillo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,corongo,corongo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,cotabambas,cotabambas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,cusco,cusco,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,cutervo,cutervo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,daniel alcides carrion,daniel alcides carrion,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,datem del maranon,datem del maranon,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,dos de mayo,dos de mayo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,el collao,el collao,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,el dorado,el dorado,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,espinar,espinar,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ferrenafe,ferrenafe,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,general sanchez cerro,general sanchez cerro,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,gran chimu,gran chimu,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,grau,grau,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huacaybamba,huacaybamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,hualgayoc,hualgayoc,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huallaga,huallaga,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huamalies,huamalies,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huamanga,huamanga,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huanca sancos,huanca sancos,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huancabamba,huancabamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huancane,huancane,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huancavelica,huancavelica,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huancayo,huancayo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huanta,huanta,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huanuco,huanuco,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huaral,huaral,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huaraz,huaraz,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huari,huari,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huarmey,huarmey,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huarochiri,huarochiri,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huaura,huaura,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huaylas,huaylas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,huaytara,huaytara,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ica,ica,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ilo,ilo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,islay,islay,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,jaen,jaen,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,jauja,jauja,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,jorge basadre,jorge basadre,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,julcan,julcan,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,junin,junin,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,la convencion,la convencion,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,la mar,la mar,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,la union,la union,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,lamas,lamas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,lambayeque,lambayeque,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,lampa,lampa,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,lauricocha,lauricocha,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,leoncio prado,leoncio prado,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,lima,lima,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,loreto,loreto,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,lucanas,lucanas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,luya,luya,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,manu,manu,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,maranon,maranon,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,mariscal caceres,mariscal caceres,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,mariscal luzuriaga,mariscal luzuriaga,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,mariscal nieto,mariscal nieto,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,mariscal ramon castilla,mariscal ramon castilla,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,maynas,maynas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,melgar,melgar,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,moho,moho,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,morropon,morropon,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,moyobamba,moyobamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,nazca,nasca,documented_spelling_alias,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ocros,ocros,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,otuzco,otuzco,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,oxapampa,oxapampa,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,oyon,oyon,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,pacasmayo,pacasmayo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,pachitea,pachitea,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,padre abad,padre abad,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,paita,paita,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,pallasca,pallasca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,palpa,palpa,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,parinacochas,parinacochas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,paruro,paruro,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,pasco,pasco,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,pataz,pataz,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,paucar del sara sara,paucar del sara sara,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,paucartambo,paucartambo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,picota,picota,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,pisco,pisco,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,piura,piura,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,pomabamba,pomabamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,puerto inca,puerto inca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,puno,puno,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,purus,purus,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,putumayo,putumayo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,quispicanchi,quispicanchi,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,recuay,recuay,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,requena,requena,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,rioja,rioja,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,rodriguez de mendoza,rodriguez de mendoza,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,san antonio de putina,san antonio de putina,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,san ignacio,san ignacio,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,san marcos,san marcos,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,san martin,san martin,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,san miguel,san miguel,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,san pablo,san pablo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,san roman,san roman,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,sanchez carrion,sanchez carrion,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,sandia,sandia,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,santa,santa,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,santa cruz,santa cruz,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,santiago de chuco,santiago de chuco,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,satipo,satipo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,sechura,sechura,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,sihuas,sihuas,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,sucre,sucre,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,sullana,sullana,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tacna,tacna,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tahuamanu,tahuamanu,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,talara,talara,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tambopata,tambopata,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tarata,tarata,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tarma,tarma,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tayacaja,tayacaja,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tocache,tocache,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,trujillo,trujillo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,tumbes,tumbes,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,ucayali,ucayali,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,urubamba,urubamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,utcubamba,utcubamba,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,victor fajardo,victor fajardo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,vilcas huaman,vilcas huaman,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,viru,viru,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,yarowilca,yarowilca,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,yauli,yauli,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,yauyos,yauyos,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,yungay,yungay,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,yunguyo,yunguyo,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code
+province,zarumilla,zarumilla,unicode_normalized_exact,name-only; geoBoundaries ADM2 does not expose parent department or UBIGEO code

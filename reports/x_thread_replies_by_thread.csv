@@ -1,0 +1,4 @@
+﻿operator,mode,root_post_key,root_post_utc,reported_reply_count,pages,reply_rows,unique_customer_authors,internet_complaints,internet_mentions_noncomplaint,ambiguous_service_complaints,voice_sms_mentions,district_mentions,unambiguous_district_mentions,ambiguous_district_mentions,has_more_after_sample
+Claro,official_post_replies_endpoint,0e1d575a74e8,2026-08-20T23:40:50+00:00,26,2,21,11,6,1,0,2,1,0,1,True
+Claro,official_post_replies_endpoint,6385ccfb600e,2026-08-19T20:23:14+00:00,16,1,12,6,2,0,0,0,1,1,0,True
+Claro,official_post_replies_endpoint,3bcaa889330c,2026-08-03T17:06:47+00:00,6,1,10,5,0,0,0,1,0,0,0,True

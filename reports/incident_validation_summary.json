@@ -1,0 +1,13 @@
+{
+  "reference_cases": 9,
+  "ioda_comparable_reference_cases": 8,
+  "positive_operator_case_pairs": 15,
+  "ioda_event_detected_pairs": 1,
+  "ioda_event_onset_detected_pairs": 1,
+  "ioda_event_overlap_only_positive_pairs": 1,
+  "known_case_recall_observed": "1/15",
+  "false_positive_rate": "NOT_ESTIMABLE: no independently labeled negative operator-windows and no fixed alert threshold",
+  "publication_freshness": "NOT_ESTIMABLE: incident sources do not provide a consistent machine-readable first-publication time; some onsets/recoveries are approximate",
+  "independent_cases": "Seven OSIPTEL monitoring notices report independently detected onsets; causes/restoration may rely on operator reports. One operator primary notice and one media report citing an operator are retained as lower-independence cases.",
+  "evidence": "reports/incident_reference_ioda_comparison.csv"
+}

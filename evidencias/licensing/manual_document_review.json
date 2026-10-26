@@ -1,0 +1,58 @@
+{
+  "evidence_type": "manual_documentation_review_summary",
+  "captured_at_utc": "2026-10-24T17:55:25.595428+00:00",
+  "note": "Research notes from official documentation pages viewed during validation; this is a summary, not an archived full page body.",
+  "reviews": [
+    {
+      "source": "cloudflare_radar",
+      "url": "https://developers.cloudflare.com/radar/",
+      "facts": [
+        "Radar API described as free and available on all plans",
+        "Radar data made available under CC BY-NC 4.0 per current docs"
+      ],
+      "decision": "commercial activation remains unauthorized pending written permission"
+    },
+    {
+      "source": "cloudflare_radar_auth",
+      "url": "https://developers.cloudflare.com/radar/get-started/first-request/",
+      "facts": [
+        "Custom token permission Account > Radar > Read",
+        "API base https://api.cloudflare.com/client/v4/radar/"
+      ]
+    },
+    {
+      "source": "twexapi",
+      "url": "https://docs.twexapi.io/guides/pricing",
+      "facts": [
+        "20,000 Starter credits; 7 day validity; typical 5 credits per post/profile; stated 0.2 QPS starter limit",
+        "Public read requests require Bearer API key",
+        "Terms/docs identify third-party public social data extraction; not affiliated with X"
+      ]
+    },
+    {
+      "source": "osiptel_sisrep",
+      "url": "https://www.gob.pe/33307-sistema-de-informacion-y-registro-de-interrupciones-sisrep",
+      "facts": [
+        "Official description says operator interruption reports are submitted to OSIPTEL using a web interface",
+        "Service links to SISREP login; no public API/feed/download channel was identified on this info page"
+      ],
+      "decision": "public machine-readable access not confirmed; not attempting authenticated/restricted access"
+    },
+    {
+      "source": "peru_open_data",
+      "url": "https://www.datosabiertos.gob.pe/search?query=UBIGEO",
+      "facts": [
+        "Official open-data portal search page inspected; rendered results were not sufficient to verify a current standalone UBIGEO catalog"
+      ],
+      "decision": "dataset discovery remains unresolved; no scraping or candidate download"
+    },
+    {
+      "source": "nominatim",
+      "url": "https://operations.osmfoundation.org/policies/nominatim/",
+      "facts": [
+        "Max one request/second; application-identifying User-Agent or Referer; no systematic queries; ODbL attribution/share-alike terms"
+      ],
+      "decision": "three one-off place-name queries spaced over one second"
+    }
+  ]
+}

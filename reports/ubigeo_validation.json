@@ -1,0 +1,29 @@
+{
+  "status": "SUCCESS_WITH_EVIDENCE",
+  "http_status": 200,
+  "rows": 1892,
+  "unique_code_count": 1892,
+  "duplicate_code_count": 0,
+  "columns": [
+    "UBIGEO_INEI",
+    "DEPARTAMENTO",
+    "PROVINCIA",
+    "DISTRITO"
+  ],
+  "selected_columns": {
+    "code": "UBIGEO_INEI",
+    "department": "DEPARTAMENTO",
+    "province": "PROVINCIA",
+    "district": "DISTRITO"
+  },
+  "department_names": 25,
+  "department_names_without_exact_ADM1_name_match": [],
+  "province_names": 196,
+  "province_names_without_exact_ADM2_name_match": [],
+  "adm1_feature_count": 26,
+  "adm2_feature_count": 196,
+  "official_resource_url": "https://www.datosabiertos.gob.pe/sites/default/files/Lista_Ubigeos_INEI.csv",
+  "evidence_id": "inei_ubigeo_current_reference-566c88f4d441",
+  "artifact_path": "evidencias/api_responses/inei_ubigeo_current_reference/20261024T200609.971694+0000.bin",
+  "source_limit": "This table is presented as the INEI reference list attached to a 2025 open-data resource; confirm current administrative validity against INEI/IDE boundary layers and Census 2025 frame before treating as current. ADM2 name comparison is unpaired because geoBoundaries ADM2 properties do not include a parent department code/name."
+}

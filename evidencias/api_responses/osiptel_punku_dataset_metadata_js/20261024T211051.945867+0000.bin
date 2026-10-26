@@ -1,0 +1,146 @@
+var res;
+function buscarDatasets() {
+    
+    var miperfil = 4; //Los datasets son datos abiertos
+
+    //obtencion de lista
+    
+    var jsonData = JSON.stringify({ pIDPerfil: miperfil});
+    //alert(jsonData);
+    $.ajax({
+        type: "POST",
+        //Se envia el pedido al servicio siguiente:
+        url: "../../webservices/wsBuscarDatasets.asmx/listarDatasetsMeta",
+        data: jsonData,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json", // el tipo de datos usado es directamente json
+        success: OnSuccessMnuBusqueda, //si se recibe respuesta se ejecuta la función OnSuccess
+        error: OnError  //si hubo errores se ejecuta la función OnErrorCall
+    });
+}
+
+
+function OnSuccessMnuBusqueda(response) {
+
+    var aData = response.d;
+    var data = eval(aData);    
+    
+    res = alasql('SELECT * FROM ? order by Id' , [data]);
+    var contador = 1
+    $('#ListBox1').remove()
+    $('#headDatasets').append('<div class="list-group overflow-auto" id="ListBox1"> </div>')
+    $.each(res, function (index, value) {
+        if (res[index].Categoria == "0") {            
+            $('#ListBox1').append('<button type="button" " onclick=listFiles(' + contador +
+                ') class="list-group-item list-group-item-action" data-toggle="popover2"  data-content="' +
+                res[index].Descripcion + '" data-placement="top" > ' +
+                '<h6>' + res[index].Nombre + '</h6></button>');
+            contador=contador+1
+        }
+
+    });
+    $('#ListBox1').append('<button type="button" " onclick=downloadFile(0) class="btn-secondary list-group-item-action" <h6>Descargar todas las categorias </h6></button>');
+    listFiles(1);
+}
+
+function listFiles(categoria) {
+    var dataset = alasql('SELECT * FROM ? WHERE Categoria="' + categoria + '"', [res]);
+    var categoria = alasql('SELECT ID, Nombre, Descripcion FROM ? WHERE ID="' + categoria + '"', [res]);
+    $('#ListBox2').remove();
+    $('#headFiles').remove();
+    $('#filesArea').append('<div class="font-weight-bold" id="headFiles">Datasets disponibles</div>');
+    $('#headFiles').append('<div class="list-group overflow-auto" id="ListBox2"> </div>');
+    
+    $.each(dataset, function (index, value) {
+        $('#ListBox2').append('<button type="button" onclick=downloadFile(' + dataset[index].ID +
+            ') class="list-group-item list-group-item-action" data-toggle="popover"  data-content="' +
+            dataset[index].Descripcion + '" data-placement="top" > ' +
+            dataset[index].Archivo.substring(0, (dataset[index].Archivo.length) - 5) + '</button>');
+        
+    });
+    if (dataset.length > 1) {
+        $('#ListBox2').append('<button type="button" onclick=downloadFile(' +
+            dataset[0].Categoria +
+            ') class="btn-secondary list-group-item-action" data-toggle="popover"  data-content="' +
+            categoria[0].Descripcion +
+            '" data-placement="top" >  Descargar toda la categoria ' +
+            categoria[0].ID +
+            ': ' +
+            categoria[0].Nombre +
+            '</button>');
+    }
+    $('.list-group-item').popover({
+        trigger: 'hover'
+    })
+
+    
+}
+
+function saveToZip(filename, urls) {
+    const zip = new JSZip()     
+    urls.forEach((url) => {
+        const blobPromise = fetch(url).then(r => {
+            if (r.status === 200) return r.blob()
+            return Promise.reject(new Error(r.statusText))
+        })
+        
+        const name = url.substring(url.lastIndexOf('/')+1)      
+        zip.file(name, blobPromise);
+    })
+
+    zip.generateAsync({ type: "blob" }, function giro() {
+        $('#loader').removeClass('text-hide')
+        $('#spinner').removeClass('text-hide')
+    })
+        .then(function callback(blob) {
+
+            // see FileSaver.js
+            saveAs(blob, filename);
+
+            $('#loader').addClass('text-hide')
+            $('#spinner').addClass('text-hide')
+        }, function (e) {
+            console.log(e);
+        })
+        .catch(e => console.log(e));   
+}
+async function downloadFile(ID) {
+    var fileName;  
+    
+    var categoriaName;
+    var fileLink = document.createElement('a');
+    
+    fileName = alasql("select Archivo, Fecha from ? where ID='" + ID + "'", [res]);
+    if (ID % 1 > 0) {
+        //const fechaModified = new Date(parseInt(fileName[0].Fecha.substring(6, fileName[0].Fecha.length - 2)));
+        fileName = fileName[0].Archivo;
+        
+        let blob = await fetch('../../datasets/' + fileName).then(r => r.blob());        
+        //blob.lastModifiedDate = fechaModified;
+        fileName = fileName.substring(5, fileName.length - 5) + '.xlsx';
+        fileLink.href = URL.createObjectURL(blob);
+        fileLink.download = fileName;
+        fileLink.click();
+    }
+    else {
+        if (ID == 0) {            
+            fileName = alasql("COLUMN OF select '../../datasets/' +Archivo from ? where Categoria<>'" + ID + "'", [res]);
+            saveToZip('datasets.zip', fileName);
+            
+        }
+        else {
+            fileName = alasql("COLUMN OF select '../../datasets/' +Archivo from ? where Categoria='" + ID + "'", [res]);
+            //   	   alasql("COLUMN OF select '../../datasets/' +Archivo from ? where Categoria='" + ID + "'", [res])	
+            categoriaName = alasql("column of select Nombre from ? where ID='" + ID + "'", [res])[0] + ".zip"
+            saveToZip(categoriaName, fileName);
+        }
+    }
+}
+
+function OnError(response) {
+    console.log(response);
+}
+
+//console.log(res);
+buscarDatasets();
+

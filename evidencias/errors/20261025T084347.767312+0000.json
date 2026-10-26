@@ -1,0 +1,1 @@
+{"errors":[{"code":2001,"message":"Invalid option: expected one of \"percentage_change\"|\"min0_max\"|\"\"","path":["query","normalization"]}],"success":false,"result":{}}

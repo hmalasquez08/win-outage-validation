@@ -1,0 +1,140 @@
+{
+  "status": "PARTIAL_OFFICIAL_CROSSCHECK",
+  "checked_at_utc": "2026-10-25T02:46:00Z",
+  "catalog": {
+    "source": "INEI SISCONCODE 2026",
+    "district_codes": 1893
+  },
+  "official_geometry_source": {
+    "publisher": "INEI",
+    "service": "WFS Interoperabilidad:ig_distrito",
+    "url": "https://geoespacial.inei.gob.pe/Interoperabilidad/ig_distrito/wfs?service=WFS&request=GetCapabilities",
+    "evidence_id": "inei_ide_district_wfs_current_2026-1a02b9903c35",
+    "feature_count": 1890,
+    "registered_at_utc": "2022-07-22T01:39:29Z",
+    "vintage_note": "El WFS vivo reproduce la cobertura del conjunto distrital disponible; sus 1.890 polígonos no cubren los tres UBIGEO añadidos al catálogo 2026. No se interpreta como geometría 2026 completa ni como fuente independiente de INEI."
+  },
+  "reference_line_service": {
+    "publisher": "PCM / GeoIDEP",
+    "service": "RENLIM official boundary segments",
+    "url": "https://services5.arcgis.com/S6BNcv6j9C2h1n1d/ArcGIS/rest/services/RENLIM_POSTGIS/FeatureServer/1/query",
+    "evidence_id": "pcm_renlim_official_segments_2026-7c1f064dbd70",
+    "features": 1233,
+    "use": "Servicio oficial de tramos, registrado como evidencia; no se presenta como cobertura poligonal distrital equivalente ni como overlay cuantitativo completado."
+  },
+  "code_crosswalk": {
+    "catalog_count": 1893,
+    "wfs_polygon_count": 1890,
+    "matching_codes": 1890,
+    "missing_geometry_codes": [
+      "120307",
+      "130112",
+      "160405"
+    ],
+    "geometry_codes_outside_catalog": [],
+    "official_inei_published_layer_missing_codes_remain": [
+      "120307",
+      "130112",
+      "160405"
+    ],
+    "derived_candidate_geometry_available": [
+      "130112"
+    ],
+    "no_full_vector_polygon_from_tested_official_services": [
+      "120307",
+      "160405"
+    ]
+  },
+  "topology": {
+    "invalid_polygon_count": 0,
+    "positive_area_overlap_pair_count": 0,
+    "overlap_tolerance_square_degrees": 1e-10,
+    "shared_edge_pair_count": 5326,
+    "near_gap_pair_count_at_1e_8_degrees": 0,
+    "polygons_with_no_neighbor_within_tolerance": 2,
+    "connected_components_in_boundary_network": 10,
+    "max_symmetric_difference_area_square_degrees": 3.950294593729633e-08,
+    "mean_symmetric_difference_area_square_degrees": 2.242609547204827e-09,
+    "exact_coordinate_equalities": 0,
+    "polygons_without_neighbor_interpreted_as_known_island_districts": [
+      {
+        "ubigeo": "211302",
+        "district": "Anapia",
+        "official_context": "Mincetur identifies the district as insular",
+        "url": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=11759"
+      },
+      {
+        "ubigeo": "210103",
+        "district": "Amantaní",
+        "official_context": "Mincetur identifies it as an island in Lake Titicaca",
+        "url": "https://consultasenlinea.mincetur.gob.pe/fichaInventario/index.aspx?cod_Ficha=958"
+      }
+    ],
+    "isolated_polygon_issue": "Resolved as expected insular geography, not a missing-neighbor topology fault."
+  },
+  "district_name_differences_vs_catalog": [
+    {
+      "ubigeo": "010517",
+      "inei_wfs": "San Francisco de Yeso",
+      "catalog": "SAN FRANCISCO DEL YESO"
+    },
+    {
+      "ubigeo": "250201",
+      "inei_wfs": "Raymondi",
+      "catalog": "RAIMONDI"
+    },
+    {
+      "ubigeo": "051010",
+      "inei_wfs": "Hualla",
+      "catalog": "HUAYA"
+    },
+    {
+      "ubigeo": "030407",
+      "inei_wfs": "Ihuayllo",
+      "catalog": "HUAYLLO"
+    },
+    {
+      "ubigeo": "060506",
+      "inei_wfs": "Santa Cruz de Toledo",
+      "catalog": "SANTA CRUZ DE TOLED"
+    },
+    {
+      "ubigeo": "050707",
+      "inei_wfs": "San Francisco de Rivacayco",
+      "catalog": "SAN FRANCISCO DE RAVACAYCO"
+    }
+  ],
+  "scope_and_limits": [
+    "La prueba de continuidad/topología aplica solo a los 1.890 polígonos presentes en la capa oficial INEI; no valida los tres distritos ausentes.",
+    "El servicio WFS y el GeoPackage previo son productos INEI de cobertura/vintage equivalente; este cotejo comprueba el WFS oficial en vivo y su topología, no constituye una réplica independiente de otra autoridad.",
+    "No se verificó el cierre del perímetro nacional frente a una geometría de país independiente ni la existencia de islas/holes esperados.",
+    "La capa PCM RENLIM contiene tramos oficiales, no se usó para inferir límites faltantes ni se reporta como overlay polígono-línea completado.",
+    "Las diferencias de nombres se conservan como discrepancias de atributos, no se corrigen automáticamente.",
+    "Alto Trujillo candidate was polygonized from four official PCM RENLIM segments (Law 31644) and cut from the two parent polygons in the older INEI layer; it preserves their area union and has no positive overlap.",
+    "For Sangani (120307), Law 32729 provides a UTM boundary description and cartographic annex, but the tested official vector services did not provide a complete vector geometry.",
+    "For Santa Rosa de Loreto (160405), PCM RENLIM contains two official segments with neighboring districts under Law 32403; they do not close a polygon and the remaining outside boundary is not inferred."
+  ],
+  "derived_candidate_update": {
+    "evidence_id": "alto_trujillo_pcm_candidate_patch-2385d8e15210",
+    "artifact_path": "evidencias/geographic/district_boundary_candidates/alto_trujillo_pcm_candidate_patch.geojson",
+    "ubigeo": "130112",
+    "district": "Alto Trujillo",
+    "source_line_segments": [
+      476,
+      477,
+      478,
+      479
+    ],
+    "closed_ring": true,
+    "candidate_polygon_valid": true,
+    "parent_codes_updated": [
+      "130102",
+      "130104"
+    ],
+    "invalid_polygons": 0,
+    "positive_overlap_pairs_after_patch": 0,
+    "parent_union_symmetric_difference_square_degrees": 2.890026408952444e-18,
+    "new_polygon_outside_parent_union_square_degrees": 0.0,
+    "status": "local candidate patch; not an INEI-published national 2026 layer"
+  }
+}

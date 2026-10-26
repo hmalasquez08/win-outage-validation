@@ -1,0 +1,26 @@
+﻿source_id,status,evidence_path,notes
+ripestat,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/ripestat/20261024T170050.839642+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ripestat_asn_movistar,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/ripestat_asn_movistar/20261024T170053.090439+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ripestat_asn_claro,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/ripestat_asn_claro/20261024T170053.851228+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ripestat_asn_entel,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/ripestat_asn_entel/20261024T170054.906939+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ripestat_asn_bitel,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/ripestat_asn_bitel/20261024T170055.863841+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ripe_atlas,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/ripe_atlas/20261024T170056.740993+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ooni,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/ooni/20261024T170057.853048+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+usgs,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/usgs/20261024T170109.143592+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+geoboundaries_adm1,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/geoboundaries_adm1/20261024T170110.190688+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+geoboundaries_adm2,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/geoboundaries_adm2/20261024T170111.123446+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+geoboundaries_adm3,UNAVAILABLE,evidencias/errors/20261024T170111.682276+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+infobip_status,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/infobip_status/20261024T170112.483934+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+twilio_status,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/twilio_status/20261024T170115.364592+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+telesign_status,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/telesign_status/20261024T170116.222345+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+sinch_status,SUCCESS_WITH_EVIDENCE,evidencias/api_responses/sinch_status/20261024T170116.872468+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ioda_movistar,UNAVAILABLE,evidencias/errors/20261024T170117.964168+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ioda_claro,UNAVAILABLE,evidencias/errors/20261024T170118.533625+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ioda_entel,UNAVAILABLE,evidencias/errors/20261024T170118.751859+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+ioda_bitel,UNAVAILABLE,evidencias/errors/20261024T170118.982116+0000.json,INSUFFICIENT_EVIDENCE; see validation_report.md
+cloudflare_radar,NOT_TESTED,,INSUFFICIENT_EVIDENCE; see validation_report.md
+globalping,NOT_TESTED,,INSUFFICIENT_EVIDENCE; see validation_report.md
+x_official,NOT_TESTED,,INSUFFICIENT_EVIDENCE; see validation_report.md
+twexapi_x,NOT_TESTED,,INSUFFICIENT_EVIDENCE; see validation_report.md
+osiptel_sisrep,NOT_TESTED,,INSUFFICIENT_EVIDENCE; see validation_report.md
+indecopi,NOT_TESTED,,INSUFFICIENT_EVIDENCE; see validation_report.md

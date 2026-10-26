@@ -1,0 +1,63 @@
+{
+  "observed_at_utc": "2026-10-25T06:57:04.919002+00:00",
+  "query_window_utc": [
+    "2026-09-25",
+    "2026-10-26"
+  ],
+  "timeline_root_window_utc": [
+    "2026-07-27",
+    "2026-10-26"
+  ],
+  "operators": [
+    {
+      "operator": "Movistar",
+      "timeline_items_returned": 20,
+      "posts_with_replies_last_90d": 0,
+      "threads_sampled": 0
+    },
+    {
+      "operator": "Claro",
+      "timeline_items_returned": 20,
+      "posts_with_replies_last_90d": 3,
+      "threads_sampled": 3
+    },
+    {
+      "operator": "Entel",
+      "timeline_items_returned": 20,
+      "posts_with_replies_last_90d": 0,
+      "threads_sampled": 0
+    },
+    {
+      "operator": "Bitel",
+      "timeline_items_returned": 20,
+      "posts_with_replies_last_90d": 0,
+      "threads_sampled": 0
+    }
+  ],
+  "calls": 20,
+  "evidence_ids": [
+    "twexapi_thread_21c0f171f198",
+    "twexapi_thread_f5f0df4424ea",
+    "twexapi_thread_0b94b0455794",
+    "twexapi_thread_cb71f7e5ae5f",
+    "twexapi_thread_79ddfe36e090",
+    "twexapi_thread_ea0b3e752545",
+    "twexapi_thread_a595ba530d7f",
+    "twexapi_thread_572b285fcc9b",
+    "twexapi_thread_483f8bc76af2",
+    "twexapi_thread_0b4111fe30ae",
+    "twexapi_thread_f050bb1cb81e",
+    "twexapi_thread_a4e573d7288a",
+    "twexapi_thread_48936bf60a06",
+    "twexapi_thread_5778087d9508",
+    "twexapi_thread_c5a6970d0755",
+    "twexapi_thread_d94dc3288689",
+    "twexapi_thread_0c73242b48a9",
+    "twexapi_thread_f1101d06b12c",
+    "twexapi_thread_15f6bf93d0e3",
+    "twexapi_thread_3640557b36ca"
+  ],
+  "distinct_replies_deduped_across_modes": 158,
+  "privacy": "No raw text, account IDs, tweet IDs, or user handles persisted; root posts represented only by SHA-256 prefixes. User uniqueness deduplicated in memory by operator.",
+  "rates_not_estimated": "This targeted high-response sample is not random or population-representative. A complaint is not proof of outage."
+}

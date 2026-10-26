@@ -1,0 +1,863 @@
+[
+  {
+    "case": "claro_los_olivos_2025-12-11",
+    "operator": "claro",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_claro_los_olivos_2025-12-11_claro-2857ffbf78a2",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_claro_los_olivos_2025-12-11_claro/20261025T055043.223417+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 331,
+        "numeric_points_in_incident_window": 42,
+        "incident_window_min": 0,
+        "incident_window_max": 1.5555555555555556,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 0.7
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 331,
+        "numeric_points_in_incident_window": 42,
+        "incident_window_min": 2624,
+        "incident_window_max": 2624,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2624
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 331,
+        "numeric_points_in_incident_window": 42,
+        "incident_window_min": 608,
+        "incident_window_max": 630,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 625
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 331,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 331,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "loreto_shared_carrier_2025-12-19",
+    "operator": "claro",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_loreto_shared_carrier_2025-12-19_claro-da95fe752290",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_loreto_shared_carrier_2025-12-19_claro/20261025T055049.474312+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 0.5,
+        "incident_window_max": 1.9,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 0.7
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 2624,
+        "incident_window_max": 2624,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 2624
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 620,
+        "incident_window_max": 631,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 623
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "loreto_shared_carrier_2025-12-19",
+    "operator": "entel",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_loreto_shared_carrier_2025-12-19_entel-5c16b2ac76b9",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_loreto_shared_carrier_2025-12-19_entel/20261025T055052.445642+0000.json",
+    "series": [
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 2032,
+        "incident_window_max": 2032,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 2032
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 53,
+        "incident_window_max": 55,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 54
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "loreto_shared_carrier_2025-12-19",
+    "operator": "bitel",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_loreto_shared_carrier_2025-12-19_bitel-1888709a827f",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_loreto_shared_carrier_2025-12-19_bitel/20261025T055055.407602+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 0.2,
+        "incident_window_max": 1,
+        "numeric_points_in_adjacent_baseline": 286,
+        "baseline_median": 0.5
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 260,
+        "incident_window_max": 260,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 260
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 17,
+        "incident_window_min": 87,
+        "incident_window_max": 91,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 90
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 305,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "movistar_lima_fiber_2026-07-01",
+    "operator": "movistar",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_movistar_lima_fiber_2026-07-01_movistar-322744b24d47",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_movistar_lima_fiber_2026-07-01_movistar/20261025T055058.306090+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 362,
+        "numeric_points_in_incident_window": 74,
+        "incident_window_min": 2.4,
+        "incident_window_max": 9.2,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 4.9
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 362,
+        "numeric_points_in_incident_window": 74,
+        "incident_window_min": 5968,
+        "incident_window_max": 5968,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 5968
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 362,
+        "numeric_points_in_incident_window": 74,
+        "incident_window_min": 1005,
+        "incident_window_max": 1050,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 1026
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 362,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 362,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "movistar_national_2024-11-18",
+    "operator": "movistar",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_movistar_national_2024-11-18_movistar-de6023a6b578",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_movistar_national_2024-11-18_movistar/20261025T055103.915246+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 294,
+        "numeric_points_in_incident_window": 4,
+        "incident_window_min": 1.9,
+        "incident_window_max": 3.5,
+        "numeric_points_in_adjacent_baseline": 283,
+        "baseline_median": 1.75
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 294,
+        "numeric_points_in_incident_window": 4,
+        "incident_window_min": 5937,
+        "incident_window_max": 5937,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 5937
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 294,
+        "numeric_points_in_incident_window": 4,
+        "incident_window_min": 942,
+        "incident_window_max": 1327,
+        "numeric_points_in_adjacent_baseline": 286,
+        "baseline_median": 1376
+      }
+    ]
+  },
+  {
+    "case": "movistar_lima_fixed_2024-11-26",
+    "operator": "movistar",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_movistar_lima_fixed_2024-11-26_movistar-c0b03835418e",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_movistar_lima_fixed_2024-11-26_movistar/20261025T055108.215172+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 296,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 0.8571428571428571,
+        "incident_window_max": 1.8,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2.2
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 296,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 5755,
+        "incident_window_max": 5755,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 5937
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 296,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 1242,
+        "incident_window_max": 1260,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 1357
+      }
+    ]
+  },
+  {
+    "case": "movistar_entel_south_2022-10-25",
+    "operator": "movistar",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_movistar_entel_south_2022-10-25_movistar-7e1aa08530a8",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_movistar_entel_south_2022-10-25_movistar/20261025T055112.509176+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 338,
+        "numeric_points_in_incident_window": 48,
+        "incident_window_min": 4.9,
+        "incident_window_max": 11.3,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 11.3
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 338,
+        "numeric_points_in_incident_window": 48,
+        "incident_window_min": 5906,
+        "incident_window_max": 5906,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 5906
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 338,
+        "numeric_points_in_incident_window": 48,
+        "incident_window_min": 1285,
+        "incident_window_max": 1337,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 1319
+      }
+    ]
+  },
+  {
+    "case": "movistar_entel_south_2022-10-25",
+    "operator": "entel",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_movistar_entel_south_2022-10-25_entel-7723c3aed7db",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_movistar_entel_south_2022-10-25_entel/20261025T055115.993419+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 338,
+        "numeric_points_in_incident_window": 48,
+        "incident_window_min": 5.5,
+        "incident_window_max": 9.8,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 8
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 338,
+        "numeric_points_in_incident_window": 48,
+        "incident_window_min": 2070,
+        "incident_window_max": 2070,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2070
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 338,
+        "numeric_points_in_incident_window": 48,
+        "incident_window_min": 13,
+        "incident_window_max": 14,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 14
+      }
+    ]
+  },
+  {
+    "case": "ancash_multioperator_2025-04-24",
+    "operator": "movistar",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_ancash_multioperator_2025-04-24_movistar-0e757394a643",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_ancash_multioperator_2025-04-24_movistar/20261025T055119.273967+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 2.4,
+        "incident_window_max": 3.2,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2.3
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 5933,
+        "incident_window_max": 5933,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 5933
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 1432,
+        "incident_window_max": 1448,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 1437
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "ancash_multioperator_2025-04-24",
+    "operator": "claro",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_ancash_multioperator_2025-04-24_claro-e709e1d619fa",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_ancash_multioperator_2025-04-24_claro/20261025T055122.236144+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 1.8,
+        "incident_window_max": 4.4,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 1.6
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 2624,
+        "incident_window_max": 2624,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2624
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 631,
+        "incident_window_max": 644,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 640
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "ancash_multioperator_2025-04-24",
+    "operator": "entel",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_ancash_multioperator_2025-04-24_entel-1b5476a48dec",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_ancash_multioperator_2025-04-24_entel/20261025T055124.803079+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 12,
+        "baseline_median": 5.6
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 2033,
+        "incident_window_max": 2033,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2033
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 54,
+        "incident_window_max": 55,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 54
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "ancash_multioperator_2025-04-24",
+    "operator": "bitel",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_ancash_multioperator_2025-04-24_bitel-66f02314a86e",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_ancash_multioperator_2025-04-24_bitel/20261025T055128.013131+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 0.2,
+        "incident_window_max": 1.4,
+        "numeric_points_in_adjacent_baseline": 287,
+        "baseline_median": 0.6
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 260,
+        "incident_window_max": 260,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 260
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 6,
+        "incident_window_min": 91,
+        "incident_window_max": 93,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 92
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 295,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "ayacucho_integratel_entel_mobile_2025-12-26",
+    "operator": "movistar",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_ayacucho_integratel_entel_mobile_2025-12-26_movistar-2b423f951e6f",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_ayacucho_integratel_entel_mobile_2025-12-26_movistar/20261025T055131.764211+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 168,
+        "incident_window_min": 1.4,
+        "incident_window_max": 4.3,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2.4
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 168,
+        "incident_window_min": 5936,
+        "incident_window_max": 5936,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 5936
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 168,
+        "incident_window_min": 1098,
+        "incident_window_max": 1168,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 1131
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  },
+  {
+    "case": "ayacucho_integratel_entel_mobile_2025-12-26",
+    "operator": "entel",
+    "http_status": 200,
+    "evidence_id": "ioda_reference_signal_ayacucho_integratel_entel_mobile_2025-12-26_entel-bdfac2b5411b",
+    "artifact_path": "evidencias/api_responses/ioda_reference_signal_ayacucho_integratel_entel_mobile_2025-12-26_entel/20261025T055137.029189+0000.json",
+    "series": [
+      {
+        "datasource": "merit-nt",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 24,
+        "incident_window_min": 1.9,
+        "incident_window_max": 3.9,
+        "numeric_points_in_adjacent_baseline": 6,
+        "baseline_median": 3
+      },
+      {
+        "datasource": "bgp",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 168,
+        "incident_window_min": 2032,
+        "incident_window_max": 2032,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 2032
+      },
+      {
+        "datasource": "ping-slash24",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 168,
+        "incident_window_min": 51,
+        "incident_window_max": 56,
+        "numeric_points_in_adjacent_baseline": 288,
+        "baseline_median": 54
+      },
+      {
+        "datasource": "ping-slash24-loss",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      },
+      {
+        "datasource": "ping-slash24-latency",
+        "subtype": "",
+        "step_seconds": 600,
+        "returned_points": 459,
+        "numeric_points_in_incident_window": 0,
+        "incident_window_min": null,
+        "incident_window_max": null,
+        "numeric_points_in_adjacent_baseline": 0,
+        "baseline_median": null
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+﻿entity,official_site,linked_handles,status,http_status,evidence_id,artifact_path
+Movistar Perú,https://www.movistar.com.pe/,movistarperu,VERIFIED_LINKED_FROM_OFFICIAL_SITE,200,official_link_movistar_perú-a4370b2a53ff,evidencias/api_responses/official_link_movistar_perú/20261024T201159.577829+0000.bin
+Claro Perú,https://www.claro.com.pe/,claroperu,VERIFIED_LINKED_FROM_OFFICIAL_SITE,200,official_link_claro_perú-5bbefdf9d2aa,evidencias/api_responses/official_link_claro_perú/20261024T201200.817321+0000.bin
+Bitel Perú,https://bitel.com.pe/,bitelperu,VERIFIED_LINKED_FROM_OFFICIAL_SITE,200,official_link_bitel_perú-0cdeea0b3422,evidencias/api_responses/official_link_bitel_perú/20261024T201201.662400+0000.bin
+Entel Perú,https://www.entel.pe/,entelperu,VERIFIED_LINKED_FROM_OFFICIAL_SITE,200,official_link_entel_perú-5869c56b52e9,evidencias/api_responses/official_link_entel_perú/20261024T201202.835918+0000.bin
+MTC,https://www.gob.pe/mtc,mtc_gobperu,VERIFIED_LINKED_FROM_OFFICIAL_SITE,200,official_link_mtc-0d914e919feb,evidencias/api_responses/official_link_mtc/20261024T201205.083935+0000.bin
+INDECI,https://www.gob.pe/indeci,indeciperu,VERIFIED_LINKED_FROM_OFFICIAL_SITE,200,official_link_indeci-ead71f15730c,evidencias/api_responses/official_link_indeci/20261024T201206.615187+0000.bin
+Indecopi,https://www.gob.pe/indecopi,indecopioficial,VERIFIED_LINKED_FROM_OFFICIAL_SITE,200,official_link_indecopi-d0659bf983ea,evidencias/api_responses/official_link_indecopi/20261024T201209.639194+0000.bin
+OSIPTEL,https://www.osiptel.gob.pe/media/r3snyrfb/informe-cuantitativa-ivtrim-2023.pdf,OSIPTEL,VERIFIED_IN_OFFICIAL_OSIPTEL_DOCUMENT,200,official_link_osiptel_x_document-490dbce6ad21,evidencias/api_responses/official_link_osiptel_x_document/20261024T201212.042329+0000.bin
+COEN,https://portal.indeci.gob.pe/emergencias/boletin-informativo-sismico-internacional-n024-2023-indeci-coen/,coenperu,VERIFIED_IN_OFFICIAL_INDECI_PUBLICATION,200,official_link_coen_indeci-dfd79ed068be,evidencias/api_responses/official_link_coen_indeci/20261024T201213.269765+0000.bin

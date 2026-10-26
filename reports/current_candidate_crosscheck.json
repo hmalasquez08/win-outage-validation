@@ -1,0 +1,78 @@
+{
+  "assessment_id": "claro_ica_2026-10-23",
+  "assessment_status": "UNCONFIRMED_CANDIDATE",
+  "activation_allowed": false,
+  "event": {
+    "operator": "claro",
+    "asn": 12252,
+    "country": "PE",
+    "hermes_partition_date": "2026-10-23",
+    "hermes_capture_time_utc": "2026-10-25T10:02:56.083184+00:00",
+    "hermes_data_age_from_day_start_hours": 58.05,
+    "city": "Ica",
+    "region": "Ica",
+    "ip_geolocation_source": "ipinfo",
+    "hermes_confidence_tier": "weak",
+    "unique_clients": 20,
+    "median_download_mbps": 5.257938265467528,
+    "baseline_download_mbps": 17.043105506202167,
+    "throughput_drop_pct_vs_baseline": 69.15,
+    "anomalous_sample_fraction": 0.9142857142857143
+  },
+  "cloudflare_same_geographic_admin_level": {
+    "department": "Ica",
+    "geoid": "3938526",
+    "geography_type": "ADM1",
+    "operator": "claro",
+    "asn": 12252,
+    "event_window": "2026-10-23T00:00:00Z/2026-10-24T00:00:00Z",
+    "control_window": "2026-10-16T00:00:00Z/2026-10-17T00:00:00Z",
+    "paired_intervals": 97,
+    "event_median_normalized": 0.57748,
+    "control_median_normalized": 0.61415,
+    "event_first_timestamp_utc": "2026-10-23T00:00:00Z",
+    "event_last_timestamp_utc": "2026-10-24T00:00:00Z",
+    "control_first_timestamp_utc": "2026-10-16T00:00:00Z",
+    "control_last_timestamp_utc": "2026-10-17T00:00:00Z",
+    "relative_median_change_pct": -5.97,
+    "median_paired_normalized_difference": -0.00830199999999992,
+    "intervals_below_control": 56,
+    "fraction_intervals_below_control": 0.5773195876288659,
+    "strict_rule": {
+      "median_difference_less_than": -0.02,
+      "minimum_fraction_below_control": 0.9,
+      "minimum_paired_intervals": 8,
+      "passed": false
+    },
+    "normalization": "MIN0_MAX",
+    "interpretation": "Event and control were requested together so normalization is common within the pair. The result is not a percentage of users offline or traffic lost; the prior Friday is not independently labeled normal."
+  },
+  "decision_reasons": [
+    "HERMES found a multi-client daily throughput anomaly for Claro in Ica, using IP-based city/region geolocation.",
+    "Cloudflare is a distinct source family and returned a same-department Claro series, but it did not meet the frozen persistent NetFlows rule.",
+    "The sources do not provide a district-verified scope or fixed/mobile attribution for this event.",
+    "The HERMES event is daily and its observation date is 2026-10-23; it is not fresh enough to represent a live outage at capture time.",
+    "No independent incident label was found for this particular event; it remains a candidate rather than a confirmed outage."
+  ],
+  "evidence": {
+    "hermes": {
+      "evidence_id": "mlab_hermes_recent_scan_20261022_25-fd15735a611b",
+      "artifact_path": "evidencias/api_responses/mlab_hermes_recent_scan_20261022_25/20261025T100256.083184+0000.json",
+      "sha256": "fd15735a611b15dbc995c8f652170c839688ea2ca83acf493891b760828f8051",
+      "http_status": 200
+    },
+    "cloudflare_ica_geography": {
+      "evidence_id": "cloudflare_geolocations_peru-7bf048ced142",
+      "artifact_path": "evidencias/api_responses/cloudflare_geolocations_peru/20261025T100410.176653+0000.json",
+      "sha256": "7bf048ced142ba4f567f4249f66e65b5e0a5df5baaee61bc934e2b3841a3f302",
+      "http_status": 200
+    },
+    "cloudflare_paired": {
+      "evidence_id": "cloudflare_netflows_ica_paired_claro_20261023-c25cfb06a100",
+      "artifact_path": "evidencias/api_responses/cloudflare_netflows_ica_paired_claro_20261023/20261025T100730.385427+0000.json",
+      "sha256": "c25cfb06a10087b04bf1db0e26a5cfba1506c80fed792753d000ae373a4f1638",
+      "http_status": 200
+    }
+  },
+  "method": "Read-only comparison of archived HERMES daily event and Cloudflare NetFlows 15-minute series for the same ASN and Ica department; prior same-weekday period used only as an unlabeled comparator."
+}

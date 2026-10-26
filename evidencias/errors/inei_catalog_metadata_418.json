@@ -1,0 +1,8 @@
+{
+  "request_url": "https://www.datosabiertos.gob.pe/api/3/action/resource_show?id=573f433b-0d44-46e2-932e-14abb9757860",
+  "http_status": 418,
+  "error_class": "HTTP_4XX_ACCESS_BLOCK",
+  "observed_at_utc": "2026-10-24T18:56:30.359241+00:00",
+  "response_body_saved": false,
+  "note": "No retry after HTTP 418. Metadata page is discoverable in official open-data search; no catalog file downloaded or validated."
+}

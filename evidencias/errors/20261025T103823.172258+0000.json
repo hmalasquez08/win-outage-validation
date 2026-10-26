@@ -1,0 +1,9 @@
+{
+  "error": {
+    "type": "no_probes_found",
+    "message": "No matching IPv4 probes available."
+  },
+  "links": {
+    "documentation": "https://globalping.io/docs/api.globalping.io#post-/v1/measurements"
+  }
+}

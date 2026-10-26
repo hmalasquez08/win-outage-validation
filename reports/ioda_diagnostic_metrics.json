@@ -1,0 +1,18 @@
+{
+  "status": "DESCRIPTIVE_ONLY",
+  "rule": "IODA event onset within +/- 1 h of reported incident onset.",
+  "positive_pairs": 15,
+  "positive_onsets_detected": 1,
+  "positive_detection_fraction": "1/15",
+  "candidate_no_control_pairs": 20,
+  "candidate_controls_with_onset": 0,
+  "candidate_control_signal_fraction": "0/20",
+  "false_positive_rate": "NOT_ESTIMABLE: the 20 other-operator case-windows are not independently verified normal service.",
+  "positive_pairs_with_any_event_overlap": 2,
+  "candidate_controls_with_any_event_overlap": 0,
+  "late_overlap_note": "One event onset was detected for AS6147 in the Movistar fixed-internet case; a separate long event overlapped Áncash after beginning earlier and is not a new-onset detection.",
+  "precision": "NOT_ESTIMABLE: one historical onset match does not define a frozen alert rule or independently labeled prediction set.",
+  "incremental_value": "1 IODA event-onset match among 15 timed positive operator-case pairs; combined-system incremental value is not estimable.",
+  "freshness": "No operational first-detection latency measured. The OSIPTEL onset timestamp and IODA event timestamp for the 2024-11-26 case differ by two minutes; both were retrieved retrospectively.",
+  "comparison_csv": "reports/incident_reference_ioda_comparison.csv"
+}

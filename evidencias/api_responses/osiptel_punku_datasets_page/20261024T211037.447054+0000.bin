@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+
+</title>
+    <!-- 
+    Frm_Descarga.aspx
+    versión: 1.0
+    creado por: J. Muñoz
+    fecha de modificación: 18-06-21 
+    Descripción: Interfaz de usuario para la descarga de datasets                 
+    -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Descarga de datasets</title>
+
+    <!---<link href="../../Scripts/bootstrap/bootstrap.css" rel="stylesheet" />     -->
+    <link href="../../Styles/bootstrap/bootstrap.min.css" rel="stylesheet"/>     
+    <link href="../../Styles/StyleSheet1.css" title="OSIPTEL" rel="stylesheet" />
+    <link href="../../Styles/StyleSheetGrafico.css" rel="stylesheet" />
+    <style type="text/css">
+ .btn-secondary{
+     color: white;
+ }
+ .popover{  
+  background-color:lightcyan;  
+ }
+ 
+
+</style>
+    <!-- estilos del formulario-->
+
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./Frm_Datasets.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDMyNDU0NjAzZGTyw+rPLc2skHiZG1ivfkG8XfdtSNRVw47/qCCNcYWP+w==" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D3280856" />
+</div>
+    
+    <div class="wapper">
+    
+    <div id="main" class="container-fluid"> 
+        
+    <div class="container-fluid">
+        <!-- titulo-->
+        <div class="row">
+            <div class="col-sm-12 secciontitulo">
+                <label>Descarga de datasets</label>                
+            </div>  
+        </div>
+        <!-- panel de Descarga-->                
+        <br />
+        
+        <div class="row">
+            <div class="col-4" id="datasetArea">              
+                <div class="row">
+                    <div class="font-weight-bold" id="headDatasets">Categorías</div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="spinner-border text-info text-hide" role="status"  id="spinner"></div>
+                    <div class="col-2 text-hide" id="loader">Descargando datasets...</div>
+                </div>
+            </div>
+            
+            <div class="col-8" id="filesArea">
+
+            </div>          
+            
+        </div>
+       
+        
+    </div>
+
+        <br/>
+      
+    </div>
+
+     </div>    
+    
+
+
+    <!-- funciones de html5 jquery, bootstrap, charts-->
+    <script src="../../Scripts/jquery-3.6.0/jquery-3.6.0.js"></script>
+    <!--<script src="../../Scripts/bootstrap/bootstrap.js"></script> -->
+    <script src="../../Scripts/bootstrap/bootstrap.bundle.min.js" ></script> 
+    
+
+    <!--funciones de respuesta a errores-->
+    <script src="../../Scripts/admin/error.js"></script>
+
+    <!--función de carga de metadatos de datasets-->
+    <script src="../../Scripts/alasql/alasql.min.js"> </script>
+    <script src="../../Scripts/jszip/jszip.js"></script>
+    <script src="../../Scripts/filesaver/FileSaver.js"></script>
+    <script src="../../Scripts/datasets/datasetsMeta.js"></script>        
+
+
+    </form>    
+
+</body>
+</html>

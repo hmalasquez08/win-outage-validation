@@ -1,0 +1,5 @@
+﻿operator,mode,http_status,returned_items,unique_posts,unique_authors,internet_complaints,internet_terms_noncomplaint,ambiguous_service_complaints,voice_sms_mentions,district_mentions,unambiguous_district_mentions,ambiguous_district_mentions
+Movistar,explicit_mention_search,200,20,20,18,0,5,0,5,0,0,0
+Claro,explicit_mention_search,200,20,20,12,0,7,0,0,0,0,0
+Entel,explicit_mention_search,200,20,20,9,0,0,0,4,0,0,0
+Bitel,explicit_mention_search,200,20,20,13,1,2,0,6,0,0,0

@@ -1,0 +1,8 @@
+﻿outlet,source_id,status,http_status,feed_url,items,parse_status,evidence_id,artifact_path,latency_seconds
+RPP Noticias,feed_rpp,SUCCESS_WITH_EVIDENCE,200,https://rpp.pe/rss,60,XML_PARSED,feed_rpp-4c758e327846,evidencias/api_responses/feed_rpp/20261024T201530.323572+0000.xml,0.357
+La República,feed_larepublica,SUCCESS_WITH_EVIDENCE,200,https://larepublica.pe/rss/home.xml,200,XML_PARSED,feed_larepublica-caefefb5b0c5,evidencias/api_responses/feed_larepublica/20261024T201530.956370+0000.xml,1.948
+Agencia Andina,feed_andina,SUCCESS_WITH_EVIDENCE,200,https://www.andina.pe/agencia/rss.aspx,20,XML_PARSED,feed_andina-c7692e428473,evidencias/api_responses/feed_andina/20261024T201533.202281+0000.xml,0.168
+El Comercio Portada,feed_elcomercio_home,SUCCESS_WITH_EVIDENCE,200,https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml,100,XML_PARSED,feed_elcomercio_home-2ece2bd29c18,evidencias/api_responses/feed_elcomercio_home/20261024T201533.628775+0000.xml,1.174
+El Comercio Perú,feed_elcomercio_peru,SUCCESS_WITH_EVIDENCE,200,https://elcomercio.pe/arc/outboundfeeds/rss/category/peru/?outputType=xml,15,XML_PARSED,feed_elcomercio_peru-0feacdcd2df4,evidencias/api_responses/feed_elcomercio_peru/20261024T201535.091937+0000.xml,2.141
+El Comercio Lima,feed_elcomercio_lima,SUCCESS_WITH_EVIDENCE,200,https://elcomercio.pe/arc/outboundfeeds/rss/category/lima/?outputType=xml,59,XML_PARSED,feed_elcomercio_lima-d1a1af254f32,evidencias/api_responses/feed_elcomercio_lima/20261024T201537.498234+0000.xml,1.303
+Diario Correo,feed_correo,SUCCESS_WITH_EVIDENCE,200,https://diariocorreo.pe/arcio/rss/,100,XML_PARSED,feed_correo-8f543103c3f3,evidencias/api_responses/feed_correo/20261024T201539.075846+0000.xml,2.235

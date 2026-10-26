@@ -1,0 +1,1 @@
+{"help":"Return the metadata of a dataset (package) and its resources. :param id: the id or name of the dataset :type id: string","success":true,"result":[{"__type":"Query Error","name_or_id":"Query \u0027numero-de-reclamos-por-averias-en-los-servicios-de-telecomunicaciones-osiptel\u0027 doesn\u0027t return results"}]}

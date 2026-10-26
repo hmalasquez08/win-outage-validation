@@ -1,0 +1,1 @@
+{"error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>", "url": "https://api.ioda.inetintel.cc.gatech.edu/v2/signals/raw/AS6147?from=1790269277&until=1792861277", "observed_at_utc": "2026-10-24T17:01:17.964168+00:00"}

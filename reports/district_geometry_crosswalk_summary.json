@@ -1,0 +1,31 @@
+{
+  "catalog_rows": 1892,
+  "catalog_unique_ubigeos": 1892,
+  "district_geometry_features": 1890,
+  "geometry_unique_codes": 1890,
+  "catalog_codes_without_geometry": [
+    "130112",
+    "160405"
+  ],
+  "geometry_codes_without_catalog": [],
+  "geography_code_coverage_pct": 99.8943,
+  "name_hierarchy_mismatches": 18,
+  "well_formed_geometry_count": 1890,
+  "geometry_parse_errors": [],
+  "nonempty_geometry_count": 1890,
+  "ring_count": 1902,
+  "closed_ring_count": 1902,
+  "out_of_peru_bbox_codes": [],
+  "overall_bounds_lonlat": [
+    -81.32823048999995,
+    -18.35092773599996,
+    -68.65227910299996,
+    -0.03860596899994562
+  ],
+  "total_coordinate_count": 1704259,
+  "topology_validated": false,
+  "geometry_layer_vintage": "2023 per INEI IDE portal",
+  "geopackage_path": "evidencias/geographic/inei_district_boundaries_2023/DISTRITO.gpkg",
+  "geopackage_evidence_id": "inei_ide_district_geopackage_extract-b4b6485e4161",
+  "source_rar_evidence_id": "inei_ide_district_boundaries_2023-ae2242802900"
+}

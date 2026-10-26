@@ -1,0 +1,5 @@
+﻿operator,mode,pages,returned_items,unique_reply_posts,unique_customer_authors,internet_complaints,internet_terms_noncomplaint,ambiguous_service_complaints,voice_sms_mentions,district_mentions,unambiguous_district_mentions,ambiguous_district_mentions,local_day_peak,first_post_utc,last_post_utc
+Movistar,to_account_reply_search,3,1,1,1,0,0,0,0,0,0,0,0,2026-10-21T20:45:05+00:00,2026-10-21T20:45:05+00:00
+Claro,to_account_reply_search,3,20,20,14,1,0,0,1,0,0,0,0,2026-09-24T16:13:48+00:00,2026-10-24T15:14:44+00:00
+Entel,to_account_reply_search,3,54,54,39,2,0,0,4,0,0,0,0,2026-10-04T03:37:22+00:00,2026-10-24T18:28:46+00:00
+Bitel,to_account_reply_search,3,3,3,1,1,0,0,2,0,0,0,0,2026-10-24T22:58:56+00:00,2026-10-25T02:03:19+00:00

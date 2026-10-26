@@ -1,0 +1,5 @@
+﻿source,operator,asn,peru_connected_probe_count,probe_total_country_listed,public_measurement_inventory_records,location_basis,evidence_id,limitation
+ripe_atlas,movistar,AS6147,1,28,2,"RIPE Atlas probe metadata/geometry, not incident location",ripe_atlas-c8a16216f8f4,probe presence is not outage measurement
+ripe_atlas,claro,AS12252,2,28,4,"RIPE Atlas probe metadata/geometry, not incident location",ripe_atlas-c8a16216f8f4,probe presence is not outage measurement
+ripe_atlas,entel,AS21575,2,28,4,"RIPE Atlas probe metadata/geometry, not incident location",ripe_atlas-c8a16216f8f4,probe presence is not outage measurement
+ripe_atlas,bitel,AS262210,0,28,0,"RIPE Atlas probe metadata/geometry, not incident location",ripe_atlas-c8a16216f8f4,probe presence is not outage measurement

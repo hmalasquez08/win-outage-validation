@@ -1,0 +1,5 @@
+operator,handle_verified,pages_read,items_returned,account_posts_in_window,account_replies_in_window,customer_context_items_found,unique_parent_users,internet_complaints_in_parent_context,internet_complaints_in_official_reply_text,operator_acknowledgements_with_internet_context,district_mentions_in_parent_complaints,unambiguous_district_mentions,ambiguous_district_mentions,voice_sms_only_context,oldest_item_utc,newest_item_utc,more_pages_available
+Movistar,True,5,207,0,11,10,10,0,0,0,0,0,0,0,2026-08-04T03:37:34+00:00,2026-10-23T22:58:19+00:00,True
+Claro,True,5,180,2,77,72,46,2,0,0,0,0,0,0,2026-08-19T20:23:14+00:00,2026-10-24T21:39:14+00:00,True
+Entel,True,5,199,0,84,84,54,0,0,0,0,0,0,0,2026-10-13T00:02:23+00:00,2026-10-25T00:17:55+00:00,True
+Bitel,True,5,194,0,15,15,13,0,0,0,0,0,0,0,2026-07-27T14:29:58+00:00,2026-10-12T14:50:04+00:00,True

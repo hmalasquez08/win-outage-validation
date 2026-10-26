@@ -1,0 +1,4 @@
+﻿source_a,source_b,family_a,family_b,independence_status,coincident_events,reason
+ioda,ripe_ris_live,BGP/routing + active signals,BGP/routing,DEPENDENT,not independently verified,Do not count correlated BGP-origin signals as separate votes.
+ioda,ripestat,BGP/routing + active signals,BGP/routing + inventory,DEPENDENT,not independently verified,Do not count correlated BGP-origin signals as separate votes.
+ripe_ris_live,ripestat,BGP/routing,BGP/routing + inventory,DEPENDENT,not independently verified,Do not count correlated BGP-origin signals as separate votes.

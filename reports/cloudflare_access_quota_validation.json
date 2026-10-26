@@ -1,0 +1,22 @@
+{
+  "token_verification_http_status": 200,
+  "radar_http_status": 200,
+  "summary_0": {
+    "desktop": "58.123471",
+    "mobile": "41.850491",
+    "other": "0.026039"
+  },
+  "device_type_categories": [
+    "desktop",
+    "mobile",
+    "other"
+  ],
+  "last_updated_utc": "2026-10-24T19:20:00Z",
+  "rate_limit_headers_observed": {
+    "Content-Type": "application/json;charset=UTF-8"
+  },
+  "published_global_api_limit": "1200 requests / 5 minutes per user; this sample did not approach it",
+  "this_is_country_aggregate": true,
+  "evidence_id": "cloudflare_closeout_radar_pe-06aa19dc3058",
+  "artifact_path": "evidencias/api_responses/cloudflare_closeout_radar_pe/20261024T200237.624360+0000.json"
+}

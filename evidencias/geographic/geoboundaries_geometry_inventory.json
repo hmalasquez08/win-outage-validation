@@ -1,0 +1,74 @@
+{
+  "observed_at_utc": "2026-10-24T18:59:49.388548+00:00",
+  "method": "local structural inspection of archived GeoJSON; no data downloaded",
+  "administrative_geometry_checks": [
+    {
+      "source_evidence_id": "geoboundaries_adm1_geojson-9e4d6e0b802b",
+      "source_id": "geoboundaries_adm1_geojson",
+      "feature_count": 26,
+      "geometry_types": {
+        "Polygon": 24,
+        "MultiPolygon": 2
+      },
+      "empty_geometries": 0,
+      "coordinate_pairs": 7947,
+      "coordinate_extent_lonlat": [
+        -81.3276984651909,
+        -18.359439638481717,
+        -68.64281794578261,
+        -0.014090115964791
+      ],
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+      },
+      "ring_closure_errors": 0,
+      "rings_with_fewer_than_4_positions": 0,
+      "first_feature_property_keys": [
+        "shapeGroup",
+        "shapeID",
+        "shapeISO",
+        "shapeName",
+        "shapeType"
+      ],
+      "property_keys_suggest_ubigeo": false,
+      "topology_validation": "not_performed; structural GeoJSON checks only"
+    },
+    {
+      "source_evidence_id": "geoboundaries_adm2_geojson_full-58d0720bc01a",
+      "source_id": "geoboundaries_adm2_geojson_full",
+      "feature_count": 196,
+      "geometry_types": {
+        "Polygon": 193,
+        "MultiPolygon": 3
+      },
+      "empty_geometries": 0,
+      "coordinate_pairs": 689927,
+      "coordinate_extent_lonlat": [
+        -81.32823048999995,
+        -18.35092773599996,
+        -68.65227910299996,
+        -0.038605967999956
+      ],
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+      },
+      "ring_closure_errors": 0,
+      "rings_with_fewer_than_4_positions": 0,
+      "first_feature_property_keys": [
+        "shapeGroup",
+        "shapeID",
+        "shapeISO",
+        "shapeName",
+        "shapeType"
+      ],
+      "property_keys_suggest_ubigeo": false,
+      "topology_validation": "not_performed; structural GeoJSON checks only"
+    }
+  ]
+}

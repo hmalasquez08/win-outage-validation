@@ -1,0 +1,5 @@
+operator,official_account_reply_posts_scanned,distinct_parent_posts_recovered,distinct_parent_authors,unique_authors_with_explicit_internet_complaint,peak_unique_complaint_authors_per_hour_utc,districts_with_complaint_mentions,districts_reaching_3_unique_authors
+Movistar,11,10,10,0,0,0,0
+Claro,77,72,46,2,1,0,0
+Entel,84,84,54,0,0,0,0
+Bitel,15,15,13,0,0,0,0

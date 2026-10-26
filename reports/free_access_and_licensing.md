@@ -1,0 +1,1 @@
+Document links and manual review summary are archived in evidencias/licensing/manual_document_review.json. Public access is not commercial authorization. Radar is CC BY-NC 4.0; TwexAPI is credit-based; Nominatim strict 1 req/s and ODbL. Other terms remain UNKNOWN pending source-specific review.

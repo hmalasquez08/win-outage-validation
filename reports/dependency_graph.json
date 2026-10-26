@@ -1,0 +1,25 @@
+{
+  "families": {
+    "ioda": "bgp_routing/active",
+    "ripe_ris_live": "bgp_routing",
+    "ripestat": "bgp_routing/inventory",
+    "cloudflare_radar": "traffic_dns",
+    "ooni": "test-dependent",
+    "ripe_atlas": "active_reachability",
+    "twexapi_x": "human_reports"
+  },
+  "shared_dependencies": [
+    [
+      "ioda",
+      "ripe_ris_live"
+    ],
+    [
+      "ioda",
+      "ripestat"
+    ],
+    [
+      "ripe_ris_live",
+      "ripestat"
+    ]
+  ]
+}

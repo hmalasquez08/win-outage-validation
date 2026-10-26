@@ -1,0 +1,9 @@
+﻿outlet,source_id,feed_url,http_status,result_status,parse_status,item_count,strict_connectivity_hits,latest_pubdate_utc,evidence_id,artifact_path
+Perú21,major_news_peru21_rss,https://peru21.pe/rss/,200,SUCCESS_WITH_EVIDENCE,XML_PARSED,20,0,2026-10-22T06:57:25+00:00,major_news_peru21_rss-5f48c0bd80a8,evidencias/api_responses/major_news_peru21_rss/20261025T024506.403807+0000.xml
+Perú21,major_news_peru21_arc_rss,https://peru21.pe/arc/outboundfeeds/rss/?outputType=xml,200,SUCCESS_WITH_EVIDENCE,XML_PARSED,20,0,2026-10-22T06:57:25+00:00,major_news_peru21_arc_rss-5f48c0bd80a8,evidencias/api_responses/major_news_peru21_arc_rss/20261025T024507.125365+0000.xml
+Gestión,major_news_gestion_rss_peru_politica,https://gestion.pe/arcio/rss/category/peru/politica/,404,VALIDATION_ERROR,NOT_FEED,,,,major_news_gestion_rss_peru_politica-0019dfc4b32d,evidencias/errors/20261025T024508.450950+0000.bin
+Gestión,major_news_gestion_rss_tecnologia,https://gestion.pe/arc/outboundfeeds/rss/category/tecnologia/?outputType=xml,200,SUCCESS_WITH_EVIDENCE,XML_PARSED,1,0,2026-10-23T23:29:41+00:00,major_news_gestion_rss_tecnologia-322cebbd1590,evidencias/api_responses/major_news_gestion_rss_tecnologia/20261025T024512.236647+0000.xml
+Trome,major_news_trome_rss,https://trome.com/rss/,404,VALIDATION_ERROR,NOT_FEED,,,,major_news_trome_rss-b87546cad365,evidencias/errors/20261025T024514.593605+0000.bin
+Trome,major_news_trome_feed,https://trome.com/feed/,404,VALIDATION_ERROR,NOT_FEED,,,,major_news_trome_feed-d47c287249bf,evidencias/errors/20261025T024517.439339+0000.bin
+El Peruano,major_news_elperuano_rss,https://elperuano.pe/rss/,502,TRANSIENT_ERROR,NOT_FEED,,,,major_news_elperuano_rss-30f177cb1777,evidencias/errors/20261025T024519.568987+0000.bin
+Expreso,major_news_expreso_feed,https://www.expreso.com.pe/feed/,403,AUTH_BLOCKED,NOT_FEED,,,,major_news_expreso_feed-7b0dac702ee6,evidencias/errors/20261025T024519.982295+0000.bin

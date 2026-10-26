@@ -1,0 +1,239 @@
+{
+  "created_at_utc": "2026-10-25T07:51:24.336476+00:00",
+  "evaluation": "exploratory retrospective source flags applied uniformly to positive operator-incident pairs with available Cloudflare NetFlows captures; rule was not preregistered before inspecting source results",
+  "positive_label_scope": "15 affected operator-event pairs across eight timed incident cases; source-reference independence varies by row",
+  "x_label_scope": "32 operator-case searches: 15 positive and 17 NO_CONTROL windows; bounded query recovered 2 isolated explicit complaint authors in positive pairs and 0 in controls; 0 same-district/15m clusters at >=2 authors",
+  "rules": {
+    "netflows": "normalized incident-window median below same-weekday/time prior-week comparison median; exploratory, uncalibrated",
+    "ioda": "at least one IODA event onset within exact reference query window",
+    "radar": "matching outage annotation onset in exact query window",
+    "x_geo": "at least 2 distinct authors with explicit internet complaints in same unambiguous district and same 15-minute UTC bin",
+    "technical_or": "OR of NetFlows, IODA, Radar flags",
+    "all_sources_or": "OR of NetFlows, IODA, Radar and X geo-cluster flags",
+    "two_families": "at least two source-family flags in the same operator-event pair"
+  },
+  "counts": {
+    "pairs_tested": 15,
+    "incident_cases": 8,
+    "netflows_hits": 9,
+    "ioda_hits": 1,
+    "radar_hits": 0,
+    "x_pairs_with_any_explicit_complaint": 2,
+    "x_distinct_complaint_authors_across_positive_pairs": 2,
+    "x_geo_cluster_hits_ge2": 0,
+    "technical_or_hits": 9,
+    "all_sources_or_hits": 9,
+    "two_or_more_families_hits": 1,
+    "false_positive_rate": "NOT_ESTIMABLE_FOR_DETECTOR; no independent normal windows. X-only NO_CONTROL sample was 0/17 but is bounded and not a population FPR.",
+    "precision": "NOT_ESTIMABLE; the 15 cases are selected positive references and there are no independently sampled negatives for the full system",
+    "operational_freshness": "NOT_ESTIMABLE; historical aggregate captures do not measure first detector time"
+  },
+  "x_historical_search": {
+    "operator_event_windows": 32,
+    "positive_pairs": 15,
+    "no_control_pairs": 17,
+    "calls": 40,
+    "pagination_capped_pairs": 0,
+    "errors": 0,
+    "positive_pairs_any_explicit_internet_complaint": 2,
+    "positive_pairs_geo_cluster_ge2": 0,
+    "control_pairs_geo_cluster_ge2": 0
+  },
+  "netflows_threshold_sensitivity": [
+    {
+      "delta_threshold": 0,
+      "hits": 9,
+      "pairs": 15
+    },
+    {
+      "delta_threshold": -0.005,
+      "hits": 9,
+      "pairs": 15
+    },
+    {
+      "delta_threshold": -0.01,
+      "hits": 9,
+      "pairs": 15
+    },
+    {
+      "delta_threshold": -0.02,
+      "hits": 8,
+      "pairs": 15
+    },
+    {
+      "delta_threshold": -0.05,
+      "hits": 5,
+      "pairs": 15
+    },
+    {
+      "delta_threshold": -0.1,
+      "hits": 2,
+      "pairs": 15
+    },
+    {
+      "delta_threshold": -0.15,
+      "hits": 1,
+      "pairs": 15
+    },
+    {
+      "delta_threshold": -0.2,
+      "hits": 1,
+      "pairs": 15
+    }
+  ],
+  "by_operator": {
+    "bitel": {
+      "pairs": 2,
+      "netflows": 1,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "union": 1
+    },
+    "claro": {
+      "pairs": 3,
+      "netflows": 2,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "union": 2
+    },
+    "entel": {
+      "pairs": 4,
+      "netflows": 2,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "union": 2
+    },
+    "movistar": {
+      "pairs": 6,
+      "netflows": 4,
+      "ioda": 1,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "union": 4
+    }
+  },
+  "by_incident": {
+    "ancash_multioperator_2025-04-24": {
+      "pairs": 4,
+      "netflows": 2,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 2,
+      "incident_has_any_candidate": true
+    },
+    "ayacucho_integratel_entel_mobile_2025-12-26": {
+      "pairs": 2,
+      "netflows": 0,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 0,
+      "incident_has_any_candidate": false
+    },
+    "claro_los_olivos_2025-12-11": {
+      "pairs": 1,
+      "netflows": 1,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 1,
+      "incident_has_any_candidate": true
+    },
+    "loreto_shared_carrier_2025-12-19": {
+      "pairs": 3,
+      "netflows": 2,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 2,
+      "incident_has_any_candidate": true
+    },
+    "movistar_entel_south_2022-10-25": {
+      "pairs": 2,
+      "netflows": 2,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 2,
+      "incident_has_any_candidate": true
+    },
+    "movistar_lima_fiber_2026-07-01": {
+      "pairs": 1,
+      "netflows": 0,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 0,
+      "incident_has_any_candidate": false
+    },
+    "movistar_lima_fixed_2024-11-26": {
+      "pairs": 1,
+      "netflows": 1,
+      "ioda": 1,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 1,
+      "incident_has_any_candidate": true
+    },
+    "movistar_national_2024-11-18": {
+      "pairs": 1,
+      "netflows": 1,
+      "ioda": 0,
+      "radar": 0,
+      "x_geo_clusters": 0,
+      "any_candidate": 1,
+      "incident_has_any_candidate": true
+    }
+  },
+  "by_service_scope": {
+    "fixed and mobile": {
+      "pairs": 4,
+      "netflows_hits": 3,
+      "ioda_hits": 0,
+      "combined_hits": 3
+    },
+    "fixed and mobile internet": {
+      "pairs": 7,
+      "netflows_hits": 5,
+      "ioda_hits": 0,
+      "combined_hits": 5
+    },
+    "fixed internet": {
+      "pairs": 2,
+      "netflows_hits": 1,
+      "ioda_hits": 1,
+      "combined_hits": 1
+    },
+    "mobile internet and mobile service": {
+      "pairs": 2,
+      "netflows_hits": 0,
+      "ioda_hits": 0,
+      "combined_hits": 0
+    }
+  },
+  "incremental_value": {
+    "ioda_pairs_beyond_netflows": 0,
+    "radar_pairs_beyond_netflows": 0,
+    "x_geo_cluster_pairs_beyond_technical_or": 0,
+    "union_gain_over_netflows": 0
+  },
+  "limitations": [
+    "The NetFlows direction rule and X cluster thresholds are exploratory and were not frozen before reviewing the evidence.",
+    "Prior-week NetFlows control is not independently labeled normal; a decrease is not an outage or percent traffic loss.",
+    "Only the X search mode to:operator filter:replies was aligned historically; other social modalities were sampled recently and cannot be scored on these case windows.",
+    "X had isolated complaint authors in two positive pairs but zero same-district/15m clusters at thresholds 2 or 3; no area-level social confirmation was found.",
+    "One case had no reliable start time and was not included in the 15 positive pairs.",
+    "No district/product attribution from the network signals; 11/15 references combine fixed and mobile.",
+    "No general false-positive, precision, recall, or first-detection freshness metric without independent negative windows and prospective captures.",
+    "Source-family independence is not fully established; Radar and NetFlows share Cloudflare as provider."
+  ],
+  "report_files": [
+    "reports/historical_detector_replay.csv",
+    "reports/historical_detector_replay.json",
+    "reports/historical_detector_replay.md"
+  ]
+}

@@ -1,0 +1,1 @@
+{"error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>", "url": "https://checatuinternetmovil.osiptel.gob.pe/", "observed_at_utc": "2026-10-24T21:09:31.474343+00:00"}

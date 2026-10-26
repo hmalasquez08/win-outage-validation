@@ -1,0 +1,23 @@
+[
+  {
+    "source_id": "alto_trujillo_ubigeo_official_reference",
+    "url": "https://mef.gob.pe/contenidos/presu_publ/migl/2025_C1_Metas_1_1.pdf",
+    "http_status": 200,
+    "evidence_id": "alto_trujillo_ubigeo_official_reference-891457126983",
+    "artifact_path": "evidencias/api_responses/alto_trujillo_ubigeo_official_reference/20261025T020236.146602+0000.bin"
+  },
+  {
+    "source_id": "santa_rosa_loreto_creation_law",
+    "url": "https://busquedas.elperuano.pe/dispositivo/NL/2415565-1",
+    "http_status": 200,
+    "evidence_id": "santa_rosa_loreto_creation_law-8231f3267488",
+    "artifact_path": "evidencias/api_responses/santa_rosa_loreto_creation_law/20261025T020244.541827+0000.bin"
+  },
+  {
+    "source_id": "sangani_creation_law_ley_32729",
+    "url": "https://busquedas.elperuano.pe/api/visor_html/2535522-1",
+    "http_status": 200,
+    "evidence_id": "sangani_creation_law_ley_32729-a92ce719b3de",
+    "artifact_path": "evidencias/api_responses/sangani_creation_law_ley_32729/20261025T020244.775498+0000.bin"
+  }
+]

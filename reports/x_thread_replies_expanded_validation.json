@@ -1,0 +1,139 @@
+{
+  "observed_at_utc": "2026-10-25T07:02:14.176357+00:00",
+  "timeline_method": "up to five pages per operator account; up to three additional reply-heavy posts per account; up to two reply pages per thread if root reports >=20 replies",
+  "mentions_method": "one public search page per handle, 30-day bounded",
+  "calls": 24,
+  "new_thread_count": 0,
+  "new_threads": [],
+  "timeline_summary": [
+    {
+      "operator": "Movistar",
+      "timeline_pages_read": 5,
+      "timeline_posts_returned": 100,
+      "posts_with_replies_in_90d": 0,
+      "additional_threads_sampled": 0,
+      "more_timeline_pages_available": true
+    },
+    {
+      "operator": "Claro",
+      "timeline_pages_read": 5,
+      "timeline_posts_returned": 100,
+      "posts_with_replies_in_90d": 3,
+      "additional_threads_sampled": 0,
+      "more_timeline_pages_available": true
+    },
+    {
+      "operator": "Entel",
+      "timeline_pages_read": 5,
+      "timeline_posts_returned": 100,
+      "posts_with_replies_in_90d": 0,
+      "additional_threads_sampled": 0,
+      "more_timeline_pages_available": true
+    },
+    {
+      "operator": "Bitel",
+      "timeline_pages_read": 5,
+      "timeline_posts_returned": 100,
+      "posts_with_replies_in_90d": 0,
+      "additional_threads_sampled": 0,
+      "more_timeline_pages_available": true
+    }
+  ],
+  "mention_summary": [
+    {
+      "operator": "Movistar",
+      "mode": "explicit_mention_search",
+      "http_status": 200,
+      "returned_items": 20,
+      "unique_posts": 20,
+      "unique_authors": 18,
+      "internet_complaints": 0,
+      "internet_terms_noncomplaint": 5,
+      "ambiguous_service_complaints": 0,
+      "voice_sms_mentions": 5,
+      "district_mentions": 0,
+      "unambiguous_district_mentions": 0,
+      "ambiguous_district_mentions": 0
+    },
+    {
+      "operator": "Claro",
+      "mode": "explicit_mention_search",
+      "http_status": 200,
+      "returned_items": 20,
+      "unique_posts": 20,
+      "unique_authors": 12,
+      "internet_complaints": 0,
+      "internet_terms_noncomplaint": 7,
+      "ambiguous_service_complaints": 0,
+      "voice_sms_mentions": 0,
+      "district_mentions": 0,
+      "unambiguous_district_mentions": 0,
+      "ambiguous_district_mentions": 0
+    },
+    {
+      "operator": "Entel",
+      "mode": "explicit_mention_search",
+      "http_status": 200,
+      "returned_items": 20,
+      "unique_posts": 20,
+      "unique_authors": 9,
+      "internet_complaints": 0,
+      "internet_terms_noncomplaint": 0,
+      "ambiguous_service_complaints": 0,
+      "voice_sms_mentions": 4,
+      "district_mentions": 0,
+      "unambiguous_district_mentions": 0,
+      "ambiguous_district_mentions": 0
+    },
+    {
+      "operator": "Bitel",
+      "mode": "explicit_mention_search",
+      "http_status": 200,
+      "returned_items": 20,
+      "unique_posts": 20,
+      "unique_authors": 13,
+      "internet_complaints": 1,
+      "internet_terms_noncomplaint": 2,
+      "ambiguous_service_complaints": 0,
+      "voice_sms_mentions": 6,
+      "district_mentions": 0,
+      "unambiguous_district_mentions": 0,
+      "ambiguous_district_mentions": 0
+    }
+  ],
+  "evidence_ids": [
+    "twexapi_thread_ba88406939e5",
+    "twexapi_thread_94db4b92f9ae",
+    "twexapi_thread_424290f4c9a2",
+    "twexapi_thread_61d961c5f93e",
+    "twexapi_thread_9d67838f53b2",
+    "twexapi_thread_fff613eb8e87",
+    "twexapi_thread_1772f9b0ce85",
+    "twexapi_thread_6171d8dbfea3",
+    "twexapi_thread_e02abd68826a",
+    "twexapi_thread_f1595ed2bbdc",
+    "twexapi_thread_ea448d06f95f",
+    "twexapi_thread_55b250a9f707",
+    "twexapi_thread_eef4e7b31bd3",
+    "twexapi_thread_79f59f00d9e7",
+    "twexapi_thread_7cb8a5fb2da2",
+    "twexapi_thread_12cdf38a188d",
+    "twexapi_thread_d1258bbc283e",
+    "twexapi_thread_e6725fe88eaf",
+    "twexapi_thread_2ddfb11c34d3",
+    "twexapi_thread_8bfb5a0333f1",
+    "twexapi_thread_4f95b04740e1",
+    "twexapi_thread_12e32fc3c856",
+    "twexapi_thread_4f43e752c64f",
+    "twexapi_thread_b2e5c11f1bd1"
+  ],
+  "reports": [
+    "reports/x_thread_replies_validation.md",
+    "reports/x_thread_replies_by_thread.csv",
+    "reports/x_thread_replies_daily.csv",
+    "reports/x_thread_replies_districts.csv",
+    "reports/x_operator_mentions_validation.csv"
+  ],
+  "privacy": "No user text, user handles, user IDs, or raw post IDs persisted. Official root IDs represented by irreversible hash prefixes.",
+  "warning": "Search and thread samples may overlap; do not sum channel totals as unique complaints."
+}

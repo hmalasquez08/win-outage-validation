@@ -13,8 +13,3 @@ __pycache__/
 build/
 dist/
 *.egg-info/
-
-# Local runtime data and generated reports
-/data/
-/evidencias/
-/reports/

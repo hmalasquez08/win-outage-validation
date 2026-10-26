@@ -1,0 +1,10 @@
+﻿account,handle,window,returned_items,candidate_keyword_fields,latest_post_timestamp_utc,operator_or_service_type,useful_reports,false_positive_count,credits_estimated_at_5_each,decision,evidence_id
+Movistar Perú,MovistarPeru,30 days,0,0,,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_movistar-dcd164bd93ac
+Claro Perú,claroperu,30 days,1,1,2026-10-09T12:06:57+00:00,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_claro-081aa8d22921
+Bitel Perú,bitelperu,30 days,0,0,,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_bitel-dcd164bd93ac
+Entel Perú,EntelPeru,30 days,2,2,2026-10-12T17:37:33+00:00,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_entel-f6b3b8fcb003
+OSIPTEL,OSIPTEL,30 days,5,4,2026-10-18T14:02:28+00:00,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_osiptel-519d304bf98d
+MTC,MTC_GobPeru,30 days,0,0,,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_mtc-dcd164bd93ac
+INDECI,indeciperu,30 days,0,0,,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_indeci-dcd164bd93ac
+COEN,COENPeru,30 days,0,0,,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_coen-dcd164bd93ac
+Indecopi,IndecopiOficial,30 days,0,0,,not proven from minimized text,not classified,not estimable,5,INSUFFICIENT_EVIDENCE,twexapi_final_indecopi-dcd164bd93ac

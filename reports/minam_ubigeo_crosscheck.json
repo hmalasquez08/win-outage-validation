@@ -1,0 +1,43 @@
+{
+  "source": "MINAM ArcGIS ServicioUbigeo/MapServer/0",
+  "queried_feature_count": 1874,
+  "unique_district_codes": 1874,
+  "catalog_codes": 1892,
+  "matched_catalog_codes": 1874,
+  "catalog_codes_missing_from_minam": [
+    "030612",
+    "050413",
+    "050512",
+    "050513",
+    "050514",
+    "050515",
+    "080915",
+    "080916",
+    "080917",
+    "080918",
+    "090724",
+    "090725",
+    "130112",
+    "160405",
+    "180107",
+    "221006",
+    "250306",
+    "250307"
+  ],
+  "minam_codes_missing_from_catalog": [],
+  "hierarchy_mismatch_rows": 10,
+  "exact_hierarchy_match_rows": 1864,
+  "geometry_requested": false,
+  "pagination_evidence": [
+    {
+      "evidence_id": "minam_ubigeo_attributes_1-654bce67560b",
+      "artifact_path": "evidencias/api_responses/minam_ubigeo_attributes_1/20261025T014259.059087+0000.json",
+      "http_status": 200
+    },
+    {
+      "evidence_id": "minam_ubigeo_attributes_2-e02f9c20b34c",
+      "artifact_path": "evidencias/api_responses/minam_ubigeo_attributes_2/20261025T014300.704198+0000.json",
+      "http_status": 200
+    }
+  ]
+}

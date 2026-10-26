@@ -1,0 +1,226 @@
+{
+  "observation_utc": "2026-10-25T08:09:00.309938+00:00",
+  "candidate_ioda_event": {
+    "operator": "claro",
+    "asn": "12252",
+    "onset_utc": "2026-10-19T19:20:00Z",
+    "duration_seconds": 900,
+    "ioda_overlap_field": false,
+    "reference": "current_candidate_detection_snapshot.json",
+    "source_overlap_flag": false
+  },
+  "window_start_utc": "2026-10-19T19:00:00Z",
+  "window_end_utc": "2026-10-19T20:00:00Z",
+  "prior_week_window_start_utc": "2026-10-12T19:00:00Z",
+  "prior_week_window_end_utc": "2026-10-12T20:00:00Z",
+  "netflows_rows": [
+    {
+      "operator": "movistar",
+      "asn": "6147",
+      "http_status": 200,
+      "result_status": "SUCCESS_WITH_EVIDENCE",
+      "evidence_id": "incident_candidate_netflows_movistar-5dd0ca6e0940",
+      "artifact_path": "evidencias/api_responses/incident_candidate_netflows_movistar/20261025T080849.379043+0000.json",
+      "event_points": 5,
+      "control_points": 5,
+      "event_values": [
+        0.848605,
+        0.86775,
+        0.965954,
+        0.956707,
+        0.988628
+      ],
+      "prior_values": [
+        0.890558,
+        0.886439,
+        0.886035,
+        0.923434,
+        1.0
+      ],
+      "paired_deltas": [
+        -0.04195299999999991,
+        -0.018688999999999956,
+        0.07991899999999996,
+        0.033273,
+        -0.011372000000000049
+      ],
+      "event_median": 0.956707,
+      "prior_median": 0.890558,
+      "event_median_delta": 0.06614900000000001
+    },
+    {
+      "operator": "claro",
+      "asn": "12252",
+      "http_status": 200,
+      "result_status": "SUCCESS_WITH_EVIDENCE",
+      "evidence_id": "incident_candidate_netflows_claro-0ae6021e2c63",
+      "artifact_path": "evidencias/api_responses/incident_candidate_netflows_claro/20261025T080850.277539+0000.json",
+      "event_points": 5,
+      "control_points": 5,
+      "event_values": [
+        0.836926,
+        0.834201,
+        0.896601,
+        0.930788,
+        1.0
+      ],
+      "prior_values": [
+        0.741794,
+        0.795053,
+        0.835692,
+        0.819421,
+        0.850721
+      ],
+      "paired_deltas": [
+        0.095132,
+        0.03914799999999996,
+        0.06090899999999999,
+        0.111367,
+        0.14927900000000005
+      ],
+      "event_median": 0.896601,
+      "prior_median": 0.819421,
+      "event_median_delta": 0.07718000000000003
+    },
+    {
+      "operator": "entel",
+      "asn": "21575",
+      "http_status": 200,
+      "result_status": "SUCCESS_WITH_EVIDENCE",
+      "evidence_id": "incident_candidate_netflows_entel-e46fa4f050f5",
+      "artifact_path": "evidencias/api_responses/incident_candidate_netflows_entel/20261025T080851.091698+0000.json",
+      "event_points": 5,
+      "control_points": 5,
+      "event_values": [
+        0.906176,
+        0.942868,
+        0.930427,
+        0.95157,
+        1.0
+      ],
+      "prior_values": [
+        0.86887,
+        0.87692,
+        0.889785,
+        0.882731,
+        0.941813
+      ],
+      "paired_deltas": [
+        0.03730599999999995,
+        0.065948,
+        0.040641999999999956,
+        0.06883899999999998,
+        0.05818699999999999
+      ],
+      "event_median": 0.942868,
+      "prior_median": 0.882731,
+      "event_median_delta": 0.060136999999999996
+    },
+    {
+      "operator": "bitel",
+      "asn": "262210",
+      "http_status": 200,
+      "result_status": "SUCCESS_WITH_EVIDENCE",
+      "evidence_id": "incident_candidate_netflows_bitel-6c1babe5c336",
+      "artifact_path": "evidencias/api_responses/incident_candidate_netflows_bitel/20261025T080851.915895+0000.json",
+      "event_points": 5,
+      "control_points": 5,
+      "event_values": [
+        0.899255,
+        0.919109,
+        0.988425,
+        0.979316,
+        1.0
+      ],
+      "prior_values": [
+        0.824151,
+        0.86009,
+        0.919022,
+        0.934898,
+        0.938844
+      ],
+      "paired_deltas": [
+        0.07510400000000006,
+        0.05901899999999993,
+        0.06940299999999999,
+        0.04441799999999996,
+        0.06115599999999999
+      ],
+      "event_median": 0.979316,
+      "prior_median": 0.919022,
+      "event_median_delta": 0.06029399999999996
+    }
+  ],
+  "x": {
+    "status": "QUERIED",
+    "pages": 5,
+    "returned_posts": 0,
+    "internet_complaint_posts": 0,
+    "distinct_authors_complaint": 0,
+    "unique_district_time_clusters_ge2": 0,
+    "pagination_capped": true,
+    "errors": 0,
+    "evidence_ids": [
+      "incident_candidate_x_claro_replies-4e1c530cb7bc",
+      "incident_candidate_x_claro_replies-4e1c530cb7bc",
+      "incident_candidate_x_claro_replies-4e1c530cb7bc",
+      "incident_candidate_x_claro_replies-4e1c530cb7bc",
+      "incident_candidate_x_claro_replies-4e1c530cb7bc"
+    ],
+    "query_window_utc": "2026-10-19 19:00-20:00",
+    "query_mode": "to:claroperu filter:replies",
+    "page_metadata": [
+      {
+        "http_status": 200,
+        "result_status": "SUCCESS_WITH_EVIDENCE",
+        "posts": 0,
+        "has_next_page": true,
+        "cursor_present": true
+      },
+      {
+        "http_status": 200,
+        "result_status": "SUCCESS_WITH_EVIDENCE",
+        "posts": 0,
+        "has_next_page": true,
+        "cursor_present": true
+      },
+      {
+        "http_status": 200,
+        "result_status": "SUCCESS_WITH_EVIDENCE",
+        "posts": 0,
+        "has_next_page": true,
+        "cursor_present": true
+      },
+      {
+        "http_status": 200,
+        "result_status": "SUCCESS_WITH_EVIDENCE",
+        "posts": 0,
+        "has_next_page": true,
+        "cursor_present": true
+      },
+      {
+        "http_status": 200,
+        "result_status": "SUCCESS_WITH_EVIDENCE",
+        "posts": 0,
+        "has_next_page": true,
+        "cursor_present": true
+      }
+    ],
+    "text_or_user_ids_persisted": false,
+    "interpretation": "INCONCLUSIVE: exact-hour query returned empty pages while has_next_page remained true; day-level requery also returned an empty first page with has_next_page true. Zero retrieved posts is not evidence of zero complaints.",
+    "day_level_requery": {
+      "query_window_utc": "2026-10-19 calendar day",
+      "pages": 1,
+      "returned_posts": 0,
+      "http_status": 200,
+      "has_next_page_even_when_empty": true,
+      "evidence_id": "incident_candidate_x_claro_day_requery-4e1c530cb7bc"
+    }
+  },
+  "limits": [
+    "A 15-minute IODA BGP event is a network signal, not proof of customer internet outage.",
+    "The previous-week NetFlows comparator is not labeled outage-free.",
+    "X query covers one bounded reply-search mode; missing posts/location do not prove no customer impact.",
+    "No district-level network measurement or fixed/mobile attribution is available."
+  ]
+}

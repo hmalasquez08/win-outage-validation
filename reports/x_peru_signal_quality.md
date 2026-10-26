@@ -1,0 +1,20 @@
+# Señales de cuentas oficiales en X
+
+Se verificaron los nueve handles oficiales y se hizo una revisión semántica adicional de las cuentas con candidatos recuperables. Entel produjo dos respuestas de soporte que reconocen interrupciones; OSIPTEL produjo dos respuestas que piden distrito/zona y persistencia del problema. Ninguna de esas respuestas identifica por sí sola un evento confirmado con operador, zona y tipo de servicio. Los otros elementos de OSIPTEL fueron información general o enlaces; la consulta más reciente de Claro no recuperó publicaciones. El análisis se limitó a las cuentas oficiales y guardó conteos/clasificación sin texto, identificadores de publicación o usuarios.
+
+La frescura de publicación de estos ejemplos no equivale a latencia de detección: no se observó el inicio de los incidentes ni una marca temporal comparable de la primera queja. No se estiman usuarios únicos, falsos positivos ni aporte incremental. Las cuentas permanecen INSUFFICIENT_EVIDENCE para detección de interrupciones. Ver `x_semantic_sample_review.csv`, `x_official_accounts_inventory.csv` y `x_final_account_decisions.csv`.
+
+
+## Respuestas a cuentas y respuestas de OSIPTEL
+
+Se añadieron seis consultas de respuestas mediante TwexAPI: cinco cuentas destinatarias (incluida OSIPTEL) y respuestas escritas por OSIPTEL. Todas respondieron HTTP 200. La consulta encontró una respuesta con contexto de interrupción a Claro y dos respuestas de OSIPTEL con ese contexto; no hubo candidatos completos con distrito, operador y servicio. Se guardaron conteos agregados, no texto ni identificadores personales. Esto demuestra acceso a la modalidad de respuestas, no su rendimiento como detector. Evidencia resumida en `x_reply_search_summary.csv` y `x_reply_search_summary.md`.
+
+## Relectura corregida de respuestas de soporte y conversaciones de usuarios (2026-10-25)
+
+La lectura inicial del contexto padre omitió respuestas porque el parser no interpretó el arreglo `data[]` del endpoint de detalle. Tras corregirlo, se recuperaron 177/183 mensajes padre de las pestañas Respuestas (cinco páginas por cuenta, 39 llamadas HTTP 200). Entre 46 autores padre recuperados para respuestas de soporte de Claro, dos autores tuvieron una queja explícita de internet; fueron en horas distintas y no incluyeron distrito. En muestras de respuestas de tres publicaciones oficiales de Claro se observaron 8 posts de queja entre 43 respuestas de clientes y dos menciones de distrito, una ambigua. Los modos se mantienen separados porque podrían solaparse; no se suman como si fueran autores independientes.
+
+Esta evidencia cambia la decisión de X de “excluir” a **candidata de corroboración agregada no ponderada**: el acceso y la presencia de quejas están demostrados en la muestra, pero no una caída ni un aumento medible de detección. La hipótesis a validar es el crecimiento de autores distintos por operador, zona y tiempo junto con señales técnicas. No se activa por un usuario y nunca se usa su publicación para dirigirle la creatividad; la eventual decisión sería por segmento geográfico. Ver `x_operator_replies_parent_context.md/.json`, `x_operator_replies_parent_hourly.csv`, `x_operator_replies_parent_districts.csv` y `x_thread_replies_validation.md`.
+
+## Replay histórico alineado a incidentes (2026-10-25)
+
+Se probaron respuestas dirigidas a las cuentas oficiales en 32 ventanas operador-caso con hora disponible: 15 pares positivos y 17 pares etiquetados `NO_CONTROL`. Hubo dos autores con quejas explícitas de internet en dos pares positivos y ninguno en los controles. Sin embargo, no se formó ningún grupo de al menos dos autores en el mismo distrito inequívoco y bloque de 15 minutos (0/15 positivos; 0/17 controles). Por eso X no añadió un segmento geográfico detectable ni pares nuevos a la combinación técnica en esta muestra. Las quejas aisladas sí son contexto útil para corroboración futura, pero no activan por sí solas una creatividad ni demuestran una caída. Los controles observados no estiman la tasa general de falsos positivos. Ver `x_historical_incident_replay.md` y `historical_detector_replay.md`.

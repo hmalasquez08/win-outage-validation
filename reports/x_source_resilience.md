@@ -1,0 +1,1 @@
+Retirar las fuentes de X o cada grupo de cuentas no permite cuantificar pérdida de cobertura: no se han clasificado incidentes únicos ni se ha comparado una ventana etiquetada común. Estado: INSUFFICIENT_EVIDENCE; no se asigna un porcentaje.

@@ -1,0 +1,11 @@
+{
+  "manifest_records": 1154,
+  "integrity_errors": [],
+  "missing_reports": [],
+  "secret_scan_files": "evidencias/ and reports/ only; .env was not read",
+  "secret_scan_hits": [],
+  "schema_validation_errors": [],
+  "report_reference_errors": [],
+  "approved_sources_count": 0,
+  "blueprint_approved_sources_count": 0
+}

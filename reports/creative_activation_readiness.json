@@ -1,0 +1,197 @@
+{
+  "assessment_id": "ica_department_live_scan_2026-10-25",
+  "assessment_status": "STALE_SINGLE_FAMILY_CANDIDATE",
+  "activation_allowed": false,
+  "scope": {
+    "country": "PE",
+    "department": "Ica",
+    "cloudflare_geoid": "3938526",
+    "operator_asns": [
+      6147,
+      12252,
+      21575,
+      262210
+    ]
+  },
+  "capture_time_utc": "2026-10-25T10:10:50.372208+00:00",
+  "source_data_last_updated_utc": "2026-10-25T08:45:00Z",
+  "source_data_lag_minutes_at_capture": 85.8,
+  "normalization": "MIN0_MAX",
+  "current_window": "2026-10-25T03:00:00Z/2026-10-25T08:45:00Z",
+  "weekday_comparator_window": "2026-10-18T03:00:00Z/2026-10-18T08:45:00Z",
+  "operators": {
+    "movistar": {
+      "asn": 6147,
+      "paired_intervals": 24,
+      "current_start": "2026-10-25T03:00:00Z",
+      "current_end": "2026-10-25T08:45:00Z",
+      "median_paired_delta": -0.101499,
+      "fraction_below_weekday_comparator": 1.0,
+      "strict_netflows_candidate": true,
+      "independent_same_zone_corroboration": false
+    },
+    "claro": {
+      "asn": 12252,
+      "paired_intervals": 24,
+      "current_start": "2026-10-25T03:00:00Z",
+      "current_end": "2026-10-25T08:45:00Z",
+      "median_paired_delta": 0.023945999999999967,
+      "fraction_below_weekday_comparator": 0.4166666666666667,
+      "strict_netflows_candidate": false,
+      "independent_same_zone_corroboration": false
+    },
+    "entel": {
+      "asn": 21575,
+      "paired_intervals": 24,
+      "current_start": "2026-10-25T03:00:00Z",
+      "current_end": "2026-10-25T08:45:00Z",
+      "median_paired_delta": 0.025709500000000038,
+      "fraction_below_weekday_comparator": 0.25,
+      "strict_netflows_candidate": false,
+      "independent_same_zone_corroboration": false
+    },
+    "bitel": {
+      "asn": 262210,
+      "paired_intervals": 24,
+      "current_start": "2026-10-25T03:00:00Z",
+      "current_end": "2026-10-25T08:45:00Z",
+      "median_paired_delta": 3.500000000000004e-06,
+      "fraction_below_weekday_comparator": 0.375,
+      "strict_netflows_candidate": false,
+      "independent_same_zone_corroboration": false
+    }
+  },
+  "real_signal_engine_evaluation": {
+    "schema_version": "win-creative-trigger-simulation-v1",
+    "status": "SUPPRESSED",
+    "simulation_only": true,
+    "decision_at": "2026-10-25T10:10:50.372208Z",
+    "expires_at": "2026-10-25T10:10:50.372208Z",
+    "scope": null,
+    "reasons": [
+      "missing_fresh_direct_internet_signal"
+    ],
+    "policy": {
+      "requires_direct_internet_evidence": true,
+      "requires_independent_corroboration": true,
+      "requires_verified_peru_geography": true,
+      "max_signal_age_minutes": 30,
+      "voice_sms_or_complaints_alone_can_trigger": false,
+      "declared_coverage_can_trigger": false
+    }
+  },
+  "ioda": {
+    "http_status": 200,
+    "event_count": 0,
+    "evidence_id": "ioda_movistar_ica_candidate_20261025-242282f2c412",
+    "artifact_path": "evidencias/api_responses/ioda_movistar_ica_candidate_20261025/20261025T101221.336931+0000.json",
+    "raw_current_evidence_id": "ioda_movistar_ica_candidate_raw_signals_20261025-85723c22fce9",
+    "raw_control_evidence_id": "ioda_movistar_ica_candidate_raw_control_20261018-af2630a262f0",
+    "raw_signals": {
+      "merit-nt": {
+        "current_points": 69,
+        "control_points": 69,
+        "paired_numeric_points": 69,
+        "current_median": 2.2,
+        "control_median": 1.8,
+        "paired_median_delta": 0.3999999999999999,
+        "fraction_intervals_below_week_prior": 0.3333333333333333,
+        "current_last_sample_utc": "2026-10-25T08:40:00Z"
+      },
+      "bgp": {
+        "current_points": 69,
+        "control_points": 69,
+        "paired_numeric_points": 69,
+        "current_median": 5933,
+        "control_median": 5933,
+        "paired_median_delta": 0,
+        "fraction_intervals_below_week_prior": 0.0,
+        "current_last_sample_utc": "2026-10-25T08:40:00Z"
+      },
+      "ping-slash24": {
+        "current_points": 35,
+        "control_points": 35,
+        "paired_numeric_points": 35,
+        "current_median": 952,
+        "control_median": 959,
+        "paired_median_delta": -8,
+        "fraction_intervals_below_week_prior": 0.6571428571428571,
+        "current_last_sample_utc": "2026-10-25T08:40:00Z"
+      },
+      "ping-slash24-loss": {
+        "current_points": 35,
+        "control_points": 35,
+        "paired_numeric_points": 0,
+        "current_median": null,
+        "control_median": null,
+        "paired_median_delta": null,
+        "fraction_intervals_below_week_prior": null,
+        "current_last_sample_utc": "2026-10-25T08:40:00Z"
+      },
+      "ping-slash24-latency": {
+        "current_points": 35,
+        "control_points": 35,
+        "paired_numeric_points": 0,
+        "current_median": null,
+        "control_median": null,
+        "paired_median_delta": null,
+        "fraction_intervals_below_week_prior": null,
+        "current_last_sample_utc": "2026-10-25T08:40:00Z"
+      }
+    },
+    "geographic_scope": "AS6147 aggregate; no Ica/department breakdown in this query",
+    "interpretation": "The event endpoint returned no event. Raw signals show BGP route count stable and a small change in active-probe reachable /24 counts; this is weak ASN-level context, not same-department corroboration."
+  },
+  "x_replies": {
+    "http_status": 200,
+    "returned_text_fields": 0,
+    "connectivity_complaint_texts": 0,
+    "ica_mentions": 0,
+    "interpretation": "The redacted response contained no text fields to classify; this is inconclusive and does not establish that no complaints existed."
+  },
+  "limits": [
+    "Cloudflare NetFlows measures traffic reaching Cloudflare from the ASN; it is not a direct count of users without internet or total ISP traffic.",
+    "The comparator is the same period one week earlier, not an independently verified normal period.",
+    "The GeoID is department-level; it does not identify a district, street, or exact customer location.",
+    "Cloudflare is the only family meeting the area-level candidate rule. IODA provides an independent but ASN-wide, weak active-probing context that is not geographically aligned with Ica.",
+    "No distinction between fixed and mobile access is available from these series."
+  ],
+  "evidence": {
+    "cloudflare_ica_geography": {
+      "evidence_id": "cloudflare_geolocations_peru-7bf048ced142",
+      "artifact_path": "evidencias/api_responses/cloudflare_geolocations_peru/20261025T100410.176653+0000.json",
+      "sha256": "7bf048ced142ba4f567f4249f66e65b5e0a5df5baaee61bc934e2b3841a3f302",
+      "http_status": 200
+    },
+    "current_ica_netflows": {
+      "evidence_id": "cloudflare_netflows_ica_recent_all_operators-ac7e230ca4c9",
+      "artifact_path": "evidencias/api_responses/cloudflare_netflows_ica_recent_all_operators/20261025T101050.372208+0000.json",
+      "sha256": "ac7e230ca4c968f690a52b3580ef4faa3ad9fab2994777363bdba3d1a86571c4",
+      "http_status": 200
+    },
+    "current_ioda": {
+      "evidence_id": "ioda_movistar_ica_candidate_20261025-242282f2c412",
+      "artifact_path": "evidencias/api_responses/ioda_movistar_ica_candidate_20261025/20261025T101221.336931+0000.json",
+      "sha256": "242282f2c412a8a8f9c4b27d4a19855465d12976ffaae33129a9477d65ab0e88",
+      "http_status": 200
+    },
+    "current_ioda_raw": {
+      "evidence_id": "ioda_movistar_ica_candidate_raw_signals_20261025-85723c22fce9",
+      "artifact_path": "evidencias/api_responses/ioda_movistar_ica_candidate_raw_signals_20261025/20261025T102827.270885+0000.json",
+      "sha256": "85723c22fce9e1ff38b6fb5b136b565ce01a7936ee8d07259167ae7f7c1afba7",
+      "http_status": 200
+    },
+    "control_ioda_raw": {
+      "evidence_id": "ioda_movistar_ica_candidate_raw_control_20261018-af2630a262f0",
+      "artifact_path": "evidencias/api_responses/ioda_movistar_ica_candidate_raw_control_20261018/20261025T102900.261744+0000.json",
+      "sha256": "af2630a262f0d9a6096c44231e7c32e0b7a2803bc775ed9db7c280b4043df15e",
+      "http_status": 200
+    },
+    "current_x": {
+      "evidence_id": "twexapi_replies_movistar_ica_candidate_20261025-74bd04629a7a",
+      "artifact_path": "evidencias/api_responses/twexapi_replies_movistar_ica_candidate_20261025/20261025T101205.094978+0000.json",
+      "sha256": "74bd04629a7ac6ef3aa60183a4c367b0d6bfa07875b316233f956d4f56c016b4",
+      "http_status": 200
+    }
+  }
+}

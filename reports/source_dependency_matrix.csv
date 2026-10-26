@@ -1,0 +1,97 @@
+﻿source,operator,family,shared_upstream,independence_status,matched_events,evidence_status,evidence_ids
+ioda,movistar,BGP/routing + active signals,same BGP family,DEPENDENT,not established,CONDITIONAL,ioda_entity_movistar-e297fff6083c;ioda_movistar-3fb3f10d0524;ioda_events_movistar-6dfedd65c3ce
+ioda,claro,BGP/routing + active signals,same BGP family,DEPENDENT,not established,CONDITIONAL,ioda_entity_claro-230eb2c2e756;ioda_claro-6e74c4ae2aa7;ioda_events_claro-acdfb2a177f8
+ioda,entel,BGP/routing + active signals,same BGP family,DEPENDENT,not established,INSUFFICIENT_EVIDENCE,ioda_entity_entel-f37bc9c86bbe;ioda_entel-938691d6032d;ioda_events_entel-d72ef53307d4
+ioda,bitel,BGP/routing + active signals,same BGP family,DEPENDENT,not established,CONDITIONAL,ioda_entity_bitel-02eec6f8c461;ioda_bitel-302056da427d;ioda_events_bitel-d2849248c2e7
+cloudflare_radar,movistar,traffic/DNS,unknown,UNKNOWN,not established,CONDITIONAL,cloudflare_outages_movistar_asn-5cd110ad9f1c
+cloudflare_radar,claro,traffic/DNS,unknown,UNKNOWN,not established,CONDITIONAL,cloudflare_outages_claro_asn-5cd110ad9f1c
+cloudflare_radar,entel,traffic/DNS,unknown,UNKNOWN,not established,CONDITIONAL,cloudflare_outages_entel_asn-5cd110ad9f1c
+cloudflare_radar,bitel,traffic/DNS,unknown,UNKNOWN,not established,CONDITIONAL,cloudflare_outages_bitel_asn-5cd110ad9f1c
+ripe_atlas,movistar,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ripe_atlas-c8a16216f8f4;ripe_atlas_measurements_movistar-137d9429a481;ripe_atlas_measurements_movistar-137d9429a481;ripe_atlas_measurements_latest_page_movistar-7bb91ed64162
+ripe_atlas,claro,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ripe_atlas-c8a16216f8f4;ripe_atlas_measurements_claro-5b61b366cfc1;ripe_atlas_measurements_claro-fdeb7b6c987b;ripe_atlas_measurements_claro-5b61b366cfc1;ripe_atlas_measurements_latest_page_claro-2041113a6ffb;ripe_atlas_measurements_claro-fdeb7b6c987b;ripe_atlas_measurements_latest_page_claro-cd3f3c031691
+ripe_atlas,entel,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ripe_atlas-c8a16216f8f4;ripe_atlas_measurements_entel-cb9679291fb5;ripe_atlas_measurements_entel-2effa31e08a5;ripe_atlas_measurements_entel-59867e5e14db;ripe_atlas_measurements_latest_page_entel-871ed2458f8e;ripe_atlas_measurements_entel-2effa31e08a5;ripe_atlas_measurements_latest_page_entel-75d999fff8a6
+ripe_atlas,bitel,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ripe_atlas-c8a16216f8f4
+ripe_ris_live,movistar,BGP/routing,same BGP family,DEPENDENT,not established,INSUFFICIENT_EVIDENCE,ripe_ris_live-9d5e94241ed5
+ripe_ris_live,claro,BGP/routing,same BGP family,DEPENDENT,not established,INSUFFICIENT_EVIDENCE,ripe_ris_live-9d5e94241ed5
+ripe_ris_live,entel,BGP/routing,same BGP family,DEPENDENT,not established,INSUFFICIENT_EVIDENCE,ripe_ris_live-9d5e94241ed5
+ripe_ris_live,bitel,BGP/routing,same BGP family,DEPENDENT,not established,INSUFFICIENT_EVIDENCE,ripe_ris_live-9d5e94241ed5
+ripestat,movistar,BGP/routing + inventory,same BGP family,DEPENDENT,not established,CONDITIONAL,ripestat_asn_movistar-2942d6ccb0ec;ripestat_prefixes_movistar-6fc06ba0715b
+ripestat,claro,BGP/routing + inventory,same BGP family,DEPENDENT,not established,CONDITIONAL,ripestat_asn_claro-6163eef8efb0;ripestat_prefixes_claro-b8aab8100baf
+ripestat,entel,BGP/routing + inventory,same BGP family,DEPENDENT,not established,CONDITIONAL,ripestat_asn_entel-beec6190b9f1;ripestat_prefixes_entel-7acab37dc2b7
+ripestat,bitel,BGP/routing + inventory,same BGP family,DEPENDENT,not established,CONDITIONAL,ripestat_asn_bitel-fb3e5442d7cd;ripestat_prefixes_bitel-836ce09c2855
+globalping,movistar,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,globalping_online_probe_inventory-d86f8996528d
+globalping,claro,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,globalping_online_probe_inventory-d86f8996528d
+globalping,entel,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,globalping_online_probe_inventory-d86f8996528d
+globalping,bitel,active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,globalping_online_probe_inventory-d86f8996528d
+ooni,movistar,test-dependent active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ooni-cf6ae5a3fc5d
+ooni,claro,test-dependent active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ooni-cf6ae5a3fc5d
+ooni,entel,test-dependent active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ooni-cf6ae5a3fc5d
+ooni,bitel,test-dependent active reachability,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,ooni-cf6ae5a3fc5d
+infobip,movistar,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,infobip_status-587cf47fce4c
+infobip,claro,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,infobip_status-587cf47fce4c
+infobip,entel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,infobip_status-587cf47fce4c
+infobip,bitel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,infobip_status-587cf47fce4c
+twilio,movistar,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,twilio_status-3b02b7413c51
+twilio,claro,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,twilio_status-3b02b7413c51
+twilio,entel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,twilio_status-3b02b7413c51
+twilio,bitel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,twilio_status-3b02b7413c51
+telesign,movistar,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,telesign_status-02c791183f51
+telesign,claro,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,telesign_status-02c791183f51
+telesign,entel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,telesign_status-02c791183f51
+telesign,bitel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,telesign_status-02c791183f51
+sinch,movistar,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,sinch_status-5fab9bca41b2
+sinch,claro,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,sinch_status-5fab9bca41b2
+sinch,entel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,sinch_status-5fab9bca41b2
+sinch,bitel,carrier messaging,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,sinch_status-5fab9bca41b2
+usgs,movistar,external context,unknown,UNKNOWN,not established,CONDITIONAL,usgs-099a33d27858
+usgs,claro,external context,unknown,UNKNOWN,not established,CONDITIONAL,usgs-099a33d27858
+usgs,entel,external context,unknown,UNKNOWN,not established,CONDITIONAL,usgs-099a33d27858
+usgs,bitel,external context,unknown,UNKNOWN,not established,CONDITIONAL,usgs-099a33d27858
+geoboundaries,movistar,geography,unknown,UNKNOWN,not established,CONDITIONAL,geoboundaries_adm1_geojson-9e4d6e0b802b;geoboundaries_adm2_geojson_full-58d0720bc01a
+geoboundaries,claro,geography,unknown,UNKNOWN,not established,CONDITIONAL,geoboundaries_adm1_geojson-9e4d6e0b802b;geoboundaries_adm2_geojson_full-58d0720bc01a
+geoboundaries,entel,geography,unknown,UNKNOWN,not established,CONDITIONAL,geoboundaries_adm1_geojson-9e4d6e0b802b;geoboundaries_adm2_geojson_full-58d0720bc01a
+geoboundaries,bitel,geography,unknown,UNKNOWN,not established,CONDITIONAL,geoboundaries_adm1_geojson-9e4d6e0b802b;geoboundaries_adm2_geojson_full-58d0720bc01a
+inei_ubigeo,movistar,geography,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+inei_ubigeo,claro,geography,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+inei_ubigeo,entel,geography,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+inei_ubigeo,bitel,geography,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+nominatim,movistar,geography,unknown,UNKNOWN,not established,CONDITIONAL,nominatim_sample_1-b2ddedbe3d30;nominatim_sample_2-e3fd899f847c;nominatim_sample_3-7f7a9f340d0c
+nominatim,claro,geography,unknown,UNKNOWN,not established,CONDITIONAL,nominatim_sample_1-b2ddedbe3d30;nominatim_sample_2-e3fd899f847c;nominatim_sample_3-7f7a9f340d0c
+nominatim,entel,geography,unknown,UNKNOWN,not established,CONDITIONAL,nominatim_sample_1-b2ddedbe3d30;nominatim_sample_2-e3fd899f847c;nominatim_sample_3-7f7a9f340d0c
+nominatim,bitel,geography,unknown,UNKNOWN,not established,CONDITIONAL,nominatim_sample_1-b2ddedbe3d30;nominatim_sample_2-e3fd899f847c;nominatim_sample_3-7f7a9f340d0c
+x_twexapi,movistar,human reports,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,twexapi_x_movistar-24c5d5a1d647
+x_twexapi,claro,human reports,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,twexapi_x_claro-2727c0f880ac
+x_twexapi,entel,human reports,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+x_twexapi,bitel,human reports,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,twexapi_x_bitel-24c5d5a1d647
+osiptel_sisrep,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+osiptel_sisrep,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+osiptel_sisrep,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+osiptel_sisrep,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+osiptel_quality,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+osiptel_quality,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+osiptel_quality,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+osiptel_quality,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+indecopi,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+indecopi,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+indecopi,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+indecopi,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_rpp,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_rpp,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_rpp,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_rpp,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_andina,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_andina,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_andina,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_andina,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_correo,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_correo,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_correo,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_correo,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_republica,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_republica,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_republica,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_republica,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_elcomercio,movistar,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_elcomercio,claro,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_elcomercio,entel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,
+peru_news_elcomercio,bitel,unknown,unknown,UNKNOWN,not established,INSUFFICIENT_EVIDENCE,

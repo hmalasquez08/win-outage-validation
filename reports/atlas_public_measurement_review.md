@@ -1,0 +1,5 @@
+# RIPE Atlas: mediciones públicas en probes candidatas
+
+Las llamadas fueron exclusivamente GET a inventarios por probe y a `/measurements/{id}/latest/`, endpoints documentados como lecturas públicas. Se evaluaron cinco probes conectadas en los ASN candidatos: Movistar 1, Claro 2, Entel 2, Bitel 0. Las consultas de inventario muestran 532–1,267 configuraciones por probe y más de una página; la página final contiene configuraciones recientes hasta 2026-10-24. Ver `atlas_measurement_inventory_detailed.csv` y sus evidence IDs.
+
+La consulta de último resultado de la configuración más reciente para cada probe devolvió 0 resultados en las cinco llamadas (IDs de evidencia `ripe_atlas_latest_result_*`, registros normalizados sin resultados ni blancos/targets). Por ello, la actualidad de configuración no demuestra ejecución/resultado reciente. No se creó medición ni se gastaron créditos. Las probes activas son puntos de medición, no localizaciones de fallas o cobertura de clientes; estado final `INSUFFICIENT_EVIDENCE`.

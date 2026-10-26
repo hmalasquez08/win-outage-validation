@@ -1,0 +1,39 @@
+{
+  "status": "CHECKED",
+  "feature_count": 1890,
+  "invalid_polygon_count": 0,
+  "positive_area_overlap_pair_count": 0,
+  "overlap_tolerance_square_degrees": 1e-10,
+  "invalid_examples": [],
+  "overlap_examples": [],
+  "passed_checks": [
+    "GeoPackage WKB parses",
+    "individual polygons are topologically valid",
+    "no pair has positive-area overlap above tolerance",
+    "live official INEI WFS code crosswalk for 1,890 available districts",
+    "no near-gap candidates at 1e-8 degrees among available polygons"
+  ],
+  "not_checked": [
+    "independent national outer-perimeter validation",
+    "geometry for UBIGEO 120307, 130112, 160405",
+    "independent authority overlay of all PCM RENLIM segments against polygons"
+  ],
+  "software": "Shapely",
+  "input_evidence_id": "inei_ide_district_geopackage_extract-b4b6485e4161",
+  "input_artifact_path": "evidencias/geographic/inei_district_boundaries_2023/DISTRITO.gpkg",
+  "official_live_wfs_crosscheck": {
+    "shared_edge_pair_count": 5326,
+    "near_gap_pair_count_at_1e_8_degrees": 0,
+    "polygons_with_no_neighbor_within_tolerance": 2,
+    "connected_components_in_boundary_network": 10,
+    "max_symmetric_difference_area_square_degrees": 3.950294593729633e-08,
+    "mean_symmetric_difference_area_square_degrees": 2.242609547204827e-09,
+    "exact_coordinate_equalities": 0
+  },
+  "official_live_wfs_evidence_id": "inei_ide_district_wfs_current_2026-1a02b9903c35",
+  "catalog_missing_geometry_codes": [
+    "120307",
+    "130112",
+    "160405"
+  ]
+}

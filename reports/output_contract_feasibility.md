@@ -1,0 +1,1 @@
+No APPROVED source. Fields potentially observed are summarized in validation_results.json; start/published latency, fixed/mobile, district outage location and Sonata geography compatibility are unknown.

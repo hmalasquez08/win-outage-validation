@@ -1,0 +1,102 @@
+{
+  "source": "OSIPTEL Checa tu internet móvil public dashboard",
+  "url": "https://checatuinternetmovil.osiptel.gob.pe/",
+  "observed_local_date": "2026-10-25",
+  "selected_view": {
+    "geography": "Perú",
+    "year": 2026,
+    "month": "Septiembre",
+    "technology": "4G"
+  },
+  "national_indicators": {
+    "upload_mbps": {
+      "Movistar": 3.01,
+      "Claro": 3.08,
+      "Entel": 3.53,
+      "Bitel": 3.07,
+      "weighted_average": 3.16
+    },
+    "download_mbps": {
+      "Movistar": 12.47,
+      "Claro": 13.29,
+      "Entel": 12.71,
+      "Bitel": 12.82,
+      "weighted_average": 12.91
+    },
+    "coverage_time_pct": {
+      "Movistar": 94.64,
+      "Claro": 88.43,
+      "Entel": 90.64,
+      "Bitel": 90.19,
+      "weighted_average": 90.49
+    },
+    "latency_ms": {
+      "Movistar": 62.96,
+      "Claro": 50.43,
+      "Entel": 62.31,
+      "Bitel": 52.59,
+      "weighted_average": 55.96
+    },
+    "packet_loss_pct": {
+      "Movistar": 0.89,
+      "Claro": 0.78,
+      "Entel": 0.75,
+      "Bitel": 1.07,
+      "weighted_average": 0.86
+    },
+    "ranking_pct": {
+      "Movistar": 78.59,
+      "Claro": 79.53,
+      "Entel": 80.39,
+      "Bitel": 78.3,
+      "weighted_average": 79.28
+    }
+  },
+  "lima_region_view": {
+    "upload_mbps": {
+      "Movistar": 3.1,
+      "Claro": 3.36,
+      "Entel": 3.62,
+      "Bitel": 3.26,
+      "weighted_average": 3.35
+    },
+    "download_mbps": {
+      "Movistar": 13.1,
+      "Claro": 13.54,
+      "Entel": 13.09,
+      "Bitel": 13.13,
+      "weighted_average": 13.26
+    },
+    "coverage_time_pct": {
+      "Movistar": 95.97,
+      "Claro": 86.58,
+      "Entel": 88.68,
+      "Bitel": 89.01,
+      "weighted_average": 89.5
+    },
+    "latency_ms": {
+      "Movistar": 57.36,
+      "Claro": 41.25,
+      "Entel": 57.0,
+      "Bitel": 41.49,
+      "weighted_average": 49.44
+    },
+    "packet_loss_pct": {
+      "Movistar": 0.63,
+      "Claro": 0.53,
+      "Entel": 0.63,
+      "Bitel": 0.7,
+      "weighted_average": 0.6
+    },
+    "ranking_pct": {
+      "Movistar": 80.89,
+      "Claro": 81.15,
+      "Entel": 81.32,
+      "Bitel": 80.12,
+      "weighted_average": 81.0
+    }
+  },
+  "method": "Values copied from the public dashboard UI. No underlying user records were copied. The dashboard displayed a monthly 4G view; map/filter showed region and subordinate province/district selectors. The district table was not successfully opened during this browser run.",
+  "limitation": "Monthly aggregate, mobile only; cannot establish minute-scale outage or coverage/attribution of fixed broadband.",
+  "observed_utc_approx": "2026-10-25T17:50:00Z"
+}

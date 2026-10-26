@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editora Perú - Mantenimiento Temporal</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container { text-align: center; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 500px; border-top: 5px solid #9d1c1f; }
+        .logo-text { font-size: 28px; font-weight: bold; color: #9d1c1f; margin-bottom: 5px; }
+        .logo-subtext { font-size: 11px; text-transform: uppercase; color: #666; letter-spacing: 2px; margin-bottom: 30px; }
+        h1 { font-size: 22px; color: #222; }
+        p { font-size: 14px; line-height: 1.6; color: #666; margin-bottom: 30px; }
+        .btn { display: inline-block; background-color: #9d1c1f; color: #fff; text-decoration: none; padding: 12px 25px; font-size: 14px; border-radius: 4px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-text">Editora Perú</div>
+        <div class="logo-subtext">Empresa Peruana de Servicios Editoriales</div>
+        <h1>Servicio temporalmente interrumpido</h1>
+        <p>Estamos realizando actualizaciones de optimización en nuestra plataforma de contenidos. Volveremos a estar en línea en unos instantes.</p>
+        <a href="javascript:window.location.reload();" class="btn">Actualizar página</a>
+    </div>
+</body>
+</html>

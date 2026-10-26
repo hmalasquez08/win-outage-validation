@@ -1,0 +1,14 @@
+{
+  "source": "Cloudflare Radar outage annotations",
+  "queries": 15,
+  "successful_queries": 15,
+  "reference_positive_operator_pairs": 15,
+  "positive_pairs_with_matching_asn_pe_annotation": 0,
+  "OSIPTEL_reference_pairs": 10,
+  "OSIPTEL_pairs_with_match": 0,
+  "observed_positive_pair_hit_rate": "0/15",
+  "false_positive_rate": "NOT_ESTIMABLE: no independently verified normal windows",
+  "fresher_than_incident_onset": "NOT_MEASURED: retrospective API retrieval does not reveal first-publication time",
+  "scope": "Curated outage annotations matching the reference ASN, country and onset window; not raw traffic anomaly detection or a calibrated detector",
+  "report": "reports/incident_reference_cloudflare_comparison.csv"
+}
