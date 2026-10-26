@@ -1,0 +1,16 @@
+retry_policy:
+  max_attempts_transient: 3
+  max_attempts_auth: 1
+  max_attempts_validation_error: 2
+  max_validation_rounds: 3
+  backoff: exponential_with_jitter
+  retry_after: honor
+  quota_guard: stop_before_paid_or_credit_exhaustion
+  max_concurrent_requests_per_host: 1
+  default_timeout_seconds: 20
+  no_retry_same_empty_query_without_new_hypothesis: true
+  stop_conditions:
+    - auth failure until credentials/scopes change
+    - quota exhausted
+    - paid action required
+    - policy/terms unclear for the planned request

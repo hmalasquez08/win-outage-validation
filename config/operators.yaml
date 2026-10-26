@@ -1,0 +1,18 @@
+operators:
+  movistar:
+    asn_candidates: [6147]
+    validated_handle: MovistarPeru
+    handle_evidence: official_homepage_link
+  claro:
+    asn_candidates: [12252]
+    validated_handle: claroperu
+    handle_evidence: official_homepage_link
+  entel:
+    asn_candidates: [21575]
+    handle: null
+    handle_status: NOT_VERIFIED
+  bitel:
+    asn_candidates: [262210]
+    validated_handle: bitelperu
+    handle_evidence: official_homepage_link
+asn_note: Candidate assignments are not complete operator inventories.

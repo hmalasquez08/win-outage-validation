@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://win.example/schemas/creative-trigger-simulation-v1.json",
+  "title": "Win creative trigger simulation event",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "status",
+    "simulation_only",
+    "decision_at",
+    "expires_at",
+    "scope",
+    "reasons",
+    "policy"
+  ],
+  "properties": {
+    "schema_version": { "const": "win-creative-trigger-simulation-v1" },
+    "status": {
+      "enum": ["SUPPRESSED", "CANDIDATE_ONLY", "QUALIFIED_FOR_SIMULATED_CREATIVE"]
+    },
+    "simulation_only": { "const": true },
+    "decision_at": { "type": "string", "format": "date-time" },
+    "expires_at": { "type": "string", "format": "date-time" },
+    "scope": {
+      "oneOf": [
+        { "$ref": "#/$defs/scope" },
+        { "type": "array", "items": { "$ref": "#/$defs/scope" }, "minItems": 2 },
+        { "type": "null" }
+      ]
+    },
+    "reasons": { "type": "array", "items": { "type": "string" } },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requires_direct_internet_evidence",
+        "requires_independent_corroboration",
+        "requires_verified_peru_geography",
+        "max_signal_age_minutes",
+        "voice_sms_or_complaints_alone_can_trigger",
+        "declared_coverage_can_trigger"
+      ],
+      "properties": {
+        "requires_direct_internet_evidence": { "const": true },
+        "requires_independent_corroboration": { "const": true },
+        "requires_verified_peru_geography": { "const": true },
+        "max_signal_age_minutes": { "const": 30 },
+        "voice_sms_or_complaints_alone_can_trigger": { "const": false },
+        "declared_coverage_can_trigger": { "const": false }
+      }
+    }
+  },
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "operator",
+        "technology",
+        "geography",
+        "direct_signal_ids",
+        "corroborating_signal_ids",
+        "evidence_families",
+        "first_observed_at",
+        "last_observed_at"
+      ],
+      "properties": {
+        "operator": { "enum": ["movistar", "claro", "entel", "bitel"] },
+        "technology": { "enum": ["fixed", "mobile", "internet_unspecified"] },
+        "geography": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["country", "level", "code"],
+          "properties": {
+            "country": { "const": "PE" },
+            "level": { "enum": ["district", "province", "department"] },
+            "code": { "type": "string", "minLength": 1 }
+          }
+        },
+        "direct_signal_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "corroborating_signal_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "evidence_families": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+        "first_observed_at": { "type": "string", "format": "date-time" },
+        "last_observed_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+version: rules-2026-10-24-v1
+principles:
+  - http_200_alone_never_approves
+  - empty_window_never_means_no_coverage
+  - auth_failure_never_means_no_coverage
+  - evidence_families_must_be_independent_for_corroboration
+  - commercial_and_licensing_review_is_deferred_and_not_a_technical_feasibility_gate
+  - no_precision_recall_without_independent_reference_truth
+approval_requirements:
+  observed_peru_evidence: true
+  operator_attribution: true
+  useful_for_declared_role: true
+  freshness_measured_for_role: true
+  independent_incremental_value: true
+  quota_cost_verified: true
+non_numeric_hypotheses:
+  - reject on no event during quiet window: false
+  - count BGP sources as independent votes: false
+  - infer district from ASN or GeoIP: false
