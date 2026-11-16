@@ -8,6 +8,7 @@ from __future__ import annotations
 import csv
 import html
 import re
+import time
 import unicodedata
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -18,21 +19,46 @@ from typing import Any
 
 ROOT = Path.cwd()
 REPORTS = ROOT / "reports"
-UBIGEO_PATH = REPORTS / "inei_sisconcode_ubigeo_2026.csv"
+UBIGEO_PATH = ROOT / "data" / "ubigeo_hibrido.csv"
 
-# These are the tested RSS/XML endpoints among Reuters Institute's Peru online
-# top ten. Outlets without a verified working RSS route remain visible as such.
 OUTLETS: list[dict[str, str]] = [
-    {"outlet": "Latina Noticias", "rank": "1", "reach": "26%", "url": "", "status": "NO_VALIDATED_FEED_ROUTE"},
-    {"outlet": "RPP Noticias", "rank": "2", "reach": "24%", "url": "https://rpp.pe/rss", "status": "CONFIGURED"},
-    {"outlet": "El Comercio", "rank": "3", "reach": "23%", "url": "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml", "status": "CONFIGURED"},
-    {"outlet": "La República", "rank": "4", "reach": "23%", "url": "https://larepublica.pe/rss/home.xml", "status": "CONFIGURED"},
-    {"outlet": "América Noticias", "rank": "5", "reach": "22%", "url": "https://www.americatv.com.pe/noticias/feed", "status": "CONFIGURED"},
-    {"outlet": "Infobae", "rank": "6", "reach": "21%", "url": "https://www.infobae.com/arc/outboundfeeds/rss/", "status": "CONFIGURED_GLOBAL_FEED"},
-    {"outlet": "Perú21", "rank": "7", "reach": "17%", "url": "https://peru21.pe/rss/", "status": "CONFIGURED"},
-    {"outlet": "ATV Noticias", "rank": "8", "reach": "16%", "url": "https://www.atv.pe/rss/", "status": "CONFIGURED"},
-    {"outlet": "Exitosa Noticias", "rank": "9", "reach": "15%", "url": "", "status": "NO_VALIDATED_FEED_ROUTE"},
-    {"outlet": "TV Perú", "rank": "10", "reach": "14%", "url": "", "status": "NO_VALIDATED_FEED_ROUTE"},
+    {"outlet": name, "rank": "", "reach": "", "url": url, "status": "CONFIGURED_GLOBAL_FEED" if name == "Infobae" else "CONFIGURED"}
+    for name, url in [
+        ("RPP Noticias", "https://rpp.pe/rss"),
+        ("El Comercio", "https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml"),
+        ("La República", "https://larepublica.pe/rss/home.xml"),
+        ("América Noticias", "https://www.americatv.com.pe/noticias/feed"),
+        ("Perú21", "https://peru21.pe/rss/"),
+        ("Gestión", "https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml"),
+        ("Diario Correo", "https://diariocorreo.pe/arc/outboundfeeds/rss/?outputType=xml"),
+        ("Trome", "https://trome.com/arc/outboundfeeds/rss/?outputType=xml"),
+        ("Andina", "https://andina.pe/agencia/rss.aspx"),
+        ("Exitosa Noticias", "https://exitosanoticias.pe/feed/"),
+        ("Canal N", "https://canaln.pe/feed/"),
+        ("Infobae", "https://www.infobae.com/arc/outboundfeeds/rss/?outputType=xml"),
+        ("Bolognesi Noticias", "https://bolognesinoticias.com/feed/"),
+        ("El Búho", "https://elbuho.pe/feed/"),
+        ("Prensa Regional", "https://prensaregional.pe/feed/"),
+        ("Los Andes", "https://losandes.com.pe/feed/"),
+        ("Diario del Cusco", "https://diariodelcusco.pe/feed/"),
+        ("Radio Onda Azul", "https://radioondaazul.com/feed/"),
+        ("Diario Ahora Amazonía", "https://diarioahora.pe/feed/"),
+        ("Diario Ahora Huánuco", "https://ahora.com.pe/feed/"),
+        ("Tu Diario Huánuco", "https://tudiariohuanuco.pe/feed/"),
+        ("Áncash Noticias", "https://ancashnoticias.com/feed/"),
+        ("Huaraz Noticias", "https://huaraznoticias.com/feed/"),
+        ("Diario La Opinión Ica", "https://diariolaopinion.pe/feed/"),
+        ("Diario de Chimbote", "https://diariodechimbote.com/feed/"),
+        ("Diario Voces", "https://diariovoces.com.pe/feed/"),
+        ("Portal Ayacucho", "https://portalayacucho.com/feed/"),
+        ("Página 3 Huánuco", "https://pagina3.pe/feed/"),
+        ("Macro Norte", "https://macronorte.pe/feed/"),
+        ("Walac Noticias", "https://walac.pe/feed/"),
+        ("Diario del País", "https://delpais.com.pe/feed/"),
+        ("Perú Informa", "https://www.peruinforma.com/feed/"),
+        ("Grupo Panorama", "https://diariogrupopanorama.com/feed/"),
+        ("DPL News", "https://dplnews.com/feed/"),
+    ]
 ]
 
 FEED_STATUS_FIELDS = [
@@ -45,6 +71,9 @@ CANDIDATE_FIELDS = [
     "news_candidate", "independence_status", "count_as_independent_family", "freshness_status",
     "source_id", "artifact_path",
 ]
+RSS_FETCH_ATTEMPTS = 3
+RSS_RETRY_BASE_SECONDS = 1.0
+RSS_REQUEST_TIMEOUT_SECONDS = 12
 
 OPERATOR_PATTERNS = {
     "movistar": (r"\bmovistar\b", r"\btelef[oó]nica\b"),
@@ -55,7 +84,7 @@ OPERATOR_PATTERNS = {
 }
 INTERNET_RE = re.compile(r"\b(internet|fibra\s+[oó]ptica|banda\s+ancha|conexi[oó]n\s+a\s+internet)\b", re.I)
 OUTAGE_RE = re.compile(
-    r"\b(ca[ií]d[ao]|corte|interrupci[oó]n|sin\s+(?:el\s+)?servicio|"
+    r"\b(ca[ií]d[ao]|corte|interrupci[oó]n|sin\s+(?:el\s+)?(?:servicio|internet)|"
     r"fallas?|aver[ií]as?|problemas?|afectaci[oó]n|degradaci[oó]n|"
     r"restableci(?:miento|do)|no\s+funciona)\b",
     re.I,
@@ -131,10 +160,18 @@ def _load_places() -> list[tuple[str, str, str, re.Pattern[str]]]:
             code = row.get("UBIGEO", "")
             for level, column, width in (("department", "DEPARTAMENTO", 2), ("province", "PROVINCIA", 4), ("district", "DISTRITO", 6)):
                 label = (row.get(column) or "").strip()
-                if len(label) >= 4:
+                if len(label) >= 4 or (level == "district" and code == "150103" and _normalise(label) == "ate"):
                     places.add((level, code[:width], label, _normalise(label)))
+    district_codes = {code for level, code, _label, _needle in places if level == "district"}
+    if "150103" in district_codes:
+        places.add(("district", "150103", "Ate", "santa clara"))
+    if "150118" in district_codes:
+        places.add(("district", "150118", "Lurigancho", "chosica"))
     return [
-        (level, code, label, re.compile(rf"(?<![a-z0-9]){re.escape(needle)}(?![a-z0-9])"))
+        (level, code, label, re.compile(
+            rf"(?<![a-z0-9]){re.escape(needle)}(?![a-z0-9])"
+            + (r"(?!\s+clara\b)" if needle == "santa" else "")
+        ))
         for level, code, label, needle in sorted(places, key=lambda item: len(item[3]), reverse=True)
     ]
 
@@ -163,7 +200,13 @@ def classify_item(
     social_derived = bool(SOCIAL_DERIVATION_RE.search(text))
     fixed = bool(FIXED_RE.search(text))
     mobile = bool(MOBILE_RE.search(text))
-    candidate = internet_match and outage_match and bool(operators) and bool(areas)
+    contexts = re.split(r"(?<=[.!?])\s+|[\r\n]+", text)
+    aligned_context = any(
+        INTERNET_RE.search(context) and OUTAGE_RE.search(context)
+        and any(re.search(pattern, context, re.I) for patterns in OPERATOR_PATTERNS.values() for pattern in patterns)
+        for context in contexts
+    )
+    candidate = bool(aligned_context and areas)
     return {
         "outlet": outlet,
         "title": item.get("title", ""),
@@ -223,10 +266,48 @@ def align_news_to_incident(
     }
 
 
+def _fetch_feed(outlet: dict[str, str], slug: str) -> tuple[dict[str, Any], list[dict[str, str]], str]:
+    """Fetch and parse one RSS feed, retrying transient failures only."""
+    from .http import request
+
+    last_record: dict[str, Any] = {}
+    last_items: list[dict[str, str]] = []
+    last_parse_status = "HTTP_ERROR"
+    for attempt in range(1, RSS_FETCH_ATTEMPTS + 1):
+        record, body = request(
+            f"news_rss_{slug}", outlet["url"], "news_feed",
+            user_agent="win-outage-validation/0.1 (RSS metadata reader; no article-page requests)",
+            max_response_bytes=15_000_000,
+            timeout=RSS_REQUEST_TIMEOUT_SECONDS,
+        )
+        status = record.get("http_status")
+        try:
+            items = parse_feed(body) if status == 200 else []
+            parse_status = "XML_PARSED" if status == 200 else "HTTP_ERROR"
+        except (ET.ParseError, ValueError):
+            items = []
+            parse_status = "XML_PARSE_ERROR"
+        last_record, last_items, last_parse_status = record, items, parse_status
+        transient_http = status is None or status == 429 or (isinstance(status, int) and status >= 500)
+        retryable = transient_http or parse_status == "XML_PARSE_ERROR"
+        if not retryable or attempt == RSS_FETCH_ATTEMPTS:
+            break
+        time.sleep(RSS_RETRY_BASE_SECONDS * attempt)
+    return last_record, last_items, last_parse_status
+
+
+def collect_news_snapshot() -> dict[str, Any]:
+    """Fetch RSS once and return both the summary and candidate rows."""
+    summary, candidates = _collect_current_news()
+    return {"summary": summary, "candidates": candidates}
+
+
 def collect_current_news() -> dict[str, Any]:
     """Fetch verified RSS endpoints, archive responses, and summarize candidates."""
-    from .cli import request
+    return collect_news_snapshot()["summary"]
 
+
+def _collect_current_news() -> tuple[dict[str, Any], list[dict[str, Any]]]:
     captured_at = datetime.now(timezone.utc)
     places = _load_places()
     feed_status_rows: list[dict[str, Any]] = []
@@ -236,18 +317,7 @@ def collect_current_news() -> dict[str, Any]:
             feed_status_rows.append({**outlet, "http_status": "", "feed_items": 0, "news_candidates": 0, "freshest_item_age_minutes": "", "evidence_id": "", "artifact_path": ""})
             continue
         slug = re.sub(r"[^a-z0-9]+", "_", _normalise(outlet["outlet"])).strip("_")
-        record, body = request(
-            f"news_rss_{slug}", outlet["url"], "news_feed",
-            user_agent="win-outage-validation/0.1 (RSS metadata reader; no article-page requests)",
-            max_response_bytes=15_000_000,
-            timeout=8,
-        )
-        try:
-            items = parse_feed(body) if record.get("http_status") == 200 else []
-            parse_status = "XML_PARSED" if record.get("http_status") == 200 else "HTTP_ERROR"
-        except (ET.ParseError, ValueError):
-            items = []
-            parse_status = "XML_PARSE_ERROR"
+        record, items, parse_status = _fetch_feed(outlet, slug)
         classified = [classify_item(item, outlet["outlet"], captured_at, places) for item in items]
         candidates = [row for row in classified if row["news_candidate"]]
         valid_ages = [row["age_minutes"] for row in classified if row["age_minutes"] is not None and row["age_minutes"] >= 0]
@@ -277,7 +347,7 @@ def collect_current_news() -> dict[str, Any]:
 
     configured_count = sum(bool(outlet["url"]) for outlet in OUTLETS)
     valid_count = sum(row.get("http_status") == 200 and row.get("parse_status") == "XML_PARSED" for row in feed_status_rows)
-    return {
+    summary = {
         "status": "COMPLETE" if valid_count == configured_count else "PARTIAL",
         "captured_at_utc": captured_at.isoformat(),
         "configured_feeds": configured_count,
@@ -290,3 +360,4 @@ def collect_current_news() -> dict[str, Any]:
         "candidates_report": candidate_path.relative_to(ROOT).as_posix(),
         "note": "RSS metadata only; no article URLs fetched. Candidate status is not outage confirmation or activation authorization.",
     }
+    return summary, candidate_rows

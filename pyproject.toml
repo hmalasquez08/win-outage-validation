@@ -5,12 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "win-outage-validation"
 version = "0.1.0"
-description = "Local, evidence-first validation of Peru outage data sources"
+description = "Manual live outage trigger for Peru network operators"
+readme = "README.md"
 requires-python = ">=3.11"
-dependencies = ["websockets>=12,<16", "certifi>=2024.2.2"]
+dependencies = ["certifi>=2024.2.2", "xmlschema>=3.4,<5"]
+
+[project.scripts]
+win-outage-live = "win_validation.live_runner:main"
+win-prueba-lima = "win_validation.prueba_lima:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-
-[tool.pytest.ini_options]
-pythonpath = ["src"]

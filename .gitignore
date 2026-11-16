@@ -1,11 +1,12 @@
-# Local credentials and configuration
-.env.*
-!.env.example
+# Runtime evidence and reports
+evidencias/
+reports/
+xml/trigger_feed_live.xml
+trigger_feed_simulated.xml
 
 # Python virtual environments, caches, and bytecode
 .venv/
 __pycache__/
-.pytest_cache/
 *.py[cod]
 
 # Build outputs

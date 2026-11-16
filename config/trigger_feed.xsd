@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:simpleType name="operadorTipo"><xs:restriction base="xs:string"><xs:enumeration value="movistar"/><xs:enumeration value="claro"/><xs:enumeration value="entel"/><xs:enumeration value="bitel"/></xs:restriction></xs:simpleType>
+  <xs:simpleType name="servicioTipo"><xs:restriction base="xs:string"><xs:enumeration value="fijo"/><xs:enumeration value="movil"/><xs:enumeration value="desconocido"/></xs:restriction></xs:simpleType>
+  <xs:simpleType name="incidenteTipo"><xs:restriction base="xs:string"><xs:enumeration value="corte"/><xs:enumeration value="degradacion"/><xs:enumeration value="desconocido"/></xs:restriction></xs:simpleType>
+  <xs:simpleType name="estadoTipo"><xs:restriction base="xs:string"><xs:enumeration value="candidato"/><xs:enumeration value="activo"/><xs:enumeration value="recuperando"/><xs:enumeration value="cerrado"/></xs:restriction></xs:simpleType>
+  <xs:simpleType name="geoTipo"><xs:restriction base="xs:string"><xs:enumeration value="pais"/><xs:enumeration value="departamento"/><xs:enumeration value="provincia"/><xs:enumeration value="distrito"/><xs:enumeration value="desconocido"/></xs:restriction></xs:simpleType>
+  <xs:simpleType name="sistemaTipo"><xs:restriction base="xs:string"><xs:enumeration value="ok"/><xs:enumeration value="degradado"/><xs:enumeration value="caido"/></xs:restriction></xs:simpleType>
+  <xs:complexType name="eventoTipo">
+    <xs:sequence>
+      <xs:element name="operador" type="operadorTipo"/>
+      <xs:element name="tipoServicio" type="servicioTipo"/>
+      <xs:element name="tipoIncidente" type="incidenteTipo"/>
+      <xs:element name="estado" type="estadoTipo"/>
+      <xs:element name="activador" type="xs:boolean"/>
+      <xs:element name="zona" type="xs:string"/>
+      <xs:element name="distrito" type="xs:string" minOccurs="0"/>
+      <xs:element name="ubigeo" type="xs:string" minOccurs="0"/>
+      <xs:element name="precisionGeo" type="geoTipo"/>
+      <xs:element name="iniciadoEn" type="xs:dateTime"/>
+      <xs:element name="expiraEn" type="xs:dateTime"/>
+      <xs:element name="urlCreativo" type="xs:anyURI" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:element name="feedActivador">
+    <xs:complexType>
+      <xs:sequence><xs:element name="evento" type="eventoTipo" minOccurs="0" maxOccurs="unbounded"/></xs:sequence>
+      <xs:attribute name="versionEsquema" type="xs:string" use="required" fixed="1.0"/>
+      <xs:attribute name="estadoSistema" type="sistemaTipo" use="required"/>
+      <xs:attribute name="generadoEn" type="xs:dateTime" use="required"/>
+      <xs:attribute name="validoHasta" type="xs:dateTime" use="required"/>
+      <xs:attribute name="simulacion" type="xs:boolean" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

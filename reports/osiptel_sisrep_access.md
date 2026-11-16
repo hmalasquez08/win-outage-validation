@@ -1,1 +1,0 @@
-Official SISREP page: https://www.gob.pe/33307-sistema-de-informacion-y-registro-de-interrupciones-sisrep . Data is described as submitted via web interface; target consultation link goes to login. No public API/feed/download verified; no login attempted.

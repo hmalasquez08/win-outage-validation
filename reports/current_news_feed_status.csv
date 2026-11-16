@@ -1,11 +1,35 @@
 ﻿outlet,rank,reach,url,status,http_status,parse_status,feed_items,news_candidates,freshest_item_age_minutes,evidence_id,artifact_path
-Latina Noticias,1,26%,,NO_VALIDATED_FEED_ROUTE,,,0,0,,,
-RPP Noticias,2,24%,https://rpp.pe/rss,CONFIGURED,200,XML_PARSED,60,0,6.7,news_rss_rpp_noticias-bc9f7ebf5197,evidencias/api_responses/news_rss_rpp_noticias/20261025T223646.755084+0000.xml
-El Comercio,3,23%,https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml,CONFIGURED,200,XML_PARSED,100,0,4.4,news_rss_el_comercio-8b9ff533ee4f,evidencias/api_responses/news_rss_el_comercio/20261025T223647.201601+0000.xml
-La República,4,23%,https://larepublica.pe/rss/home.xml,CONFIGURED,200,XML_PARSED,200,0,2.1,news_rss_la_republica-7950b7531d7a,evidencias/api_responses/news_rss_la_republica/20261025T223650.129162+0000.xml
-América Noticias,5,22%,https://www.americatv.com.pe/noticias/feed,CONFIGURED,200,XML_PARSED,33,0,67.5,news_rss_america_noticias-0836e788d7ed,evidencias/api_responses/news_rss_america_noticias/20261025T223653.390470+0000.xml
-Infobae,6,21%,https://www.infobae.com/arc/outboundfeeds/rss/,CONFIGURED_GLOBAL_FEED,200,XML_PARSED,100,0,6.8,news_rss_infobae-44a20b95c92f,evidencias/api_responses/news_rss_infobae/20261025T223654.064567+0000.xml
-Perú21,7,17%,https://peru21.pe/rss/,CONFIGURED,200,XML_PARSED,20,0,5259.4,news_rss_peru21-5f48c0bd80a8,evidencias/api_responses/news_rss_peru21/20261025T223656.243552+0000.xml
-ATV Noticias,8,16%,https://www.atv.pe/rss/,CONFIGURED,200,XML_PARSED,20,0,40595.1,news_rss_atv_noticias-d89d8bd09f99,evidencias/api_responses/news_rss_atv_noticias/20261025T223656.619475+0000.xml
-Exitosa Noticias,9,15%,,NO_VALIDATED_FEED_ROUTE,,,0,0,,,
-TV Perú,10,14%,,NO_VALIDATED_FEED_ROUTE,,,0,0,,,
+RPP Noticias,,,https://rpp.pe/rss,CONFIGURED,200,XML_PARSED,60,0,5.2,news_rss_rpp_noticias-6d42bd696a54,evidencias/api_responses/news_rss_rpp_noticias/20261116T191756.766901+0000.xml
+El Comercio,,,https://elcomercio.pe/arc/outboundfeeds/rss/?outputType=xml,CONFIGURED,200,XML_PARSED,100,0,5.2,news_rss_el_comercio-456e8278e9d1,evidencias/api_responses/news_rss_el_comercio/20261116T191757.123369+0000.xml
+La República,,,https://larepublica.pe/rss/home.xml,CONFIGURED,200,XML_PARSED,200,0,2.0,news_rss_la_republica-e2d7552af9fa,evidencias/api_responses/news_rss_la_republica/20261116T191759.804610+0000.xml
+América Noticias,,,https://www.americatv.com.pe/noticias/feed,CONFIGURED,200,XML_PARSED,33,0,67.9,news_rss_america_noticias-f13820eaa570,evidencias/api_responses/news_rss_america_noticias/20261116T191801.840910+0000.xml
+Perú21,,,https://peru21.pe/rss/,CONFIGURED,200,XML_PARSED,20,0,11.4,news_rss_peru21-aa1fe252376c,evidencias/api_responses/news_rss_peru21/20261116T191802.114492+0000.xml
+Gestión,,,https://gestion.pe/arc/outboundfeeds/rss/?outputType=xml,CONFIGURED,200,XML_PARSED,100,0,6.6,news_rss_gestion-c9a6ed868cd2,evidencias/api_responses/news_rss_gestion/20261116T191802.494247+0000.xml
+Diario Correo,,,https://diariocorreo.pe/arc/outboundfeeds/rss/?outputType=xml,CONFIGURED,200,XML_PARSED,100,0,11.5,news_rss_diario_correo-ea6b0a60591d,evidencias/api_responses/news_rss_diario_correo/20261116T191804.456184+0000.xml
+Trome,,,https://trome.com/arc/outboundfeeds/rss/?outputType=xml,CONFIGURED,200,XML_PARSED,86,0,5.3,news_rss_trome-f94a71541f30,evidencias/api_responses/news_rss_trome/20261116T191805.718880+0000.xml
+Andina,,,https://andina.pe/agencia/rss.aspx,CONFIGURED,200,XML_PARSED,20,0,0.8,news_rss_andina-840099f8caf9,evidencias/api_responses/news_rss_andina/20261116T191807.108876+0000.xml
+Exitosa Noticias,,,https://exitosanoticias.pe/feed/,CONFIGURED,200,XML_PARSED,44,0,34.9,news_rss_exitosa_noticias-6b708bd12d2e,evidencias/api_responses/news_rss_exitosa_noticias/20261116T191807.239787+0000.xml
+Canal N,,,https://canaln.pe/feed/,CONFIGURED,200,XML_PARSED,33,0,72.9,news_rss_canal_n-9a3e81db55e8,evidencias/api_responses/news_rss_canal_n/20261116T191808.103623+0000.xml
+Infobae,,,https://www.infobae.com/arc/outboundfeeds/rss/?outputType=xml,CONFIGURED_GLOBAL_FEED,200,XML_PARSED,100,0,1.4,news_rss_infobae-11d10b21d16c,evidencias/api_responses/news_rss_infobae/20261116T191808.897618+0000.xml
+Bolognesi Noticias,,,https://bolognesinoticias.com/feed/,CONFIGURED,200,XML_PARSED,12,0,1587.6,news_rss_bolognesi_noticias-6b6ae1566b31,evidencias/api_responses/news_rss_bolognesi_noticias/20261116T191810.778821+0000.xml
+El Búho,,,https://elbuho.pe/feed/,CONFIGURED,200,XML_PARSED,20,0,75.9,news_rss_el_buho-71313b9bd8d3,evidencias/api_responses/news_rss_el_buho/20261116T191812.082521+0000.xml
+Prensa Regional,,,https://prensaregional.pe/feed/,CONFIGURED,200,XML_PARSED,50,0,407.7,news_rss_prensa_regional-a19b2263f0ac,evidencias/api_responses/news_rss_prensa_regional/20261116T191814.361923+0000.xml
+Los Andes,,,https://losandes.com.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,896.3,news_rss_los_andes-63dfc11b0a4c,evidencias/api_responses/news_rss_los_andes/20261116T191816.165896+0000.xml
+Diario del Cusco,,,https://diariodelcusco.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,420.7,news_rss_diario_del_cusco-765dd098882c,evidencias/api_responses/news_rss_diario_del_cusco/20261116T191818.040148+0000.xml
+Radio Onda Azul,,,https://radioondaazul.com/feed/,CONFIGURED,200,XML_PARSED,10,0,271.1,news_rss_radio_onda_azul-82c23b12f2d6,evidencias/api_responses/news_rss_radio_onda_azul/20261116T191819.405915+0000.xml
+Diario Ahora Amazonía,,,https://diarioahora.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,172.0,news_rss_diario_ahora_amazonia-2f806c0c5628,evidencias/api_responses/news_rss_diario_ahora_amazonia/20261116T191819.933463+0000.xml
+Diario Ahora Huánuco,,,https://ahora.com.pe/feed/,CONFIGURED,200,XML_PARSED,50,0,7.9,news_rss_diario_ahora_huanuco-a775995ab85e,evidencias/api_responses/news_rss_diario_ahora_huanuco/20261116T191821.475306+0000.xml
+Tu Diario Huánuco,,,https://tudiariohuanuco.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,370.0,news_rss_tu_diario_huanuco-80b8c67f37f4,evidencias/api_responses/news_rss_tu_diario_huanuco/20261116T191825.069655+0000.xml
+Áncash Noticias,,,https://ancashnoticias.com/feed/,CONFIGURED,200,XML_PARSED,10,0,3.1,news_rss_ancash_noticias-4ee8e0c693e5,evidencias/api_responses/news_rss_ancash_noticias/20261116T191825.645320+0000.xml
+Huaraz Noticias,,,https://huaraznoticias.com/feed/,CONFIGURED,200,XML_PARSED,10,0,374.0,news_rss_huaraz_noticias-421426778d70,evidencias/api_responses/news_rss_huaraz_noticias/20261116T191827.021502+0000.xml
+Diario La Opinión Ica,,,https://diariolaopinion.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,4097.3,news_rss_diario_la_opinion_ica-d6045f265abb,evidencias/api_responses/news_rss_diario_la_opinion_ica/20261116T191828.655703+0000.xml
+Diario de Chimbote,,,https://diariodechimbote.com/feed/,CONFIGURED,200,XML_PARSED,10,0,136.9,news_rss_diario_de_chimbote-5be5cb27a6cf,evidencias/api_responses/news_rss_diario_de_chimbote/20261116T191829.559669+0000.xml
+Diario Voces,,,https://diariovoces.com.pe/feed/,CONFIGURED,200,XML_PARSED,12,0,367.9,news_rss_diario_voces-248ff459a071,evidencias/api_responses/news_rss_diario_voces/20261116T191830.276588+0000.xml
+Portal Ayacucho,,,https://portalayacucho.com/feed/,CONFIGURED,200,XML_PARSED,10,0,1215.3,news_rss_portal_ayacucho-d0ee6357fa1e,evidencias/api_responses/news_rss_portal_ayacucho/20261116T191831.366211+0000.xml
+Página 3 Huánuco,,,https://pagina3.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,114.5,news_rss_pagina_3_huanuco-5e479c007879,evidencias/api_responses/news_rss_pagina_3_huanuco/20261116T191832.176865+0000.xml
+Macro Norte,,,https://macronorte.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,87.5,news_rss_macro_norte-77cc91500540,evidencias/api_responses/news_rss_macro_norte/20261116T191833.916169+0000.xml
+Walac Noticias,,,https://walac.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,198.8,news_rss_walac_noticias-a3f6616f095f,evidencias/api_responses/news_rss_walac_noticias/20261116T191835.078248+0000.xml
+Diario del País,,,https://delpais.com.pe/feed/,CONFIGURED,200,XML_PARSED,10,0,306.3,news_rss_diario_del_pais-b2b38a6ec374,evidencias/api_responses/news_rss_diario_del_pais/20261116T191836.404365+0000.xml
+Perú Informa,,,https://www.peruinforma.com/feed/,CONFIGURED,200,XML_PARSED,6,0,24.3,news_rss_peru_informa-a333a56cde87,evidencias/api_responses/news_rss_peru_informa/20261116T191837.605917+0000.xml
+Grupo Panorama,,,https://diariogrupopanorama.com/feed/,CONFIGURED,200,XML_PARSED,10,0,93.6,news_rss_grupo_panorama-6f19c7caa58f,evidencias/api_responses/news_rss_grupo_panorama/20261116T191839.149724+0000.xml
+DPL News,,,https://dplnews.com/feed/,CONFIGURED,200,XML_PARSED,10,0,8.6,news_rss_dpl_news-9b05b22096c9,evidencias/api_responses/news_rss_dpl_news/20261116T191841.369305+0000.xml

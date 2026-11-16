@@ -1,1 +1,0 @@
-No account was rejected. All nine official handles passed identity checks. Results from the bounded read-only searches remain INSUFFICIENT_EVIDENCE for incident detection because keyword matches are not manually classified incidents and text was not retained.
