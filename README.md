@@ -205,20 +205,3 @@ src/win_validation/
   radar_context.py      # anomalías y anotaciones de Cloudflare Radar
   http.py               # cliente HTTP, evidencia y carga de .env
 ```
-
-## Fuentes del catálogo UBIGEO
-
-El catálogo conserva los códigos y nombres de la base local etiquetada 2026. Sus metadatos referenciales proceden de [ubigeos_peru, INEI 2025](https://github.com/MichaelSuarez0/ubigeos_peru/tree/3e2ed18eb246dd9a81b129352be6a3b6b8a96ea0) y [ubigeo-peru-aumentado, 2021](https://github.com/jmcastagnetto/ubigeo-peru-aumentado/tree/5e98222bb010243592ae02bfafb0a3658d6c4bd8). Se copiaron únicamente para códigos y nombres administrativos coincidentes; para las coordenadas se exigió también la coincidencia de la capital. Los campos de 2021 y la población son históricos.
-
-## Licencias
-
-MIT License
-
-Copyright (c) 2025 MichaelSuarez0
-Copyright (c) 2021 Jesus M. Castagnetto
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
